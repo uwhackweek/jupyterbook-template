@@ -1,4 +1,4 @@
-name: hackweek-template
+name: hackweek
 channels:
   - conda-forge
 dependencies:
