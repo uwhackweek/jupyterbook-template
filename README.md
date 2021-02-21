@@ -11,8 +11,7 @@ Use this to facilitate creating a [Jupyter-book](https://jupyterbook.org/) hoste
 From the root level of the repository
 
 ```
-make build
-make serve 
+jb build book
 ```
 
 ## GitHub Deployment

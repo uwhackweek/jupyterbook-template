@@ -20,10 +20,19 @@ latex:
   latex_documents:
     targetname: book.tex
 
+# Configure your Binder links, such as the URL of the BinderHub.
+launch_buttons:
+  notebook_interface: jupyterlab
+  #binderhub_url: https://gke.mybinder.org
+  # NOTE: Want to use nbgitpuller with binderhub, not sure this will work currently...
+  binderhub_url: https://aws-uswest2-binder.pangeo.io/v2/gh/pangeo-data/notebook-binder/2021.02.02?git-pull?repo=https://github.com/uwhackweek/jupyterbook-template
+  jupyterhub_url: https://aws-uswest2.pangeo.io
+  colab_url: "" #empty string disables button
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/uwhackweek/jupyterbook-template # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
+  path_to_book: book  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
