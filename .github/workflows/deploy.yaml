@@ -7,16 +7,24 @@ on:
 
 jobs:
   deploy-example-book:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
-
+    - name: Cache conda
+      uses: actions/cache@v2
+      env:
+        # Increase this value to reset cache if environment.yaml has not changed
+        CACHE_NUMBER: 0
+      with:
+        path: ~/conda_pkgs_dir
+        key: ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('environment.yaml') }}
     - name: Setup Miniconda
       uses: conda-incubator/setup-miniconda@v2
       with:
         auto-update-conda: true
         auto-activate-base: false
+        use-only-tar-bz2: true
         miniconda-version: 'latest'
         python-version: 3.8
         environment-file: environment.yml
@@ -30,6 +38,6 @@ jobs:
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GH_PAT }}
         publish_dir: book/_build/html
         publish_branch: gh-pages
