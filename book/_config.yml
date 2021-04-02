@@ -1,14 +1,14 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Snowex Hackweek
+title: ICESat-2 Hackweek
 author: eScience Institute, University of Washington
 logo: logo.png
 
 parse:
   myst_substitutions:
-    hackweek: snowex-hackweek
-    dates: July ? to ?, 2021
+    hackweek: ICESat-2hackweek
+    dates: October ? to ?, 2021
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
