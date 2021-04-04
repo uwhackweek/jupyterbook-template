@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Basic git workflow for a project &#8212; ICESat-2 Hackweek</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -337,25 +338,25 @@
         
               <div>
                 
-  <div class="section" id="basic-git-workflow-for-a-project">
+  <section id="basic-git-workflow-for-a-project">
 <h1>Basic git workflow for a project<a class="headerlink" href="#basic-git-workflow-for-a-project" title="Permalink to this headline">¶</a></h1>
 <p>Here we suggest a basic git workflow for working on your group project. Combined with our example project template and good communication, this workflow should help minimize conflicts on your GitHub project repo.</p>
-<div class="section" id="first-time-only-clone-your-project-into-your-local-working-environment">
+<section id="first-time-only-clone-your-project-into-your-local-working-environment">
 <h2>First time only - clone your project into your local working environment<a class="headerlink" href="#first-time-only-clone-your-project-into-your-local-working-environment" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/ICESAT-2HackWeek/&lt;project-repo-name&gt;.git 
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/&lt;hackweek-organization-name&gt;/&lt;project-repo-name&gt;.git 
 </pre></div>
 </div>
-<p>Where the <code class="docutils literal notranslate"><span class="pre">&lt;project-repo-name&gt;</span></code> is the unique name of your project repository.</p>
-</div>
-<div class="section" id="each-time-you-begin-working">
+<p>Where the <code class="docutils literal notranslate"><span class="pre">&lt;hackweek-organization-name&gt;</span></code> is the name of our hackweek organization (in our case <strong>ICESat-2hackweek</strong>), and the <code class="docutils literal notranslate"><span class="pre">&lt;project-repo-name&gt;</span></code> is the unique name of your project repository.</p>
+</section>
+<section id="each-time-you-begin-working">
 <h2>Each time you begin working<a class="headerlink" href="#each-time-you-begin-working" title="Permalink to this headline">¶</a></h2>
 <p>Navigate to your project directory:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd &lt;project-repo-name&gt; 
 </pre></div>
 </div>
-<p>Now, check in with your team: has there been any new work pushed to GitHub? If so, you will need to pull remote changes to your master branch:</p>
+<p>Now, check in with your team: has there been any new work pushed to GitHub? If so, you will need to pull remote changes to your main branch:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git fetch
-$ git pull origin master:master
+$ git pull origin main:main
 </pre></div>
 </div>
 <p>Next, checkout your working branch. Use the <code class="docutils literal notranslate"><span class="pre">-b</span></code> option if you are beginning work and need to create a new branch:</p>
@@ -363,8 +364,8 @@ $ git pull origin master:master
 </pre></div>
 </div>
 <p>Here <code class="docutils literal notranslate"><span class="pre">&lt;branch-name&gt;</span></code> is an arbitrary name identifying this branch of work.</p>
-</div>
-<div class="section" id="make-changes-or-add-new-files-locally-and-put-them-on-github">
+</section>
+<section id="make-changes-or-add-new-files-locally-and-put-them-on-github">
 <h2>Make changes or add new files locally and put them on GitHub<a class="headerlink" href="#make-changes-or-add-new-files-locally-and-put-them-on-github" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add new_file #if adding a new file 
 $ git status #to see which files have been added or modified and are ready (staged) for committing
@@ -372,15 +373,15 @@ $ git commit -am &quot;brief description of your changes (commit message)&quot;
 $ git push origin branch_name  
 </pre></div>
 </div>
-<p>Complete pull request and merge with master via GitHub UI.</p>
-</div>
-<div class="section" id="clean-up-your-local-repository-after-successful-merge-of-pull-request">
+<p>Complete pull request and merge with main via GitHub UI.</p>
+</section>
+<section id="clean-up-your-local-repository-after-successful-merge-of-pull-request">
 <h2>Clean up your local repository (after successful merge of pull request)<a class="headerlink" href="#clean-up-your-local-repository-after-successful-merge-of-pull-request" title="Permalink to this headline">¶</a></h2>
-<p>Switch back to the master branch.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout master
+<p>Switch back to the main branch.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout main
 </pre></div>
 </div>
-<p>Confirm that you are on the master branch.</p>
+<p>Confirm that you are on the main branch.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch
 </pre></div>
 </div>
@@ -392,20 +393,18 @@ $ git push origin branch_name
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch -d branch_name
 </pre></div>
 </div>
-<p>Finally, git pull all the latest changes (yours and others) to your local master branch.</p>
+<p>Finally, git pull all the latest changes (yours and others) to your local main branch.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git pull
 </pre></div>
 </div>
 <p><em>When you are ready to do more work, checkout another branch and repeat.</em></p>
-</div>
-</div>
-<div class="section" id="project-data-download-storage-and-access">
+</section>
+</section>
+<section id="project-data-download-storage-and-access">
 <h1>Project Data - download, storage, and access<a class="headerlink" href="#project-data-download-storage-and-access" title="Permalink to this headline">¶</a></h1>
 <p>Transferring and storing large amounts of data is expensive. Rather than each project team member downloading their own copy of the data, we encourage teams to have one member download the data to a shared project directory (and make sure the code to get the data is shared on the group’s project repo) that everyone can access from the Hackweek’s Pangeo JupyterHub.</p>
 <p>The file system can be accessed in the same manner as any other drive with a directory/file structure. The name of the file system is <code class="docutils literal notranslate"><span class="pre">/srv/shared/projects/</span></code>, and you should create a directory for your team’s data (which may then also have subdirectories).</p>
-<hr class="docutils" />
-<p>Adapted from <a class="reference external" href="https://github.com/ICESAT-2HackWeek/topohack/wiki/Git-workflow-for-team">https://github.com/ICESAT-2HackWeek/topohack/wiki/Git-workflow-for-team</a></p>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

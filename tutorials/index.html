@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Tutorials &#8212; ICESat-2 Hackweek</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -315,29 +316,29 @@
         
               <div>
                 
-  <div class="section" id="tutorials">
+  <section id="tutorials">
 <h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
 <p>This section contains everything you need to know about hackweek tutorials:</p>
 <ul class="simple">
 <li><p>What are the <span class="xref myst">roles and responsibilities</span> of hackweek tutorial lead?</p></li>
 <li><p>How to create an interactive jupyter notebook tutorial</p></li>
 </ul>
-<div class="section" id="organization">
+<section id="organization">
 <h2>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h2>
 <p>Each tutorial is a collection of jupyterbooks and files in a its own subfolder under tutorials. For example in this template we have the <code class="docutils literal notranslate"><span class="pre">tutorials/raster/into-ipyleaflet.ipynb</span></code>. New tutorials need to be listed explicitly in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file to show up in the rendered documentation.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>When adding new notebooks be sure to “Clear all Outputs” before saving. This keeps the book source code small, but outputs are still built for the HTML webpage by Jupyter Book!</p>
 </div>
-</div>
-<div class="section" id="suggestions">
+</section>
+<section id="suggestions">
 <h2>Suggestions<a class="headerlink" href="#suggestions" title="Permalink to this headline">¶</a></h2>
 <p>Use small example datasets, or have notebooks start by loading source data from the data provider. For example, instead of downloading a large number of datasets from NASA’s <a class="reference external" href="https://nsidc.org/daac">NSIDC DAAC</a> and having your tutorial start by opening local files, your notebook should start with code to retrieve your necessary datasets from NSIDC servers. This captures the full workflow from data acquisition to final analysis.</p>
 <p>Increasingly there are ways to access data remotely in a streaming fashion so that you don’t have to download lots of files as a first step in your analysis. This is a good option as well to facilitate data management and portability of your tutorial to run on different machines (hackweek jupyterhub, your personal computer, the computers of collaborators, some temporary server on the Cloud like <a class="reference external" href="http://mybinder.org">mybinder.org</a>, etc…)</p>
 <div class="toctree-wrapper compound">
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
