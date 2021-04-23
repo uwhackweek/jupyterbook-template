@@ -25,6 +25,18 @@
         "ideas",
         "content"
       ]
+    },
+    {
+      "login": "lsetiawan",
+      "name": "Landung \"Don\" Setiawan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17802172?v=4",
+      "profile": "https://www.linkedin.com/in/landungsetiawan/",
+      "contributions": [
+        "eventOrganizing",
+        "ideas",
+        "content",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
