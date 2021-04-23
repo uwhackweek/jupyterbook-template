@@ -14,6 +14,17 @@
       "contributions": [
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "aaarendt",
+      "name": "Anthony Arendt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4993098?v=4",
+      "profile": "http://psc.apl.uw.edu/people/investigators/anthony-arendt/",
+      "contributions": [
+        "eventOrganizing",
+        "ideas",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
