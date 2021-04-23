@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "scottyhq",
+      "name": "Scott Henderson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3924836?v=4",
+      "profile": "http://scottyhq.github.io",
+      "contributions": [
+        "eventOrganizing"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "jupyterbook-template",
+  "projectOwner": "uwhackweek",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
