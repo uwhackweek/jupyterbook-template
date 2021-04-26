@@ -1,5 +1,22 @@
+.bash_history
+
 # Jupyter Book things
 *_build
+
+# Things related to running docker image for local development
+.config/
+.jupyter-server-log.txt
+.jupyter/
+.local/
+.npm/
+
+# MacOS things
+.DS_Store
+
+# All-contributors CLI
+node_modules/
+package.json
+yarn.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

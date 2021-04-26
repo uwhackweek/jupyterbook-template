@@ -2,7 +2,7 @@
 
 We will be hosting {{hackweek}} as a virtual event during {{dates}}.
 
-![snow from iss](img/snow_from_iss.jpg)
+![banner](img/banner.png)
 
 In this website you will:
 
@@ -12,4 +12,4 @@ In this website you will:
 
 {fa}`check,text-success mr-1`: review the hackweek [schedule](schedule)
 
-{fa}`check,text-success mr-1`: find out how you can submit an [application form](application) 
+{fa}`check,text-success mr-1`: find out how you can submit an [application form](application)
