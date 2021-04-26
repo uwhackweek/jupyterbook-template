@@ -25,4 +25,4 @@ Ask me about: Oceanography, Python
 
 ````
 
-Note: to add additional people to the team, you can easily get the URL of a GitHub user image via the following link https://api.github.com/users/GITHUB_USERNAME
+Note: to add additional people to the team, you can easily get the URL of a GitHub user image via the GitHub API: `https://api.github.com/users/GITHUB_USERNAME`
