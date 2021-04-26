@@ -2,7 +2,7 @@
 
 ## What is Git/GitHub?
 
-[Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to know Git in advance of this event, but come prepared to learn a lot about it! [GitHub](https:/github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.  
+[Git](https://git-scm.com/) is a popular version control system that is the foundation of most open source software development. You are not required to know Git in advance of this event, but come prepared to learn a lot about it! [GitHub](https://github.com) is a hosting service for Git repositories, enabling us to share code across teams in a web environment.  
 
 ## What if I do not have the `git` command on my local machine?
 

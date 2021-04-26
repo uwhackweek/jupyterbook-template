@@ -7,8 +7,9 @@ logo: logo.png
 
 parse:
   myst_substitutions:
-    hackweek: hackweek-template
+    hackweek: uwhackweek
     dates: October ? to ?, 2021
+    # Redundant?: assume hackweek name = github org name?
     github_org_url: https://github.com/uwhackweek
     jupyterhub_url: INSERT_JUPYTERHUB_URL
     contact_email: uwhackweek@github.com
@@ -46,4 +47,3 @@ html:
   use_issues_button: true
   use_repository_button: true
   #google_analytics_id: G-XXXXXXXXX
-  
