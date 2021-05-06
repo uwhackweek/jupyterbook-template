@@ -23,6 +23,14 @@ jobs:
         docker pull $DOCKER_IMAGE
         docker images
 
+    # NOTE: this isn't a comprehensive spellcheck, just common typos
+    - name: Spellcheck
+      uses: codespell-project/actions-codespell@master
+      with:
+        check_filenames: true
+        check_hidden: true
+        only_warn: true
+
     - name: Build JupyterBook
       run: |
         docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --warningiserror --keep-going
