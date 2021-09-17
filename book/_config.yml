@@ -4,6 +4,7 @@
 title: Hackweek Template
 author: eScience Institute, University of Washington
 logo: logo.png
+only_build_toc_files: true
 
 parse:
   myst_substitutions:
@@ -12,13 +13,26 @@ parse:
     # Redundant?: assume hackweek name = github org name?
     github_org_url: https://github.com/uwhackweek
     jupyterhub_url: INSERT_JUPYTERHUB_URL
+    slack_workspace_url: INSERT_SLACK_URL
     contact_email: uwhackweek@github.com
+  myst_enable_extensions:
+    # Defaults
+    - dollarmath
+    - linkify
+    - substitution
+    - colon_fence
+    # Extras
+    - html_image
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  # NOTE: 'cache' to use jupyter-cache, or 'force' to run all
+  execute_notebooks: cache
+  exclude_patterns: ["*rendered*", "*skip*", "uavsar-download.ipynb"]
   allow_errors: false
+  # Per-cell notebook execution limit (seconds)
+  timeout: 300
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -27,13 +41,7 @@ latex:
 
 # Configure your Binder links, such as the URL of the BinderHub.
 launch_buttons:
-  notebook_interface: jupyterlab
-  #binderhub_url: https://gke.mybinder.org
-  # NOTE: Want to use nbgitpuller with binderhub, not sure this will work currently...
-  #binderhub_url: https://aws-uswest2-binder.pangeo.io/v2/gh/pangeo-data/notebook-binder/2021.02.02?git-pull?repo=https://github.com/uwhackweek/jupyterbook-template
-  binderhub_url: https://aws-uswest2-binder.pangeo.io
-  jupyterhub_url: https://aws-uswest2.pangeo.io
-  colab_url: "" #empty string disables button
+  binderhub_url: ''
 
 # Information about where the book exists on the web
 repository:
@@ -41,9 +49,20 @@ repository:
   path_to_book: book  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
+# Bibliography
+bibtex_bibfiles:
+  - references.bib
+sphinx:
+  config:
+    bibtex_reference_style: author_year  # or label, super, \supercite
+    templates_path: _templates
+
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  use_edit_page_button: true
   use_issues_button: true
   use_repository_button: true
-  #google_analytics_id: G-XXXXXXXXX
+  # Using custom fix to enable google analytics temporarily
+  # https://github.com/ProjectPythia/pythia-foundations/issues/128
+  # google_analytics_id: G-XXXXXXXXX

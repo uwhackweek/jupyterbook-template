@@ -2,6 +2,7 @@ name: NetlifyPreview
 
 on:
   pull_request_target:
+<<<<<<< HEAD
     types: [labeled]
 
 env:
@@ -10,6 +11,16 @@ env:
 jobs:
   add-preview:
     runs-on: ubuntu-latest
+=======
+    types: [labeled, synchronize]
+
+env:
+  DOCKER_IMAGE: uwhackweek/snowex:latest
+
+jobs:
+  add-preview:
+    runs-on: ubuntu-20.04
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
     # This workflow accesses secrets and checks out a PR, so only run if labelled
     # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
     if: contains(github.event.pull_request.labels.*.name, 'preview')
@@ -20,14 +31,48 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
 
+<<<<<<< HEAD
     - name: Pull Docker Image
+=======
+    - name: Setup Cache
+      uses: actions/cache@v2
+      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
+      with:
+        path: ./book/_build
+        key: jupyterbook-4
+
+    - name: Pull SnowEX Docker Image
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
       run: |
         docker pull $DOCKER_IMAGE
         docker images
 
+<<<<<<< HEAD
     - name: Build JupyterBook
       run: |
         docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book
+=======
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-2
+        role-to-assume: github-actions-role
+        role-duration-seconds: 1800
+
+    - name: Build JupyterBook
+      env:
+        # Warning: careful exposing secrets in scripts
+        EARTHDATA_LOGIN: ${{ secrets.EARTHDATA_LOGIN }}
+        EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
+      run: |
+        docker run -u root \
+        -e EARTHDATA_LOGIN -e EARTHDATA_PASSWORD \
+        -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN \
+        -v ${{ github.workspace }}:/home/jovyan:rw \
+        $DOCKER_IMAGE .github/workflows/build.sh
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
 
     - name: Deploy Website Preview
       uses: nwtgck/actions-netlify@v1.1

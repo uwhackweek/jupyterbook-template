@@ -1,14 +1,24 @@
 name: Test
 
 on:
+<<<<<<< HEAD
   pull_request:
     paths:
       - 'book/**'
       - '.github/workflows/test.yaml'
+=======
+  pull_request_target:
+    types: [labeled, synchronize]
+    paths:
+      - 'book/**'
+      - '.github/workflows/test.yaml'
+      - '.binder/**'
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
     branches:
       - main
 
 env:
+<<<<<<< HEAD
   DOCKER_IMAGE: uwhackweek/template:latest
 
 jobs:
@@ -37,12 +47,35 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+=======
+  DOCKER_IMAGE: uwhackweek/snowex:latest
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-20.04
+    # This workflow accesses secrets and checks out a PR, so only run if labelled
+    # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+    if: contains(github.event.pull_request.labels.*.name, 'preview')
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+
+    - name: Setup Cache
+      uses: actions/cache@v2
+      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
+      with:
+        path: ./book/_build
+        key: jupyterbook-4
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
 
     - name: Pull Docker Image
       run: |
         docker pull $DOCKER_IMAGE
         docker images
 
+<<<<<<< HEAD
     - name: Build JupyterBook
       run: |
         docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --warningiserror --keep-going
@@ -52,6 +85,31 @@ jobs:
         docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --builder linkcheck
 
     - name: Save Build
+=======
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-2
+        role-to-assume: github-actions-role
+        role-duration-seconds: 1800
+
+    - name: Build JupyterBook
+      env:
+        # Warning: careful exposing secrets in scripts
+        EARTHDATA_LOGIN: ${{ secrets.EARTHDATA_LOGIN }}
+        EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
+      run: |
+        docker run -u root \
+        -e EARTHDATA_LOGIN -e EARTHDATA_PASSWORD \
+        -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN \
+        -v ${{ github.workspace }}:/home/jovyan:rw \
+        $DOCKER_IMAGE .github/workflows/build.sh
+
+    - name: Save Build
+      if: ${{ always() }}
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
       uses: actions/upload-artifact@v2
       with:
         name: build

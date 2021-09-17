@@ -4,7 +4,11 @@ This section contains everything you need to know about hackweek projects:
 
 * What are the [roles and responsibilities](project_roles.md) of hackweek project participants?
 * How to [initialize a project](project_initialization.md) within the hackweek Github Organization?
+<<<<<<< HEAD
 * What are the [recommended GitHub workflows](example_workflow.md) for managing projects?
+=======
+* What are the [recommended GitHub workflows](https://github.com/snowex-hackweek/learning-git#git-workflows) for managing projects?
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
 
 ## Purpose of the projects:
 
@@ -30,4 +34,8 @@ Hacking is a session of focused, highly collaborative computer programming, in w
 
 * if you have a project idea already brewing, we encourage you to share that with participants on our #project_ideas channel.
 * feel free to explore various projects and initiate conversations. The goal is to gather as much information as you can to inform your decision about which team to join when we meet in person.
+<<<<<<< HEAD
 * contact a hackweek organizer if you would like assistance in assessing whether a project is well-scoped, or if you need help with a particular dataset.
+=======
+* contact a hackweek organizer if you would like assistance in assessing whether a project is well-scoped, or if you need help with a particular dataset.
+>>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3

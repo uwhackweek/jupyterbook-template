@@ -1,26 +1,42 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
-#
 - file: intro
-- file: application
-- file: schedule
-- file: team
-- file: norms/index
-  sections:
+- part: Details
+  chapters:
+  - file: application
+  - file: schedule
+  - file: team
+  - file: norms/index
+    sections:
     - file: norms/CoC
     - file: norms/community
-- file: projects/index
-  sections:
-    - file: projects/project_initialization
-    - file: projects/project_roles
-    - file: projects/example_workflow
-- file: preliminary/index
-  sections:
-    - file: preliminary/conda
-    - file: preliminary/github
-    - file: preliminary/jupyterhub
-    - file: preliminary/jupyterhub_fork_clone
-    - file: preliminary/earthdata
-- file: tutorials/index
-  sections:
-    - file: tutorials/raster/intro-ipyleaflet
+- part: Preparation
+  chapters:
+    - file: preliminary/index
+      sections:
+        - file: preliminary/swc
+        - file: preliminary/github
+        - file: preliminary/jupyterhub
+        - file: preliminary/git
+        - file: preliminary/earthdata
+        - file: preliminary/pangeo
+        - file: preliminary/python
+- part: Tutorials
+  chapters:
+    - file: tutorials/index
+      sections:
+        - file: tutorials/jupyter
+        - file: tutorials/core-datasets/index
+        - file: tutorials/open_science
+        - file: tutorials/open_source_software
+- part: Projects
+  chapters:
+    - file: projects/index
+      sections:
+        - file: projects/project_initialization
+        - file: projects/project_roles
+        - file: projects/list_of_projects
+- part: Reference
+  chapters:
+    - file: glossary
+    - file: bibliography
