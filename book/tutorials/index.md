@@ -1,9 +1,9 @@
 # Tutorials
-
-<<<<<<< HEAD
 ## Organization
 
-Each tutorial is a collection of jupyterbooks and files in a its own subfolder under tutorials. For example in this template we have the `tutorials/raster/into-ipyleaflet.ipynb`. New tutorials need to be listed explicitly in the `_toc.yml` file to show up in the rendered documentation.
+Each tutorial is a collection of jupyterbooks and files in its own subfolder under tutorials.
+For example in this template we have the `tutorials/raster/into-ipyleaflet.ipynb`.
+New tutorials need to be listed explicitly in the `_toc.yml` file to show up in the rendered documentation.
 
 ## Suggestions for tutorial development
 
@@ -14,7 +14,9 @@ Each tutorial is a collection of jupyterbooks and files in a its own subfolder u
 1. When adding new notebooks be sure to "Clear all Outputs" before saving. This keeps the book source code small, but outputs are still built for the HTML webpage by Jupyter Book.
 
 1. Make tutorials interactive, by incorporating exercises, quizzes, and practice the timing to make sure you can get through the content in the allotted time.
-=======
+
+
+## Listing of tutorials during the event
 These tutorials consist of Jupyter Notebooks that can be run in our 
 [preconfigured software environment](https://github.com/snowex-hackweek/docker-image). 
 If you are attending the hackweek, you have access to a JupyterHub environment 
@@ -37,18 +39,4 @@ All live tutorial recordings available via UW eScience [YouTube Playlist](https:
 | Tutorial | Topics | Datasets |  Recording Link |
 | -  | - | - |  - |
 | [Open Science Tools](./jupyter.md) | Git, GitHub, JupyterHub | n/a | [Recording](https://youtu.be/rKhs5FLI5rc)  |
-| [SnowEx Mission Overview](./core-datasets/index.md) | SnowEx, Airborne + field data | Snow pit data | [Recording](https://youtu.be/5hVQusosGSg) |
-| [Project Team Building](https://docs.google.com/presentation/d/1qJDpFdS42kF5pcrbmxm1xFWzNoNamVrnMFelwAOh73Q/edit?usp=sharing) | HackWeek project tips | n/a |[Recording](https://youtu.be/qJX573AAr5g) |
-| [Geospatial fundamentals](./geospatial/index.md) |  raster, vector, python | DEMs, SNOTEL | [Part 1](https://youtu.be/AmwCowCadI0), [Part 2](https://youtu.be/ZXg70BH3wW4)  |
-| [NSIDC Data Access](./nsidc-access/nsidc-data-access.ipynb) |  API access to NASA archives | GPR | [Recording](https://youtu.be/An--phlTH7o)|
-| [SnowExSQL](./database/index.md) | databases, SQL | All SnowEx datasets | [Recording](https://youtu.be/BZ1oAkTNu8s)|
-| [LiDAR](./lidar/index.md) | altimeters, point clouds  | ICESat2, ASO, snow depth | [Recording](https://youtu.be/MKWg5yDN0YY)|
-| [Thermal IR](./thermal-ir/index.md) |  energy balance  | in-situ, airborne, ASTER | [Recording](https://youtu.be/dkI0pVYclt0)|
-| [Snow microstructure](./microstructure/microstructure-tutorial.ipynb) | microstructure | SMP, MicroCT | [Recording](https://youtu.be/ovSST10BJWo)|
-| [Ground Penetrating Radar](./thermal-ir/index.md) | snow depth | GPR, Magnaprobe | [Recording](https://youtu.be/gp8kPT26ljA)|
-| [Machine Learning](./machine-learning/Machine_Learning_Tutorial.ipynb) | theory, snow depth | Tensorflow, Keras | [Recording](https://youtu.be/IWm9SO0m7Eg)|
-| [Microwave Radar](./sar/index.md) | theory, SWE | Sentinel-1, UAVSAR, SWESARR | [Recording](https://youtu.be/6L-hnf9ZvJA)|
-| [Timelapse Cameras](./camera-traps-tutorial/timelapse-camera-tutorial.ipynb) | snow depth | 2017,2020 field campaigns | [Recording](https://youtu.be/fcY4Yk6o5oM)|
-| [Modeling](./lis/index.ipynb) | hydrologic modeling, data assimilation | NASA LIS | [Recording](https://youtu.be/9pxp2e2YjN4)|
 | [Open Science](./open_science.md) | resources, open source software | n/a | [Recording](https://youtu.be/CRkP70ouDsA)|
->>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
