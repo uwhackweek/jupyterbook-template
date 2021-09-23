@@ -1,24 +1,16 @@
 name: Test
 
 on:
-<<<<<<< HEAD
-  pull_request:
-    paths:
-      - 'book/**'
-      - '.github/workflows/test.yaml'
-=======
   pull_request_target:
     types: [labeled, synchronize]
     paths:
       - 'book/**'
       - '.github/workflows/test.yaml'
       - '.binder/**'
->>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
     branches:
       - main
 
 env:
-<<<<<<< HEAD
   DOCKER_IMAGE: uwhackweek/template:latest
 
 jobs:
@@ -41,16 +33,6 @@ jobs:
         pip install nb-clean
         find book -name "*ipynb" | xargs nb-clean check
 
-
-  build-and-test:
-    runs-on: ubuntu-20.04
-
-    steps:
-    - uses: actions/checkout@v2
-=======
-  DOCKER_IMAGE: uwhackweek/snowex:latest
-
-jobs:
   build-and-test:
     runs-on: ubuntu-20.04
     # This workflow accesses secrets and checks out a PR, so only run if labelled
@@ -68,24 +50,12 @@ jobs:
       with:
         path: ./book/_build
         key: jupyterbook-4
->>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
 
     - name: Pull Docker Image
       run: |
         docker pull $DOCKER_IMAGE
         docker images
 
-<<<<<<< HEAD
-    - name: Build JupyterBook
-      run: |
-        docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --warningiserror --keep-going
-
-    - name: Check External Links
-      run: |
-        docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --builder linkcheck
-
-    - name: Save Build
-=======
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -107,9 +77,12 @@ jobs:
         -v ${{ github.workspace }}:/home/jovyan:rw \
         $DOCKER_IMAGE .github/workflows/build.sh
 
+    - name: Check External Links
+      run: |
+        docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --builder linkcheck
+
     - name: Save Build
       if: ${{ always() }}
->>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3
       uses: actions/upload-artifact@v2
       with:
         name: build
