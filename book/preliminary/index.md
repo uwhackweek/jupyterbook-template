@@ -1,8 +1,5 @@
 # Preliminary Work
 
-<<<<<<< HEAD
-In order for everyone to arrive at the hackweek ready to go, we encourage you to work through the following content.
-=======
 We welcome all types of learners to our event, from professional software developers to people just getting started. Based on previous experience, participants gain more from our hackweeks when they arrive having a preliminary understand of some of the foundational tools of data science workflows. These skills include knowing how to:
 
 * navigate a [Jupyter Notebook](https://jupyter.org/) environment
@@ -69,4 +66,3 @@ and how you can install that on your personal machine.
 
 ### Pangeo
 Learn more about the [technical cloud environment](pangeo) the hackweek is using.
->>>>>>> 5513cf672a39ad9402e029bb2082c497a5c870b3

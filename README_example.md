@@ -1,4 +1,4 @@
-# SnowEx Hackweek 2021 JupyterBook Website
+# EXAMPLE README from the SnowEx Hackweek 2021 JupyterBook Website
 [![Deploy](https://github.com/snowex-hackweek/website/actions/workflows/deploy.yaml/badge.svg)](https://github.com/snowex-hackweek/website/actions/workflows/deploy.yaml)
 
 https://snowex-hackweek.github.io/website

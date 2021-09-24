@@ -1,12 +1,13 @@
 # Code of Conduct
 
-Rules to ensure we offer a hospitable and inclusive event, and a list of resources for reporting violations.
+Rules to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations.
 
 ---
 
 ## Overview
 
-The organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion. Hackweek volunteers and organizers will step up to address harassment of participants and/or presenters in any form if we are direct witnesses.
+The organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion.
+Hackweek volunteers and organizers will step up to address harassment of participants and/or presenters in any form if we are direct witnesses.
 
 ## Definition of Harassment
 
