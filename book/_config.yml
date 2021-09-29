@@ -58,7 +58,6 @@ bibtex_bibfiles:
 sphinx:
   config:
     bibtex_reference_style: author_year  # or label, super, \supercite
-    templates_path: _templates
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository

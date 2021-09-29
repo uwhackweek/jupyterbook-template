@@ -2,7 +2,7 @@
 ## Organization
 
 Each tutorial is a collection of jupyterbooks and files in its own subfolder under tutorials.
-For example in this template we have the `tutorials/raster/into-ipyleaflet.ipynb`.
+For example in this template we have the `tutorials/example/intro-ipyleaflet.ipynb`.
 New tutorials need to be listed explicitly in the `_toc.yml` file to show up in the rendered documentation.
 
 ## Suggestions for tutorial development
