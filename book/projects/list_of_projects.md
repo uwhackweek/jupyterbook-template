@@ -1,6 +1,6 @@
 # List of Projects
 
-Here are the projects carried out during the 2021 {{ hackweek }}:
+Here are the projects during the {{dates}} {{ hackweek }} hackweek:
 
 | Project Name (with link to GitHub repo) | slack channel | final presentation | 
 |:--------|:--------|:-----|

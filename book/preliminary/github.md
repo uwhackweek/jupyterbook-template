@@ -67,4 +67,4 @@ When you click on the "Repositories" tab in the {{ '[GitHub organization]({url})
 
 ![repos-tab](../img/repos.png)
 
-Each repository is a container for a specific subset of material for this event. For example, there is a repository for the public-facing website you used to register for this event https://github.com/snowex-hackweek/website. We'll also create new repositories for each project.
+Each repository is a container for a specific subset of material for this event. For example, there is a repository for the public-facing website you used to register for this event {{website_url}}. We'll also create new repositories for each project.

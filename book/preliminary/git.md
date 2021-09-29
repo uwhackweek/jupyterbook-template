@@ -12,7 +12,7 @@ You are not required to know Git in advance of this event, but come prepared to 
 (setting-up-git)=
 ## Setting up on JupyterHub
 
-Below are instructions to get you setup with `git` on the SnowEx hackweek
+Below are instructions to get you setup with `git` on the {{hackweek}} hackweek
 JupyterHub. These are only basic instructions to get started. See the
 [Software Carpentry Git](http://swcarpentry.github.io/git-novice/02-setup/index.html)
 instructions for a more thorough explanation and background information.
@@ -30,14 +30,14 @@ Set your username and email address. The email address should be the same
 as you used to register your GitHub account.
 
 ```{attention}
-Use your personal name instead of the placeholder `SnowEx Attendee`
+Use your personal name instead of the placeholder `{{hackweek}} Attendee`
 in the below commands. For the email, it should be the address you used to create
 your GitHub account instead of `attendee@hackweek.com`. Both values need to be
 surrounded by quotes `"`.
 ```
 
 ```shell
-git config --global user.name "SnowEx Attendee"
+git config --global user.name "Attendee Name"
 git config --global user.email "attendee@hackweek.com"
 git config --global pull.rebase false
 git config --global credential.helper store
@@ -61,7 +61,7 @@ command.
 The output should look similar to this:
 ```shell
 jovyan@jupyter:~$ git config -l
-user.name=SnowEx Attendee
+user.name= Attendee Name
 user.email=attendee@hackweek.com
 credential.helper=store
 ```
@@ -80,10 +80,10 @@ Take a moment to work through the instructions on the [GitHub personal access to
 Once you have created your token, be sure to save it on your computer in case
 you need to re-authenticate again. The token will give you access to your
 personal GitHub account. It will also give you permission to push changes to your project repository within
-the SnowEx hackweek organization via the command line.
+the {{hackweek}} hackweek organization via the command line.
 
 To test your setup on the JupyterHub, we will be using a test repository from
-the SnowEx Hackweek organization. Paste the following command into your open
+the {{hackweek}} Hackweek organization. Paste the following command into your open
 terminal on the JupyterHub. where you will be prompted for your GitHub username
 and the token.
 
@@ -103,7 +103,7 @@ in the below sample output. For the password, paste your created token.
 ```shell
 Cloning into 'github_setup_check'...
 Username for 'https://github.com': <GitHub Username>
-Password for 'https://snowex-attendee@github.com':
+Password for 'https://attendee@github.com':
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Compressing objects: 100% (2/2), done.
@@ -156,7 +156,7 @@ The minimum required scopes are 'repo', 'read:org', 'workflow'.
 ? Paste your authentication token: ****************************************
 - gh config set -h github.com git_protocol https
 ✓ Configured git protocol
-✓ Logged in as SnowExHackweek
+✓ Logged in as {{hackweek}}Hackweek
 ```
 
 ## Installing `git` on your local computer

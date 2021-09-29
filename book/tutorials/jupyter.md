@@ -25,14 +25,14 @@ In order to make personal notes in the notebooks for each tutorial that you
 can save and keep for later reference, you first need to make a
 [fork](https://docs.github.com/en/get-started/quickstart/github-glossary#clone)
 of the website. A fork is your personalized copy of the website that will be
-stored under your GitHub user account instead of the SnowEx organization account.
+stored under your GitHub user account instead of the {{hackweek}} organization account.
 This also enables you to write to that repository, which in contrast you can not
-do with the SnowEx organization repository. A fork is also a first common step
+do with the {{hackweek}} organization repository. A fork is also a first common step
 to contribute to open-source projects and further described in the
 [Pro Git book](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
 
 To make a fork of the website, go to the
-[GitHub repository](https://github.com/snowex-hackweek/website)
+[GitHub repository]({{website_url}})
 and hit the 'Fork' button in the top right corner. In the follow-up dialog,
 choose your user account as the destination
 
@@ -154,22 +154,22 @@ Commands for branches:
 
 By making a fork of the website, you are creating a copy of the website as
 of the date you clicked the 'Fork' button. This also means that your version will not
-get any updates automatically if the SnowEx website repository is changed after
+get any updates automatically if the {{hackweek}} website repository is changed after
 your fork was created.
 
-To update your forked version with changes from the SnowEx version, you need to
+To update your forked version with changes from the {{hackweek}} version, you need to
 do a one time setup. This process is also called
 ['working with a remote'](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 for a git repository.
 
-### Add the SnowEx organization repository as a remote
+### Add the {{hackweek}} organization repository as a remote
 
 A remote is defined with a label and a URL. In our case and command below,
-we are using `SnowEx` as the label and `https://github.com/snowex-hackweek/website.git`
+we are using `{{hackweek}}` as the label and `{{website_url}}.git`
 as the URL.
 
 ```{Note} 
-The chosen label `SnowEx` is found in many projects as the `upstream`. Here we
+The chosen label `{{hackweek}}` is found in many projects as the `upstream`. Here we
 just went with a more descriptive label instead of the default value.
 ```
 
@@ -177,7 +177,7 @@ just went with a more descriptive label instead of the default value.
 # Change to the website folder, it was created with the `clone`
 cd website
 # Add the remote
-git remote add SnowEx https://github.com/snowex-hackweek/website.git
+git remote add {{hackweek}} {{website_url}}.git
 ```
 
 The command will not return any output. Instead, we verify by printing the 
@@ -190,8 +190,8 @@ list of known remotes for this repository:
 
 ```shell
  git remote -v
- SnowEx	https://github.com/snowex-hackweek/website.git (fetch)
- SnowEx	https://github.com/snowex-hackweek/website.git (push)
+ {{hackweek}}	{{website_url}}.git (fetch)
+ {{hackweek}}	{{website_url}}.git (push)
  origin	https://github.com/<github-username>/website.git (fetch)
  origin	https://github.com/<github-username>/website.git (push)
 ```
@@ -203,12 +203,12 @@ fetch from the website.
 
 To update your fork of the website, you first need to fetch and then pull
 the changes. A fetch is a pre-step that reads all the changes that need to
-be applied to your fork. The `SnowEx` command options indicates from which
+be applied to your fork. The `{{hackweek}}` command options indicates from which
 source the changes will be queried from.
 
-Reading changes from the remote 'SnowEx':
+Reading changes from the remote '{{hackweek}}':
 ```shell
-git fetch SnowEx
+git fetch {{hackweek}}
 ```
 
 To now also get and apply those changes, you need to issue a `pull` command.
@@ -223,9 +223,9 @@ command should return `nothing to commit, working tree clean` at the end of the
 output.
 ```
 
-Applying changes from the remote 'SnowEx':
+Applying changes from the remote '{{hackweek}}':
 ```shell
-git pull SnowEx main
+git pull {{hackweek}} main
 ```
 
 ```{note}
@@ -251,7 +251,7 @@ Your files are persisted acrosss server shutdowns and startups and you don't hav
 to upload them again when you log out at the end of the day and restart anew the
 next day.
 
-The user space has a total limit of 10 GB, which is a SnowEx JupyterHub set limit.
+The user space has a total limit of 10 GB, which is a {{hackweek}} JupyterHub set limit.
 You can use `/tmp` for temporary large files and they **are not** persistet after
 logout. 
 

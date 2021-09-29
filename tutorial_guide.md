@@ -21,10 +21,10 @@ For tutorials, we recommend creating a Jupyter Notebook (a `.ipynb` file) for se
 
 We'll use a common ['forking' workflow](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) for collaboratively working on the same website repository:
 
-1. Create a fork of the event website repository on GitHub (https://github.com/snowex-hackweek/website):
+1. Create a fork of the event website repository on GitHub ({{website_url}}):
 <img width="1237" alt="Screen Shot 2021-04-21 at 7 35 33 PM" src="https://user-images.githubusercontent.com/3924836/115537286-037e9980-a2de-11eb-9f26-6be5be37c1c8.png">
 
-2. Log into the event JupyterHub and open a Terminal (e.g. https://snowex.hackweek.io):
+2. Log into the event JupyterHub and open a Terminal (e.g. {{jupyterhub_url}}):
 <img width="1237" alt="Screen Shot 2021-04-21 at 7 15 39 PM" src="https://user-images.githubusercontent.com/3924836/115538087-dda5c480-a2de-11eb-9aa1-4e6e0e3f6344.png">
 
 3. From the Terminal, clone your forked repository with the following commands:
@@ -114,10 +114,10 @@ Increasingly there are ways to access data remotely in a streaming fashion so th
 *I want to use a Python package that isn't installed on the JupyterHub*
 The first cell in your notebook can include a command like `!conda install mypackage` or `!pip install mypackage`. Alternatively, the default environment is defined here https://github.com/snowex-hackweek/docker-image, you'll have to open an issue or create a pull request there to add the package you need.
 
-*I'd like to update my forked website to be up-to-date with the snowex website*
-After you fork the snowex-hackweek/website repository your work will become dated as new changes are integrated into the website. If you want these new changes locally while working on adding new tutorials for example, you'll have to follow [GitHub's documentation on 'syncing your fork with the upstream repository'](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork). In brief, the sequence of commands is:
+*I'd like to update my forked website to be up-to-date with the {{hackweek}} website*
+After you fork the {{hackweek}}-hackweek/website repository your work will become dated as new changes are integrated into the website. If you want these new changes locally while working on adding new tutorials for example, you'll have to follow [GitHub's documentation on 'syncing your fork with the upstream repository'](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork). In brief, the sequence of commands is:
 ```
-git remote add upstream https://github.com/snowex-hackweek/website.git
+git remote add upstream {{website_url}}.git
 git fetch upstream
 git checkout main
 git merge upstream/main

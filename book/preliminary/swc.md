@@ -1,10 +1,10 @@
 # Software Carpentry Training
 
-We will host a SnowEx hackweek [Software Carpentry](https://software-carpentry.org) training on June 21 - 22.
-This event is by invitation to SnowEx hackweek participants only.
+We will host a {{hackweek}} hackweek [Software Carpentry](https://software-carpentry.org) training on June 21 - 22.
+This event is by invitation to {{hackweek}} hackweek participants only.
 
 The purpose of this training is to help everyone gain skills in fundamental data science tools.
-By offering this work in advance of the hackweek we can maximize the amount of time we get to focus on SnowEx data!
+By offering this work in advance of the hackweek we can maximize the amount of time we get to focus on {{dataset}} data!
 Feel free to contact one of us if you need more clarity on deciding whether this would be a good use of your time.
 
 ## Time Zones
