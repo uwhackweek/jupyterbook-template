@@ -18,7 +18,7 @@ New tutorials need to be listed explicitly in the `_toc.yml` file to show up in 
 
 ## Listing of tutorials during the event
 These tutorials consist of Jupyter Notebooks that can be run in our 
-[preconfigured software environment](https://github.com/snowex-hackweek/docker-image). 
+[preconfigured software environment]({{github_org_url}}/docker-image). 
 If you are attending the hackweek, you have access to a JupyterHub environment 
 with all the necessary Python software packages installed that are needed to run 
 through these tutorials interactively. On JupyterHub, your home directory persists 

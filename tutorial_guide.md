@@ -112,7 +112,7 @@ Increasingly there are ways to access data remotely in a streaming fashion so th
 ## Troubleshooting
 
 *I want to use a Python package that isn't installed on the JupyterHub*
-The first cell in your notebook can include a command like `!conda install mypackage` or `!pip install mypackage`. Alternatively, the default environment is defined here https://github.com/snowex-hackweek/docker-image, you'll have to open an issue or create a pull request there to add the package you need.
+The first cell in your notebook can include a command like `!conda install mypackage` or `!pip install mypackage`. Alternatively, the default environment is defined here {{github_org_url}}/docker-image, you'll have to open an issue or create a pull request there to add the package you need.
 
 *I'd like to update my forked website to be up-to-date with the {{hackweek}} website*
 After you fork the {{hackweek}}-hackweek/website repository your work will become dated as new changes are integrated into the website. If you want these new changes locally while working on adding new tutorials for example, you'll have to follow [GitHub's documentation on 'syncing your fork with the upstream repository'](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork). In brief, the sequence of commands is:

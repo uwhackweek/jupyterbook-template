@@ -88,7 +88,7 @@ terminal on the JupyterHub. where you will be prompted for your GitHub username
 and the token.
 
 ```shell
-git clone https://github.com/snowex-hackweek/github_setup_check.git
+git clone {{github_org_url}}.github_setup_check.git
 ```
 
 Since this is the first time you are interacting from the JupyterHub with GitHub,

@@ -36,7 +36,7 @@ All times listed below are UTC -7 (Pacific Daylight Time). You might want to con
 
 ### 11:05 to 11:30 AM: Break
 
-### 11:30 AM to 12:15 PM: SnowEx Mission Overview and Datasets
+### 11:30 AM to 12:15 PM: Mission Overview and Datasets
 
 #### [Link to video](https://youtu.be/5hVQusosGSg)
 

@@ -7,7 +7,7 @@ on:
     - cron:  '0 0 * * 0'
 
 env:
-  DOCKER_IMAGE: uwhackweek/snowex:latest
+  DOCKER_IMAGE: uwhackweek/template:latest
 
 jobs:
   build-and-test:
