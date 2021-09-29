@@ -12,9 +12,12 @@ parse:
     dates: October ? to ?, 2021
     # Redundant?: assume hackweek name = github org name?
     github_org_url: https://github.com/uwhackweek
+    website_url: https://github.com/uwhackweek/website
     jupyterhub_url: INSERT_JUPYTERHUB_URL
     slack_workspace_url: INSERT_SLACK_URL
+    docker_image: INSERT_DOCKER_IMAGE_URL
     contact_email: uwhackweek@github.com
+    dataset: ICESat-2
   myst_enable_extensions:
     # Defaults
     - dollarmath

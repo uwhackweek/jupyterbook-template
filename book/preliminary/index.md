@@ -7,12 +7,12 @@ We welcome all types of learners to our event, from professional software develo
 * add and commit changes in Git, and push and pull content from GitHub
 * create simple scientific workflows in Python 
 
-## SnowEx Software Carpentry Session
+## {{hackweek}} Software Carpentry Session
 
 We will be offering a preliminary training session for anyone wishing to brush up on fundamentals, or for those of you who are new to open source workflows. This will be a two day event modeled after a [Software Carpentry](https://software-carpentry.org/) training.
 
 ```{note}
-**We will be hosting a SnowEx Software Carpentry training as a virtual event during June 21 - 22.**
+**We will be hosting a {{hackweek}} Software Carpentry training as a virtual event during June 21 - 22.**
 ```
 
 You can view our [Software Carpentry Schedule](swc) for more information.
@@ -32,7 +32,7 @@ Visit our [GitHub instruction page](github) to learn how!
 ### Slack Account
 
 All of our communication throughout the hackweek will be done using the
-{{ '[SnowEx Slack workspace]({url})'.format(url=slack_workspace_url) }}.
+{{ '[{{hackweek}} Slack workspace]({url})'.format(url=slack_workspace_url) }}.
 With your invite to the hackweek, you should also have received a separate 
 email to join the Slack workspace. Upon accepting the invite, please take a moment to 
 [complete your Slack profile](https://slack.com/help/articles/204092246-Edit-your-profile).
