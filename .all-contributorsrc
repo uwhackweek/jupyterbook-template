@@ -37,6 +37,17 @@
         "content",
         "code"
       ]
+    },
+    {
+      "login": "JessicaS11",
+      "name": "Jessica",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11756442?v=4",
+      "profile": "https://github.com/JessicaS11",
+      "contributions": [
+        "code",
+        "ideas",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
