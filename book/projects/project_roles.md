@@ -1,21 +1,40 @@
-# Project Roles and Responsibilities
+# Project Roles
 
-## Project Lead
+We find it helps to have clearly defined roles for everyone who is engaged in hackweek projects:
 
-The project scientist roles are to:
+```{image} ../img/project-roles.png
+:alt: diagram of the purpose of hackwek project work
+:class: bg-primary mb-1
+:width: 450px
+:align: center
+```
+## **Project Leadership** 
 
-* pitch initial project ideas and interact with all interested participants during networking.
-* coordinate team building with other instructors to an optimal size of 4-7 total participants per team.  
-* with help from the moderator, create a GitHub repository for your project. We recommend following the steps described on our [project initialization](project_initialization) page. 
-* coordinate with the tutor/moderator to support the team, especially for the development of Github workflows that work for everyone to be able to contribute code. 
-* oversee data management: be sure you have permission and consent to use data you share in the project and follow professional standards while using data for training that may be used in future publications. We recommend following the [AGU guidelines on data and consent ethics](https://ethics.agu.org/). 
-* coordinate team activities and code to answer the research question; data, code, and tools originally proposed may change.    
-* support each individual on your team to meeting their individual goals.
+### Lead Project Coordinator
 
-## Tutor / Moderator
+The Lead Project Coordinator will help to assess what projects are possible and to align projects with programmatic objectives if applicable. They will be active on communication platforms such as Slack to encourage participants to pitch ideas before the hackweek, and to communicate the process, roles and responsibilities of working in collaborative teams. During the event they might facilitate project team formation and embed with teams to guide collaborations, resolve conflicts and define what is possible within the allotted time. 
 
-The role of tutor / moderator includes:
+### Collaboration Consultant
 
-* advising teams regarding data science practices and methodologies
-* help coordinate a Github workflow
-* enable and encourage participants to solve their problems in a way that builds confidence in their skills 
+The Collaboration Consultant is a member of the UW eScience Team who helps to create the conditions for participants and organizers to function well together in teams. They will share best practices to guide project formation, team building and collaboation, conflict resolution and generating random connections through social interactions.
+
+## **Project Teams**
+
+We invite everyone to be a participant in a project team. There are two additional roles for participants that we encourage you to consider:
+
+### Project Team Lead
+
+The role of Project Team Lead is to guide the collaborative project work before, during and sometimes after the hackweek. Specific tasks could include:
+
+* pitching an idea for a project
+* gathering together a team and helping each person get clear on their individual goals during the project work 
+* facilitating relationship-building and development of collaborative structures among the team
+* helping everyone design project work that is within the scope of the hackweek  
+
+### Project Helper
+
+Each project might have one or several Project Helpers. Their role is often to:
+
+* offer technical guidance on a specific data science tool or topic in which they have expertise
+* help team members navigate collaboration technologies like JupyterHub and GitHub
+* offer a deeper-dive on content touched on during tutorials
