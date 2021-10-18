@@ -8,15 +8,34 @@ on:
     branches:
       - main
 
-env:
-  DOCKER_IMAGE: uwhackweek/template:latest
-
 jobs:
   quality-control:
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+        shell: bash -l {0}
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Cache conda
+      uses: actions/cache@v2
+      env:
+        # Increase this value to reset cache if environment.yml has not changed
+        CACHE_NUMBER: 0
+      with:
+        path: ~/conda_pkgs_dir
+        key:
+          ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('binder/conda-linux-64.lock') }}
+
+    - name: Setup Conda Environment
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniforge-version: latest
+        auto-update-conda: false
+        environment-file: binder/conda-linux-64.lock #or binder/environment.yml
+        activate-environment: hackweek
+        use-only-tar-bz2: true # IMPORTANT: This needs to be set for caching to work properly!
 
     - name: Ensure Clean Notebooks
       continue-on-error: true
@@ -33,11 +52,6 @@ jobs:
         check_hidden: true
         only_warn: false
 
-    - name: Pull Docker Image
-      run: |
-        docker pull $DOCKER_IMAGE
-        docker images
-
     # borrowed from https://github.com/ProjectPythia/pythia-foundations/blob/main/.github/workflows/link-checker.yaml
     - name: Disable Notebook Execution
       shell: python
@@ -52,4 +66,4 @@ jobs:
     # NOTE: create separate _config.yml to pass --config (and skip executing notebooks?)
     - name: Check External Links
       run: |
-        docker run -u root -v ${{ github.workspace }}:/home/jovyan:rw $DOCKER_IMAGE jb build book --builder linkcheck
+        jb build book --builder linkcheck

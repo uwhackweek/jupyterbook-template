@@ -23,5 +23,8 @@ Creates public preview, via netlify, of changes by building from a PR.
 Quality assessment and quality control.
 Standardizes formatting including spell check, hyperlink check, and clearing notebook outputs.
 
+### repo2docker.yaml
+Build a Docker image based on binder/ configuration files for JupyterHub/BinderHub
+
 ### test.yaml
 GitHub recommended method to enable website builds using GitHub secrets when an admin adds the preview label to a PR.
