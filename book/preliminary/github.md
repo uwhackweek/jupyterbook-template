@@ -16,7 +16,7 @@ There are three reasons you are required to have a GitHub account for the hackwe
 
 Go to [GitHub](https://github.com/).
 
-![github-signup](../img/github-signup.jpg)
+![github-signup](../img/github-signup.png)
 
 Next, enter your email address and click on the green 'Sing up for GitHub' button.
 You will need to answer a few required questions in the following dialogs.

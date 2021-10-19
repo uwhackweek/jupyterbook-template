@@ -28,10 +28,9 @@ parts:
     - file: tutorials/index
       sections:
         - file: tutorials/jupyter
-        - file: tutorials/core-datasets/index
         - file: tutorials/open_science
         - file: tutorials/open_source_software
-        - file: tutorials/example/intro_ipyleaflet
+        - file: tutorials/example/intro-ipyleaflet
 - caption: Projects
   chapters:
     - file: projects/index
