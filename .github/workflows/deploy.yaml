@@ -56,8 +56,6 @@ jobs:
     - name: Build JupyterBook
       env:
         # Warning: careful exposing secrets in scripts
-        EARTHDATA_LOGIN: ${{ secrets.EARTHDATA_LOGIN }}
-        EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
       run: |
         jb build book
 

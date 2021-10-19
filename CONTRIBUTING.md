@@ -10,11 +10,11 @@ Ready to contribute? Here's a quick guide
 
 1. Fork this hackweek's website repo on GitHub.
 
-1. Clone your fork locally and install requirements:
+1. Clone your fork locally:
 
     ```sh
     git clone {{website_url}}.git
-    cd website
+    cd jupyterbook-template
     ```
 
 1. Create a branch to add your changes:
