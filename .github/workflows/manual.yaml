@@ -4,9 +4,6 @@ on: workflow_dispatch
     # can maybe specify PR branch ref here?
     # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#example-workflow-configuration
 
-env:
-  DOCKER_IMAGE: uwhackweek/template:latest
-
 jobs:
   build-and-test:
     runs-on: ubuntu-20.04
@@ -18,7 +15,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Cache conda
+    - name: Setup Conda Cache
       uses: actions/cache@v2
       env:
         # Increase this value to reset cache if environment.yml has not changed

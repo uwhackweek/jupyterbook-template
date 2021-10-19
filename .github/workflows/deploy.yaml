@@ -8,16 +8,13 @@ on:
     branches:
       - main
 
-env:
-  DOCKER_IMAGE: uwhackweek/template:latest
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
     defaults:
       run:
         shell: bash -l {0}
-        
+
     steps:
     - uses: actions/checkout@v2
 
@@ -28,7 +25,7 @@ jobs:
         path: ./book/_build
         key: jupyterbook
 
-    - name: Cache conda
+    - name: Setup Conda Cache
       uses: actions/cache@v2
       env:
         # Increase this value to reset cache if environment.yml has not changed

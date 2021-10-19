@@ -20,7 +20,14 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
 
-    - name: Cache conda
+    - name: Setup JupyterBook Cache
+      uses: actions/cache@v2
+      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
+      with:
+        path: ./book/_build
+        key: jupyterbook
+
+    - name: Setup Conda Cache
       uses: actions/cache@v2
       env:
         # Increase this value to reset cache if environment.yml has not changed
@@ -38,13 +45,6 @@ jobs:
         environment-file: binder/conda-linux-64.lock #or binder/environment.yml
         activate-environment: hackweek
         use-only-tar-bz2: true # IMPORTANT: This needs to be set for caching to work properly!
-
-    - name: Setup JupyterBook Cache
-      uses: actions/cache@v2
-      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
-      with:
-        path: ./book/_build
-        key: jupyterbook
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1

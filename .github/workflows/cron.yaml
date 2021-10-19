@@ -24,7 +24,7 @@ jobs:
         path: ./book/_build
         key: jupyterbook
 
-    - name: Cache conda
+    - name: Setup Conda Cache
       uses: actions/cache@v2
       env:
         # Increase this value to reset cache if environment.yml has not changed
