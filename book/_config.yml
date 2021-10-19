@@ -7,12 +7,13 @@ logo: logo.png
 only_build_toc_files: true
 
 parse:
+  # https://jupyterbook.org/content/content-blocks.html?highlight=myst%20substitution#define-substitutions-for-your-whole-book
   myst_substitutions:
     hackweek: uwhackweek
     dates: October ? to ?, 2021
     # Redundant?: assume hackweek name = github org name?
-    github_org_url: https://github.com/uwhackweek
-    website_url: https://github.com/uwhackweek/website
+    github_org_url: "https://github.com/uwhackweek"
+    website_url: "https://github.com/uwhackweek/website"
     jupyterhub_url: INSERT_JUPYTERHUB_URL
     slack_workspace_url: INSERT_SLACK_URL
     docker_image: INSERT_DOCKER_IMAGE_URL
@@ -65,6 +66,4 @@ html:
   use_edit_page_button: true
   use_issues_button: true
   use_repository_button: true
-  # Using custom fix to enable google analytics temporarily
-  # https://github.com/ProjectPythia/pythia-foundations/issues/128
   # google_analytics_id: G-XXXXXXXXX
