@@ -41,7 +41,7 @@ jobs:
       continue-on-error: true
       run: |
         pip install nb-clean==2.0.2
-        find book -name "*ipynb" | xargs nb-clean check --preserve-cell-metadata
+        find book -name "*ipynb" | xargs nb-clean check --preserve-cell-metadata --remove-empty-cells
 
     # NOTE: this isn't a comprehensive spellcheck, just common typos
     - name: Spellcheck

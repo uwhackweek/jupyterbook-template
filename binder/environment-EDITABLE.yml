@@ -13,4 +13,5 @@ dependencies:
   - jupyterlab=3
   - jupyter-resource-usage
   - mamba
+  - pip
   - sphinxcontrib-bibtex
