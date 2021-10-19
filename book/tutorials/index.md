@@ -17,12 +17,12 @@ New tutorials need to be listed explicitly in the `_toc.yml` file to show up in 
 
 
 ## Listing of tutorials during the event
-These tutorials consist of Jupyter Notebooks that can be run in our 
-[preconfigured software environment]({{github_org_url}}/docker-image). 
-If you are attending the hackweek, you have access to a JupyterHub environment 
-with all the necessary Python software packages installed that are needed to run 
-through these tutorials interactively. On JupyterHub, your home directory persists 
-so any changes you make to the tutorials will be saved and be there for you next 
+These tutorials consist of Jupyter Notebooks that can be run in our
+{{ '[preconfigured software environment]({url})'.format(url=github_org_url) }}
+If you are attending the hackweek, you have access to a JupyterHub environment
+with all the necessary Python software packages installed that are needed to run
+through these tutorials interactively. On JupyterHub, your home directory persists
+so any changes you make to the tutorials will be saved and be there for you next
 time you log in.
 
 [![badge](https://img.shields.io/static/v1.svg?logo=Jupyter&label=Launch&message=SnowExJupyterHub&color=orange)](https://snowex.hackweek.io)

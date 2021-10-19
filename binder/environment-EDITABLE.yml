@@ -8,7 +8,7 @@ channels:
   - conda-forge
 dependencies:
   - ipyleaflet
-  - jupyter-book=0.10
+  - jupyter-book=0.12
   - jupyterhub-singleuser
   - jupyterlab=3
   - jupyter-resource-usage

@@ -1,7 +1,9 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
-- part: Details
+root: intro
+format: jb-book
+parts:
+- caption: Details
   chapters:
   - file: application
   - file: schedule
@@ -10,7 +12,7 @@
     sections:
     - file: norms/CoC
     - file: norms/community
-- part: Preparation
+- caption: Preparation
   chapters:
     - file: preliminary/index
       sections:
@@ -21,23 +23,22 @@
         - file: preliminary/earthdata
         - file: preliminary/pangeo
         - file: preliminary/python
-- part: Tutorials
+- caption: Tutorials
   chapters:
     - file: tutorials/index
       sections:
         - file: tutorials/jupyter
-        - file: tutorials/core-datasets/index
         - file: tutorials/open_science
         - file: tutorials/open_source_software
-        - file: tutorials/example/intro_ipyleaflet
-- part: Projects
+        - file: tutorials/example/intro-ipyleaflet
+- caption: Projects
   chapters:
     - file: projects/index
       sections:
         - file: projects/project_initialization
         - file: projects/project_roles
         - file: projects/list_of_projects
-- part: Reference
+- caption: Reference
   chapters:
     - file: glossary
     - file: bibliography

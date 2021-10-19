@@ -29,7 +29,7 @@ Ready to contribute? Here's a quick guide
     conda create --name hackweek --file binder/conda-osx-64.lock
     conda activate hackweek
     ```
-    NOTE: if you want to add packages or change the environment, first edit `binder/environment-EDITABLE.yml`, then generate updated "lockfiles" by executing `binder/lock-environment.sh`
+    NOTE: if you want to add packages or change the environment, in the `binder` directory first edit `environment-EDITABLE.yml`, then generate updated "lockfiles" by executing `lock-environment.sh`
 
 1. Make your desired changes and build the book locally
 
