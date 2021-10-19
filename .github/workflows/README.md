@@ -3,9 +3,6 @@
 ### binder-badge.yml
 Create binder badges with links to test tutorial notebooks
 
-### build.sh
-Shell script to add Earthdata login credentials if they're needed to build the tutorial notebooks
-
 ### cron.yaml
 This Jupyterbook uses a cache to ensure that once multiple tutorial notebooks are added, only those with changes are rebuilt (otherwise build times could be over 20 minutes!).
 This cron action makes sure the cache is always present by rebuilding periodically (since otherwise the cache could expire).
