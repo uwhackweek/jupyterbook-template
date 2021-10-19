@@ -102,8 +102,6 @@ jobs:
         role-duration-seconds: 1800
 
     - name: Build JupyterBook
-      env:
-        # Warning: careful exposing secrets in scripts
       run: |
         jb build book
 

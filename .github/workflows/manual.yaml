@@ -44,7 +44,6 @@ jobs:
         role-duration-seconds: 1800
 
     - name: Build JupyterBook
-      env:
       run: |
         jb build book
 

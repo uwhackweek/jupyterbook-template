@@ -53,9 +53,6 @@ jobs:
         role-duration-seconds: 1800
 
     - name: Build JupyterBook
-      env:
-        EARTHDATA_LOGIN: ${{ secrets.EARTHDATA_LOGIN }}
-        EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
       run: |
         jb build book
 
