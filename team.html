@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Team &#8212; Hackweek Template</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,21 +31,21 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -58,14 +55,14 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Hackweek Norms" href="norms/index.html" />
     <link rel="prev" title="Hackweek Schedule" href="schedule.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -74,27 +71,36 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Hackweek Template</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Hackweek Template</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
    Welcome to uwhackweek!
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Details
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="application.html">
    Application
@@ -110,11 +116,16 @@
    Our Team
   </a>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="norms/index.html">
    Hackweek Norms
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="norms/CoC.html">
      Code of Conduct
@@ -126,14 +137,117 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Preparation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="preliminary/index.html">
+   Preliminary Work
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/swc.html">
+     Software Carpentry Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/jupyterhub.html">
+     JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/git.html">
+     Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/earthdata.html">
+     Earthdata Login
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/pangeo.html">
+     Pangeo
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="preliminary/python.html">
+     Python Installation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tutorials/index.html">
+   Tutorials
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tutorials/jupyter.html">
+     GitHub, Git, JupyterHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tutorials/open_science.html">
+     Open Science
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tutorials/open_source_software.html">
+     Open source software
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tutorials/example/intro-ipyleaflet.html">
+     An introduction to rasters
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="projects/index.html">
    Projects
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="projects/project_initialization.html">
      Project Initialization
@@ -145,74 +259,32 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="projects/example_workflow.html">
-     Basic git workflow for a project
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="projects/example_workflow.html#project-data-download-storage-and-access">
-     Project Data - download, storage, and access
+    <a class="reference internal" href="projects/list_of_projects.html">
+     List of Projects
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="preliminary/index.html">
-   Preliminary Work
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="glossary.html">
+   Glossaries
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="preliminary/conda.html">
-     Python Installation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="preliminary/github.html">
-     GitHub Account
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="preliminary/jupyterhub.html">
-     JupyterHub Connection
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="preliminary/jupyterhub_fork_clone.html">
-     JupyterHub Connection
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="preliminary/earthdata.html">
-     Earthdata Login
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="tutorials/index.html">
-   Tutorials
+ <li class="toctree-l1">
+  <a class="reference internal" href="bibliography.html">
+   Bibliography
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="tutorials/raster/intro-ipyleaflet.html">
-     An introduction to rasters
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="tutorials/raster/intro-ipyleaflet.html#nasa-gibs">
-     NASA GIBS
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -274,16 +346,18 @@
             href="https://github.com/uwhackweek/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2Fteam.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
+        <a class="edit-button" href="https://github.com/uwhackweek/jupyterbook-template/edit/main/book/team.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -300,47 +374,98 @@
         
               <div>
                 
-  <div class="section" id="our-team">
+  <div class="tex2jax_ignore mathjax_ignore section" id="our-team">
 <h1>Our Team<a class="headerlink" href="#our-team" title="Permalink to this headline">¶</a></h1>
 <p>The people on this page have helped organize the hackweek. You’ll find a few specializations listed per person if you’re wondering who to reach out to during the event!</p>
-<div class="sphinx-bs container pb-4 docutils">
+<div class="sphinx-bs full-width docutils">
 <div class="row docutils">
-<div class="d-flex col-4 docutils">
-<div class="card w-100 shadow docutils">
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
 <div class="card-header docutils">
 <p class="card-text"><strong>Scott Henderson</strong></p>
 </div>
 <div class="card-body docutils">
-<img src="https://avatars.githubusercontent.com/u/3924836?v=4?s=100">
+<a class="reference internal image-reference" href="https://avatars.githubusercontent.com/u/3924836?v=4?s=100"><img alt="picture of Scott Henderson" src="https://avatars.githubusercontent.com/u/3924836?v=4?s=100" style="width: 200px; height: 200px;" /></a>
 </div>
-<div class="card-footer docutils">
-<p class="card-text">Ask me about: InSAR, Jupyter, Python</p>
+<div class="card-footer text-left docutils">
+<p class="card-text"><em>Affiliations:</em> UW eScience</p>
+<p class="card-text"><em>Ask me about:</em> InSAR, Jupyter, Python</p>
 </div>
 </div>
 </div>
-<div class="d-flex col-4 docutils">
-<div class="card w-100 shadow docutils">
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
 <div class="card-header docutils">
 <p class="card-text"><strong>Anthony Arendt</strong></p>
 </div>
 <div class="card-body docutils">
-<img src="https://avatars.githubusercontent.com/u/4993098?v=4?s=100">
+<a class="reference internal image-reference" href="https://avatars.githubusercontent.com/u/4993098?v=4?s=100"><img alt="picture of Anthony Arendt" src="https://avatars.githubusercontent.com/u/4993098?v=4?s=100" style="width: 200px; height: 200px;" /></a>
 </div>
-<div class="card-footer docutils">
-<p class="card-text">Ask me about: Hackweeks, Glaciers, Python</p>
+<div class="card-footer text-left docutils">
+<p class="card-text"><em>Affiliations:</em>  UW eScience &amp; APL</p>
+<p class="card-text"><em>Ask me about:</em> Hackweeks, Glaciers, Python</p>
 </div>
 </div>
 </div>
-<div class="d-flex col-4 docutils">
-<div class="card w-100 shadow docutils">
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
 <div class="card-header docutils">
 <p class="card-text"><strong>Landung “Don” Setiawan</strong></p>
 </div>
 <div class="card-body docutils">
-<img src="https://avatars.githubusercontent.com/u/17802172?v=4?s=100">
+<a class="reference internal image-reference" href="https://avatars.githubusercontent.com/u/17802172?v=4?s=100"><img alt="picture of Landung Setiawan" src="https://avatars.githubusercontent.com/u/17802172?v=4?s=100" style="width: 200px; height: 200px;" /></a>
 </div>
-<div class="card-footer docutils">
-<p class="card-text">Ask me about: Oceanography, Python</p>
+<div class="card-footer text-left docutils">
+<p class="card-text"><em>Affiliations:</em> UW eScience</p>
+<p class="card-text"><em>Ask me about:</em> Oceanography, Python</p>
+</div>
+</div>
+</div>
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Jane Koh</strong></p>
+</div>
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="https://icesat-2hackweek.github.io/assets/images/JaneKoh.jpg"><img alt="picture of Jane Koh" src="https://icesat-2hackweek.github.io/assets/images/JaneKoh.jpg" style="width: 165px; height: 200px;" /></a>
+</div>
+<div class="card-footer text-left docutils">
+<p class="card-text"><em>Affiliations:</em> UW eScience</p>
+<p class="card-text"><em>Ask me about:</em> Zoom</p>
+</div>
+</div>
+</div>
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Charley Haley</strong></p>
+</div>
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="https://highmountainasia.github.io/team-collaboration/images/CharleyHaley.jpg"><img alt="picture of Charley Haley" src="https://highmountainasia.github.io/team-collaboration/images/CharleyHaley.jpg" style="width: 200px; height: 200px;" /></a>
+</div>
+<div class="card-footer text-left docutils">
+<p class="card-text"><em>Affiliations:</em> Social Strategist &amp; Collaboration Architect</p>
+<p class="card-text"><em>Ask me about:</em> Facilitation, Team Building</p>
+</div>
+</div>
+</div>
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Jessica Scheick</strong></p>
+</div>
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="https://avatars.githubusercontent.com/u/11756442?v=4"><img alt="picture of Jessica Scheick" src="https://avatars.githubusercontent.com/u/11756442?v=4" style="width: 200px; height: 200px;" /></a>
+</div>
+<div class="card-footer text-left docutils">
+<p class="card-text"><em>Affiliations:</em> University of New Hampshire</p>
+<p class="card-text"><em>Ask me about:</em> open science, Python, git, GitHub, glaciers, ICESat-2/icepyx</p>
+</div>
+</div>
+</div>
+<div class="d-flex text-center col-6 col-lg-4 docutils">
+<div class="card w-100 shadow my-2 docutils">
+<div class="card-body docutils">
 </div>
 </div>
 </div>
@@ -372,22 +497,42 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="schedule.html" title="previous page">Hackweek Schedule</a>
-    <a class='right-next' id="next-link" href="norms/index.html" title="next page">Hackweek Norms</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="schedule.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Hackweek Schedule</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="norms/index.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Hackweek Norms</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
           By eScience Institute, University of Washington<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
@@ -396,11 +541,9 @@
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>
