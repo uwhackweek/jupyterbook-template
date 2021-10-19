@@ -65,5 +65,6 @@ jobs:
 
     # NOTE: create separate _config.yml to pass --config (and skip executing notebooks?)
     - name: Check External Links
+      continue-on-error: true
       run: |
         jb build book --builder linkcheck
