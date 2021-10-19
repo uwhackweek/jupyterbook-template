@@ -25,7 +25,7 @@ jobs:
         path: ./book/_build
         key: jupyterbook
 
-    - uses: ./github/actions/setupconda
+    - uses: ./.github/actions/setupconda
 
     - name: Build JupyterBook
       run: |
