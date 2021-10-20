@@ -16,8 +16,6 @@ Before getting started, you'll need a name for your project. A team exploring sn
 We have created a GitHub template that is pre-populated with directories and a README layout the we find works well with most teams.
 
 We encourage all teams to create a new GitHub repository within the {{hackweek}} Organization, even if it is just to point to an already-existing repository or package your team is contributing to for their project.
-
-Each project should create a new Github repo within the {{hackweek}} Organization:
 1. Go to: {{ '[https://github.com/`{hw}`](https://github.com/{hw})'.format(hw=hackweek) }}
 1. Click the green “New” button on right side of page
 1. Select the "{{hackweek}}/sample_project_repository" template
