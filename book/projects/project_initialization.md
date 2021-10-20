@@ -24,7 +24,7 @@ Each project should create a new Github repo within the {{hackweek}} Organizatio
 1. Use short project name
 1. We recommend choosing "Public" (so other participants can follow progress). You can also select Private for now and make Public before final presentation.
 
-## Create a new Github team within the {{hackweek}} Organization
+## Create a new GitHub team within the {{hackweek}} Organization
 GitHub teams provide a convenient way for you to set permissions on your project repository for groups of people, rather than having to do this for each individual on your team. 
 
 1. Go to: {{ '[https://github.com/orgs/`{hw}`](https://github.com/orgs/{hw})'.format(hw=hackweek + "/teams") }} (or click the "Teams" tab near the top of the GitHub Organization page)
