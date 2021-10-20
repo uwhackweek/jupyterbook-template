@@ -9,7 +9,8 @@ During hackweeks we invite participants to collaborate in small group project te
 :align: center
 ```
 
-We encourage you to be creative in how you use design your project work! Here are some ways people have used project time in the past:
+We encourage you to be creative in how you design your project work! Here are some ways people have used project time in the past:
+
 
 * *focus on learning*: dive deeper into tutorial content and gain more hands on experience with new tools
 * *focus on community building*: hackweeks bring people together for the first time and projects are used to build social fabric and foster open science
