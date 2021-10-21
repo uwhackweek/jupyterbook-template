@@ -6,7 +6,7 @@ We will be hosting {{hackweek}} as a virtual event during {{dates}}.
 
 On this JupyterBook website you will:
 
-{fa}`check,text-success mr-1`: learn about our hackweek [Code of Conduct](norms/CoC) and our commitment to creating positive [learning communities](norms/community)
+{fa}`check,text-success mr-1`: learn about our hackweek [Mission](mission) and our [Code of Conduct](CoC)
 
 {fa}`check,text-success mr-1`: learn more about the amazing [organizing team](team) who have designed this event
 
