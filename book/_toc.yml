@@ -8,10 +8,8 @@ parts:
   - file: application
   - file: schedule
   - file: team
-  - file: norms/index
-    sections:
-    - file: norms/CoC
-    - file: norms/community
+  - file: mission
+  - file: CoC
 - caption: Preparation
   chapters:
     - file: preliminary/index
