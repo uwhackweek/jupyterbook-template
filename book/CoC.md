@@ -1,6 +1,6 @@
 # Event Code of Conduct
 
-Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT) governing contributions to this JupyterBook.
+Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the [Contributor Covenant Code of Conduct](../CODE_OF_CONDUCT) governing contributions to this JupyterBook.
 
 ---
 
@@ -13,7 +13,7 @@ We do not tolerate harassment of participants in any form. Sexual language and i
 
 Harassment includes, but is not limited to:
 
-* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion.
+* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.
 * Sexual images in public spaces
 * Deliberate intimidation, stalking, or following
 * Harassing photography or recording
