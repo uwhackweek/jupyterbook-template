@@ -19,6 +19,7 @@ parse:
     docker_image: INSERT_DOCKER_IMAGE_URL
     contact_email: uwhackweek@github.com
     dataset: ICESat-2
+    anon_reporting_url: INSERT_FORM_LINK
   myst_enable_extensions:
     # Defaults
     - dollarmath
