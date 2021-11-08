@@ -27,3 +27,72 @@ The hackweek organizing committee follows a two phase process in selecting appli
 :width: 1000px
 :align: center
 ```
+
+### Review process
+
+#### Phase 1
+Blind panel review
+
+```{admonition} Central question
+Is the appicant a generally good fit for this hackweek
+```
+
+```{important}
+__Hackweek Application question__:
+
+_Q8_: How will you benefit from the hackweek?
+
+_Q9_: How will you give back to the community?
+```
+
+````{panels}
+:column: col-lg-6
+:header: text-center text-white bg-primary
+:card: border-2 shadow
+
+{badge}`Successful in Phase 1,badge-pimary text-white`
+
+^^^
+__Answers__:
+
+* I am new to open science and want to gain experience working with a team
+* I am a python user and want to learn more about available libraries within my community
+---
+:header: text-center text-white bg-warning
+
+__Applicants recommended to other programs__
+^^^
+__Answers__:
+
+* I want to learn the Python programming language
+* I want to write a lot of code and get better at coding
+
+````
+
+#### Phase 2
+Review Phase
+
+```{admonition} Central process
+We pre-define criteria ....
+```
+
+```{important}
+__Hackweek Application question__:
+
+_Q4_: Geographic location
+
+_Q12_: Programming experience
+```
+````{panels}
+:column: col-lg-6 
+:card: text-center bg-success
+
+{badge}`Selected Participants,badge-success text-white`
+
+---
+:column: col-lg-6 
+:card: text-center bg-info
+
+{badge}`Waitlisted Participants,badge-info text-white`
+
+````
