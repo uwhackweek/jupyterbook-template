@@ -9,6 +9,13 @@ To facilitate creating a [Jupyter-book](https://jupyterbook.org/) hosted via Git
 
 For an example of a hackweek jupyterbook website based on this template see https://snowex-hackweek.github.io/website/intro.html 
 
+### To Use this Template
+1. Click the "Use this template" button at the top of the repo
+1. Select the account where you'd like to use the template.
+1. **Be sure to select the checkbox to include all branches!** Otherwise your book will not be rendered automatically. You can remove all branches except for `main` and `gh-pages` from your new repo.
+1. In your new repo, go to Settings > Pages to find the link to your JupyterBook. We recommend adding this link to the home page.
+1. Starting with `book/_config.yml`, begin customizing your content!
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
