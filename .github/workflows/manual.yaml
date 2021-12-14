@@ -1,10 +1,11 @@
 name: Build Without Cache
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
     # can maybe specify PR branch ref here?
     # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#example-workflow-configuration
-  paths:
-    - '.github/workflows/manual.yaml'
+    paths:
+      - '.github/workflows/manual.yaml'
 
 jobs:
   build-and-test:
