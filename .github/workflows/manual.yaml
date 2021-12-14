@@ -3,7 +3,8 @@ name: Build Without Cache
 on: workflow_dispatch
     # can maybe specify PR branch ref here?
     # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#example-workflow-configuration
-
+  paths:
+    - '.github/workflows/manual.yaml'
 jobs:
   build-and-test:
     runs-on: ubuntu-20.04
@@ -12,7 +13,7 @@ jobs:
         shell: bash -l {0}
 
     steps:
-    - uses: ../.github/actions/buildbook
+    - uses: ./.github/actions/buildbook
       with:
         jb-cache: false
         publish-to-gh: false
