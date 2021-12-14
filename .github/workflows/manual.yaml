@@ -12,7 +12,7 @@ jobs:
         shell: bash -l {0}
 
     steps:
-    - uses: ./.github/actions/buildbook
+    - uses: ../.github/actions/buildbook
       with:
         jb-cache: false
         publish-to-gh: false
