@@ -153,8 +153,7 @@
     "sponsors": {
         "description": "",
         "organizations": [
-            {"name": "eScience Institute", "website": "", "logo_url": "https://icesat-2hackweek.github.io/assets/images/escience.png"},
-            {"name": "ICESAT-2", "website": "https://icesat-2.gsfc.nasa.gov/mission", "logo_url": "https://icesat-2hackweek.github.io/assets/images/ICESat2.png"}
+            {"name": "eScience Institute", "website": "", "logo_url": "https://icesat-2hackweek.github.io/assets/images/escience.png"}
         ]
     },
     "footer": {
