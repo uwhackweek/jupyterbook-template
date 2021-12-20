@@ -15,3 +15,4 @@ dependencies:
   - mamba
   - pip
   - sphinxcontrib-bibtex
+  - cookiecutter
