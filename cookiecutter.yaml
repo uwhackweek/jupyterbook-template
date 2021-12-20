@@ -21,7 +21,7 @@ banner:
 applicant_info: UW Hackweek 2022 will take place in October 2022 (virtual or in-person
   TBD). Applications have not yet opened, but should be anticipated in September 2022.
 team:
-  !include team.yaml
+  !include book/team.yaml
 schedule:
   tabs:
   - title: Day 1

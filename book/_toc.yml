@@ -7,7 +7,7 @@ parts:
   chapters:
   - file: application
   - file: schedule
-  - file: team
+  # - file: team
   - file: mission
   - file: CoC
 - caption: Preparation

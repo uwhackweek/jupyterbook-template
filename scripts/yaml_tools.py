@@ -40,6 +40,4 @@ class Loader(yaml.SafeLoader):
             else:
                 consolidated_result = result
 
-        print(consolidated_result)
-
         return consolidated_result
