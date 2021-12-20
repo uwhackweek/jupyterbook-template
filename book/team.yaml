@@ -30,10 +30,13 @@ people:
   avatar: https://highmountainasia.github.io/team-collaboration/images/CharleyHaley.jpg
   role: Social Strategist and Collaboration Architect
   organizations:
-  - Consultant
+  - name: Consultant
   expertise:
   - Facilitation
   - Team Building
+  social:
+  user_groups:
+  - Tutorial Lead
 - title: Scott Henderson
   avatar: https://avatars2.githubusercontent.com/u/3924836?s=460&v=4
   role: Research Scientist
@@ -63,6 +66,9 @@ people:
   bio: about Jane here
   expertise:
   - Zoom
+  social:
+  user_groups:
+  - Tutorial Lead
 - title: Jessica Scheick
   avatar: https://avatars.githubusercontent.com/u/11756442?v=4
   role: Research Assistant Professor
