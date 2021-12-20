@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+cd "${BASH_SOURCE%/*}/" || exit
+
 JSON_FILE=../cookiecutter.json
 YAML_FILE=../cookiecutter.yaml
 
@@ -22,4 +24,3 @@ if [ -d "../book/_build/html/assets" ]; then
 fi
   
 cookiecutter ../. -f --no-input -o ../book/_build
-
