@@ -1,7 +1,6 @@
 {
   "files": [
-    "README.md",
-    "book/team.md"
+    "README.md"
   ],
   "imageSize": 100,
   "commit": false,

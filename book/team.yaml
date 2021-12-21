@@ -2,7 +2,7 @@ description:
   The people on this page have helped organize the hackweek.
   You'll find a few specializations listed per person if you're wondering who to reach out to during the event!
 
-# please add yourself as a team member in alphabetical order by last name
+# please add yourself as a team member in alphabetical order by last name (a template is commented at the end of this file)
 # you can easily get the URL of a GitHub user image via the GitHub API: `https://api.github.com/users/GITHUB_USERNAME`
 people:
 - title: Anthony Arendt
@@ -25,12 +25,13 @@ people:
     link: aaarendt
   user_groups:
   - Tutorial Lead
-  - Organizer
+  - Lead Hackweek Organizer
 - title: Charley Haley
   avatar: https://highmountainasia.github.io/team-collaboration/images/CharleyHaley.jpg
   role: Social Strategist and Collaboration Architect
   organizations:
   - name: Consultant
+  bio: Charley brings her awesome facilitation skills to Hackweeks.
   expertise:
   - Facilitation
   - Team Building
@@ -50,7 +51,10 @@ people:
     Short ribs landjaeger frankfurter hamburger, kevin pig rump short loin alcatra.
     Pastrami corned beef tongue biltong brisket cow drumstick frankfurter. Boudin
     bresaola bacon, pig brisket jowl picanha frankfurter spare ribs shank pork burgdoggen.
-  expertise: [InSAR, Jupyter, Python]
+  expertise:
+  - InSAR
+  - Jupyter
+  - Python
   social:
   - icon: github
     icon_pack: fab
@@ -75,9 +79,13 @@ people:
   organizations:
   - name: University of New Hampshire
   - name: eScience
-  bio: about Jessica
+  bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+    collaborative developer, open-source software contributor and maintainer, and community manager.
+    She enjoys weaving her many roles together to work with others to build software that makes it easier
+    for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
   expertise:
   - open science
+  - collaborative development
   - Python
   - git
   - GitHub
@@ -91,7 +99,9 @@ people:
     icon_pack: fab
     link: https://github.com/icesat2py
   user_groups:
+  - Lead Hackweek Organizer
   - Tutorial Lead
+  - Project Team Lead
 - title: Don Setiawan
   avatar: https://avatars.githubusercontent.com/u/17802172?v=4
   role: Research Software Engineer
@@ -117,3 +127,26 @@ people:
     link: https://github.com/lsetiawan
   user_groups:
   - Tutorial Lead
+
+"""
+TEMPLATE FOR A NEW PERSON
+(ultimately move this to a set of 'startup' docs that also include links to things like acceptable user_groups)
+
+- title: 
+  avatar: 
+  role: 
+  organizations:
+  - name: 
+    url: 
+  - name: 
+  bio: 
+  expertise:
+  - 
+  - 
+  social:
+  - icon: github
+    icon_pack: fab
+    link: 
+  user_groups:
+  - 
+"""
