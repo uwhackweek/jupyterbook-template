@@ -8,7 +8,7 @@ On this JupyterBook website you will:
 
 {fa}`check,text-success mr-1`: learn about our hackweek [Mission](mission) and our [Code of Conduct](CoC)
 
-{fa}`check,text-success mr-1`: learn more about the amazing [organizing team](https://uwhackweek.github.io/team) who have designed this event
+{fa}`check,text-success mr-1`: learn more about the amazing {{ '[organizing team]({url}/team.html)'.format(url=website_url) }} who have designed this event
 
 {fa}`check,text-success mr-1`: review the hackweek [schedule](schedule)
 
