@@ -14,7 +14,8 @@ parse:
     # Redundant?: assume hackweek name = github org name?
     github_org_url: "https://github.com/uwhackweek"
     book_repo: "jupyterbook-template"
-    website_url: "https://github.com/uwhackweek/website"
+    # website_url: "https://github.com/uwhackweek/website"
+    website_url: "https://uwhackweek.github.io"
     jupyterhub_url: INSERT_JUPYTERHUB_URL
     slack_workspace_url: INSERT_SLACK_URL
     docker_image: INSERT_DOCKER_IMAGE_URL
@@ -72,6 +73,6 @@ html:
   extra_navbar: |
     <div align="left">
       <h6>
-        <a href="https://uwhackweek.github.io/jupyterbook-template/blob/gh-pages/index.html">OUR TEAM</a>
+        <a href="https://uwhackweek.github.io">OUR TEAM</a>
       </h6>
     </div>

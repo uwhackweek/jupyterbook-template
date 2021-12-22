@@ -17,10 +17,10 @@ fi
 echo "Building the jupyter book"
 jupyter-book build ../book/
 
-echo "building the splash page"
-
 if [ -d "../book/_build/html/assets" ]; then
    rm -rf ../book/_build/html/assets
+   echo "Removed jupyterbook assets"
 fi
   
+echo "building the splash page"
 cookiecutter ../. -f --no-input -o ../book/_build
