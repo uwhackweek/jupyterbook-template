@@ -73,6 +73,6 @@ html:
   extra_navbar: |
     <div align="left">
       <h6>
-        <a href="https://uwhackweek.github.io">OUR TEAM</a>
+        <a href="https://uwhackweek.github.io#speakers-section">OUR TEAM</a>
       </h6>
     </div>
