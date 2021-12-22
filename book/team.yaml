@@ -36,6 +36,9 @@ people:
   - Facilitation
   - Team Building
   social:
+  - icon: github
+    icon_pack: fab
+    link: ""
   user_groups:
   - Tutorial Lead
 - title: Scott Henderson
@@ -71,6 +74,9 @@ people:
   expertise:
   - Zoom
   social:
+  - icon: github
+    icon_pack: fab
+    link: ""
   user_groups:
   - Tutorial Lead
 - title: Jessica Scheick
