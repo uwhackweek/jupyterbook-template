@@ -13,6 +13,7 @@ parse:
     dates: October ? to ?, 2021
     # Redundant?: assume hackweek name = github org name?
     github_org_url: "https://github.com/uwhackweek"
+    book_repo: "jupyterbook-template"
     website_url: "https://github.com/uwhackweek/website"
     jupyterhub_url: INSERT_JUPYTERHUB_URL
     slack_workspace_url: INSERT_SLACK_URL
@@ -68,3 +69,9 @@ html:
   use_issues_button: true
   use_repository_button: true
   # google_analytics_id: G-XXXXXXXXX
+  extra_navbar: |
+    <div align="left">
+      <h3>
+        <a href="{{website_url}}">OUR TEAM</a>
+      </h3>
+    </div>
