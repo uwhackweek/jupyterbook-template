@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This script will re-generate reproducible lockfiles based on environment-minimal.yml
-conda create -q -y -n CondaLock conda-lock=0.13 mamba=0.17
+conda create -q -y -n CondaLock -c conda-forge conda-lock=0.13 mamba=0.17
 # https://github.com/conda/conda/issues/7980#issuecomment-492784093
 eval "$(conda shell.bash hook)"
 conda activate CondaLock
