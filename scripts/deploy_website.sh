@@ -14,8 +14,6 @@ if [ -f "$YAML_FILE" ]; then
    python yaml2json.py "$YAML_FILE" "$JSON_FILE"
 fi
 
-echo "Building the jupyter book"
-jupyter-book build ../book/
 
 if [ -d "../book/_build/html/assets" ]; then
    rm -rf ../book/_build/html/assets
@@ -24,3 +22,6 @@ fi
   
 echo "building the splash page"
 cookiecutter ../. -f --no-input -o ../book/_build
+
+echo "Building the jupyter book"
+jupyter-book build ../book/
