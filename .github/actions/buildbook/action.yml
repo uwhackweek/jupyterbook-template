@@ -21,10 +21,10 @@ runs:
     - name: Setup JupyterBook Cache
       if: ${{inputs.jb-cache}} == true
       uses: actions/cache@v2
-      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
       with:
         path: ./book/_build
-        key: jupyterbook
+        # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
+        key: jupyterbook-0
 
     - uses: ./.github/actions/setupconda
 
