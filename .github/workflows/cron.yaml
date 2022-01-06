@@ -14,25 +14,8 @@ jobs:
         shell: bash -l {0}
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Setup JupyterBook Cache
-      uses: actions/cache@v2
-      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
+    - uses: ./.github/actions/buildbook
       with:
-        path: ./book/_build
-        key: jupyterbook
-
-    - uses: ./.github/actions/setupconda
-
-    - name: Build JupyterBook
-      run: |
-        jb build book
-
-    - name: Save Build
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v2
-      with:
-        name: build
-        path: book/_build/
+        jb-cache: true
+        publish-to-gh: false
+        jb-save: true

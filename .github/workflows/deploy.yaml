@@ -16,31 +16,8 @@ jobs:
         shell: bash -l {0}
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Setup JupyterBook Cache
-      uses: actions/cache@v2
-      # NOTE: change key "jupyterbook-N+1" to force rebuilding cache
+    - uses: ./.github/actions/buildbook
       with:
-        path: ./book/_build
-        key: jupyterbook
-
-    - uses: ./.github/actions/setupconda
-
-    - name: Build JupyterBook
-      run: |
-        jb build book
-
-    - name: Publish to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.GH_PAT }}
-        publish_dir: book/_build/html
-        publish_branch: gh-pages
-
-    - name: Save Build
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v2
-      with:
-        name: build
-        path: book/_build/
+        jb-cache: true
+        publish-to-gh: true
+        jb-save: true

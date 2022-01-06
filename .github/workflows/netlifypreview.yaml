@@ -15,23 +15,11 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'preview')
 
     steps:
-    - name: Checkout PR
-      uses: actions/checkout@v2
+    - uses: ./.github/actions/buildbook
       with:
-        ref: ${{ github.event.pull_request.head.sha }}
-
-    - name: Setup JupyterBook Cache
-      uses: actions/cache@v2
-      # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
-      with:
-        path: ./book/_build
-        key: jupyterbook
-
-    - uses: ./.github/actions/setupconda
-
-    - name: Build JupyterBook
-      run: |
-        jb build book
+        jb-cache: true
+        publish-to-gh: false
+        jb-save: false
 
     - name: Deploy Website Preview
       uses: nwtgck/actions-netlify@v1.1
