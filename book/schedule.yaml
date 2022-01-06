@@ -1,5 +1,4 @@
 tabs:
-- timezone: Pacific
 - title: Day 1
   date: Wed 12, Oct
   contents:
@@ -10,7 +9,6 @@ tabs:
     leads:
     - Scott Henderson
     - Anthony Arendt
-    video: https://youtu.be/cHQloxZFtOQ
   - time: 9:30 - 10:00
     location: Room A5
     title: Coffee Break
@@ -19,15 +17,7 @@ tabs:
     leads: []
 - title: Day 2
   date: Thu 13, Oct
-  contents:
-  - time: 1:00 - 2:00 PM
-    title: Coffee Break
-    description: more refueling, but with a bulleted list (not sure how to get a colon here)
-    * item 1
-    * item 2
 - title: Day 3
   date: Fri 14, Oct
 - title: Day 4
   date: Sat 15, Oct
-- title: Day 5
-  date: Sun 16, Oct
