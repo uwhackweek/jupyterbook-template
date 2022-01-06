@@ -10,7 +10,7 @@ On this JupyterBook website you will:
 
 {fa}`check,text-success mr-1`: learn more about the amazing {{ '[organizing team]({url}/#team)'.format(url=website_url) }} who have designed this event
 
-{fa}`check,text-success mr-1`: review the hackweek [schedule](schedule)
+{fa}`check,text-success mr-1`: review the hackweek {{ '[schedule]({url}/#schedule-section)'.format(url=website_url) }}
 
 {fa}`check,text-success mr-1`: find out how you can submit an [application form](application)
 

@@ -6,7 +6,8 @@ parts:
 - caption: Details
   chapters:
   - file: application
-  - file: schedule
+  - url: https://uwhackweek.github.io#schedule-section
+    title: Schedule
   - url: https://uwhackweek.github.io#team
     title: Team
   - file: mission
