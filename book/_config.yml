@@ -13,7 +13,9 @@ parse:
     dates: October ? to ?, 2021
     # Redundant?: assume hackweek name = github org name?
     github_org_url: "https://github.com/uwhackweek"
-    website_url: "https://github.com/uwhackweek/website"
+    book_repo: "jupyterbook-template"
+    # website_url: "https://github.com/uwhackweek/website"
+    website_url: "https://uwhackweek.github.io"
     jupyterhub_url: INSERT_JUPYTERHUB_URL
     slack_workspace_url: INSERT_SLACK_URL
     docker_image: INSERT_DOCKER_IMAGE_URL

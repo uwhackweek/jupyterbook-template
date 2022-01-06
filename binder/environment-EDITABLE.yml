@@ -7,6 +7,7 @@ name: hackweek
 channels:
   - conda-forge
 dependencies:
+  - cookiecutter
   - ipyleaflet
   - jupyter-book=0.12
   - jupyterhub-singleuser

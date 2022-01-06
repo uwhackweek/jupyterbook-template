@@ -1,6 +1,7 @@
 # Event Code of Conduct
 
-Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the [Contributor Covenant Code of Conduct](../CODE_OF_CONDUCT) governing contributions to this JupyterBook.
+Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the {{ '[Contributor Covenant Code of Conduct]({url}/{repo}/blob/main/CODE_OF_CONDUCT.md)'.format(url=github_org_url, repo=book_repo) }}  governing contributions to this JupyterBook.
+
 
 ---
 

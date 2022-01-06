@@ -6,8 +6,10 @@ parts:
 - caption: Details
   chapters:
   - file: application
-  - file: schedule
-  - file: team
+  - url: https://uwhackweek.github.io#schedule-section
+    title: Schedule
+  - url: https://uwhackweek.github.io#team
+    title: Team
   - file: mission
   - file: CoC
 - caption: Preparation
