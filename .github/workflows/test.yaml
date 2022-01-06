@@ -19,7 +19,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - uses: ./.github/actions/buildbook
+    - uses: ./.github/actions/buildresources
       with:
         jb-cache: true
         publish-to-gh: false
