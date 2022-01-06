@@ -30,7 +30,7 @@ runs:
 
     - name: Build JupyterBook
       run: |
-        jb build book
+        ./scripts/deploy_website.sh
 
     - name: Publish to GitHub Pages
       if: ${{inputs.publish-to-gh}} == true
