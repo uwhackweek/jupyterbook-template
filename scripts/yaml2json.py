@@ -1,6 +1,6 @@
 # converts yaml configuration file to json file
 # usage: python <yaml_input_filename> <json_output_filename>
-# called by deploy_website.sh script
+# called by build_resources.sh script
 
 import json
 import sys
