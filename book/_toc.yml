@@ -7,7 +7,7 @@ parts:
   chapters:
   - file: application
   - file: schedule
-  - url: https://uwhackweek.github.io#speakers-section
+  - url: https://uwhackweek.github.io#team
     title: Team
   - file: mission
   - file: CoC
