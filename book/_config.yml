@@ -70,9 +70,3 @@ html:
   use_issues_button: true
   use_repository_button: true
   # google_analytics_id: G-XXXXXXXXX
-  extra_navbar: |
-    <div align="left">
-      <h6>
-        <a href="https://uwhackweek.github.io#speakers-section">OUR TEAM</a>
-      </h6>
-    </div>
