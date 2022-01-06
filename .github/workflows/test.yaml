@@ -6,6 +6,8 @@ on:
     paths:
       - 'book/**'
       - '.github/workflows/test.yaml'
+      - '{{ cookiecutter.repo_directory }}/**'
+      - 'scripts/**'
       - 'binder/**'
     branches:
       - main

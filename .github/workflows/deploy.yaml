@@ -4,7 +4,10 @@ on:
   push:
     paths:
       - 'book/**'
+      - '{{ cookiecutter.repo_directory }}/**'
+      - 'scripts/**'
       - '.github/workflows/deploy.yaml'
+
     branches:
       - main
 
