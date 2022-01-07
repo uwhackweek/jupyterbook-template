@@ -25,7 +25,7 @@ Ready to contribute? Here's a quick guide
 
 1. Create and activate the "hackweek" conda environment. 
 
-   __NOTE__: If you're running linux or Windows use `binder/conda-linux-64.lock`
+   __NOTE__: If you're running linux or Windows use `conda/conda-linux-64.lock`
 
     ```sh
     conda create --name hackweek --file conda/conda-osx-64.lock
