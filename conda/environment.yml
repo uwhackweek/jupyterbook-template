@@ -16,3 +16,5 @@ dependencies:
   - mamba
   - pip
   - sphinxcontrib-bibtex
+  - pip:
+    - jinja_markdown

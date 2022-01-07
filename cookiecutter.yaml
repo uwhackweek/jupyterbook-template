@@ -37,3 +37,5 @@ footer:
     link: https://github.com/uwhackweek/
 _copy_without_render:
 - assets
+_extensions:
+- jinja_markdown.MarkdownExtension
