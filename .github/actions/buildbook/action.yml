@@ -37,7 +37,7 @@ runs:
       if: ${{inputs.publish-to-gh}} == true
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{inputs.token}}
+        personal_token: ${{ inputs['token'] }}
         publish_dir: book/_build/html
         publish_branch: gh-pages
 
