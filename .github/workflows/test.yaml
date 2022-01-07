@@ -2,10 +2,11 @@ name: Test
 
 on:
   pull_request_target:
-    types: [labeled, synchronize]
     paths:
       - 'book/**'
       - '.github/workflows/test.yaml'
+      - '{{ cookiecutter.repo_directory }}/**'
+      - 'scripts/**'
       - 'binder/**'
     branches:
       - main
@@ -13,17 +14,11 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-20.04
-    defaults:
-      run:
-        shell: bash -l {0}
-    # This workflow accesses secrets and checks out a PR, so only run if labelled
-    # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
-    if: contains(github.event.pull_request.labels.*.name, 'preview')
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
+
     - uses: ./.github/actions/buildbook
       with:
         jb-cache: true

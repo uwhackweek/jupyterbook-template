@@ -11,13 +11,13 @@ inputs:
   jb-save:
     description: "Save the Jupyterbook Build (boolean)"
     required: true
+  token:
+    description: 'A GitHub Personal Access Token (for publishing)'
+    required: false
 
 runs:
   using: "composite"
   steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
     - name: Setup JupyterBook Cache
       if: ${{inputs.jb-cache}} == true
       uses: actions/cache@v2
@@ -29,6 +29,7 @@ runs:
     - uses: ./.github/actions/setupconda
 
     - name: Build JupyterBook
+      shell: bash -l {0}
       run: |
         ./scripts/deploy_website.sh
 
@@ -36,7 +37,7 @@ runs:
       if: ${{inputs.publish-to-gh}} == true
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.GH_PAT }}
+        personal_token: ${{inputs.token}}
         publish_dir: book/_build/html
         publish_branch: gh-pages
 

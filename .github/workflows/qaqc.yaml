@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'book/**'
+      - '{{ cookiecutter.repo_directory }}/**'
+      - 'scripts/**'
       - '.github/workflows/qaqc.yaml'
     branches:
       - main
@@ -34,6 +36,7 @@ jobs:
         check_filenames: true
         check_hidden: true
         only_warn: false
+        skip: '*.js'
 
     # borrowed from https://github.com/ProjectPythia/pythia-foundations/blob/main/.github/workflows/link-checker.yaml
     - name: Disable Notebook Execution
