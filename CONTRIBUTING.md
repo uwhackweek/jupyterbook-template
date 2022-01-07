@@ -23,13 +23,17 @@ Ready to contribute? Here's a quick guide
     git checkout -b name-of-your-bugfix-or-feature
     ```
 
-1. Create and activate the "hackweek" conda environment. NOTE: if you're running linux or windows use `binder/conda-linux-64.lock`:
+1. Create and activate the "hackweek" conda environment. 
+
+   __NOTE__: If you're running linux or Windows use `conda/conda-linux-64.lock`
 
     ```sh
-    conda create --name hackweek --file binder/conda-osx-64.lock
+    conda create --name hackweek --file conda/conda-osx-64.lock
     conda activate hackweek
     ```
-    NOTE: if you want to add packages or change the environment, in the `binder` directory first edit `environment-EDITABLE.yml`, then generate updated "lockfiles" by executing `lock-environment.sh`
+    __NOTE__: If you want to add packages or change the environment,
+    first edit `environment.yml` in the 'conda' folder, and then generate 
+    updated `.lock` files by executing `lock-environment.sh`.
 
 1. Make your desired changes and build the book locally
 
