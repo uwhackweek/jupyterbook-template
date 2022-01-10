@@ -14,6 +14,7 @@ inputs:
   token:
     description: 'A GitHub Personal Access Token (for publishing)'
     required: false
+    default: '0'
 
 runs:
   using: "composite"
