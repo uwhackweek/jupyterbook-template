@@ -17,7 +17,12 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-20.04
+    name: Build and test on OS - ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ "ubuntu-latest", "macos-latest" ]
 
     steps:
     - name: Checkout repository
