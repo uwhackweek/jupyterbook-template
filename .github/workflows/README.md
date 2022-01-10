@@ -3,10 +3,6 @@
 ### binder-badge.yml
 Create binder badges with links to test tutorial notebooks
 
-### cron.yaml
-This Jupyterbook uses a cache to ensure that once multiple tutorial notebooks are added, only those with changes are rebuilt (otherwise build times could be over 20 minutes!).
-This cron action makes sure the cache is always present by rebuilding periodically (since otherwise the cache could expire).
-
 ### deploy.yaml
 Render and post the website.
 
@@ -24,4 +20,7 @@ Standardizes formatting including spell check, hyperlink check, and clearing not
 Build a Docker image based on binder/ configuration files for JupyterHub/BinderHub
 
 ### test.yaml
-GitHub recommended method to enable website builds using GitHub secrets when an admin adds the preview label to a PR.
+Build the websites (JupyterBook and front page).
+- This Jupyterbook uses a cache to ensure that once multiple tutorial notebooks are added, only those with changes are rebuilt (otherwise build times could be over 20 minutes!).
+This cron action makes sure the cache is always present by rebuilding periodically (since otherwise the cache could expire).
+- GitHub recommended method to enable website builds using GitHub secrets when an admin adds the preview label to a PR.
