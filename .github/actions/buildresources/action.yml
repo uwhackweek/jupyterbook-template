@@ -43,7 +43,7 @@ runs:
         publish_branch: gh-pages
 
     - name: Save Build
-      if: inputs.jb-save == 'true' && always()
+      if: inputs.jb-save == 'true'
       uses: actions/upload-artifact@v2
       with:
         name: build
