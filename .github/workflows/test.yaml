@@ -32,4 +32,5 @@ jobs:
       with:
         jb-cache: true
         publish-to-gh: false
+        token: 0
         jb-save: true
