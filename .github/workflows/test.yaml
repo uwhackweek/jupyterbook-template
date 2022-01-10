@@ -7,7 +7,7 @@ on:
     - cron:  '0 0 * * 0'
   pull_request_target:
     paths:
-      - '.github/workflows/test.yaml'
+      - '.github/**/*'
       - '{{ cookiecutter.repo_directory }}/**'
       - 'book/**'
       - 'conda/**'
