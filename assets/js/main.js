@@ -82,49 +82,59 @@ var spy = new Gumshoe('#navigation a', {
 });
 
 
-/* ======= Countdown ========= */
-// set the date we're counting down to
-var target_date = new Date("Oct 12, 2024").getTime();
- 
 // variables for time units
-var days, hours, minutes, seconds;
- 
-// get tag element
-var countdown =  document.getElementById("countdown-box");
-var days_span = document.createElement("SPAN");
-days_span.className = 'days';
-countdown.appendChild(days_span);
-var hours_span = document.createElement("SPAN");
-hours_span.className = 'hours';
-countdown.appendChild(hours_span);
-var minutes_span = document.createElement("SPAN");
-minutes_span.className = 'minutes';
-countdown.appendChild(minutes_span);
-var secs_span = document.createElement("SPAN");
-secs_span.className = 'secs';
-countdown.appendChild(secs_span);
- 
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
- 
+const counterDiv =  document.getElementById("countdown-box");
+const endDate = new Date(counterDiv.getAttribute('data-start-date'));
+let days, hours, minutes, seconds;
+
+function createCountdownSpans(className) {
+    const span = document.createElement("SPAN");
+    span.className = className;
+    return span
+}
+
+function updateCountdownHTML(span, value, unit) {
+    span.innerHTML = '<span class="number">' + value + '</span>' +
+        '<span class="unit">' + unit + '</span>';
+}
+
+function timeLeft() {
     // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
- 
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-     
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-     
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-     
+    const currentDate = new Date().getTime();
+    return (endDate - currentDate) / 1000;
+}
+
+
+function updateCounter(counterDiv) {
+    let secondsLeft = timeLeft()
+    let days = parseInt(secondsLeft / 86400);
+    secondsLeft = secondsLeft % 86400;
+
+    let hours = parseInt(secondsLeft / 3600);
+    secondsLeft = secondsLeft % 3600;
+
+    let minutes = parseInt(secondsLeft / 60);
+    let seconds = parseInt(secondsLeft % 60);
+
     // format countdown string + set tag value.
-    days_span.innerHTML = '<span class="number">' + days + '</span>' + '<span class="unit">Days</span>';
-    hours_span.innerHTML = '<span class="number">' + hours + '</span>' + '<span class="unit">Hrs</span>';
-    minutes_span.innerHTML = '<span class="number">' + minutes + '</span>' + '<span class="unit">Mins</span>';
-    secs_span.innerHTML = '<span class="number">' + seconds + '</span>' + '<span class="unit">Secs</span>'; 
- 
-}, 1000);
+    updateCountdownHTML(counterDiv.getElementsByClassName('days')[0], days, 'Days');
+    updateCountdownHTML(counterDiv.getElementsByClassName('hours')[0], hours, 'Hours');
+    updateCountdownHTML(counterDiv.getElementsByClassName('minutes')[0], minutes, 'Mins');
+    updateCountdownHTML(counterDiv.getElementsByClassName('secs')[0], seconds, 'Secs');
+}
+
+function startCountDown(counterDiv) {
+    if ( timeLeft() > 0 ) {
+        counterDiv.appendChild(createCountdownSpans('days'))
+        counterDiv.appendChild(createCountdownSpans('hours'))
+        counterDiv.appendChild(createCountdownSpans('minutes'))
+        counterDiv.appendChild(createCountdownSpans('secs'))
+
+        // update the counter every 1 second
+        setInterval(updateCounter, 1000, counterDiv);
+    } else {
+        document.getElementById("countdown-intro").remove();
+    }
+}
+
+startCountDown(counterDiv);
