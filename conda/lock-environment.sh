@@ -25,13 +25,6 @@ fi
 # Local environments
 ## Generate explicit lock files (optional -p win-64)
 conda-lock lock --mamba -f ${ENV_FILE} -p linux-64 -p osx-64
-# The symbolic link is needed to test GitHub actions.
-if [[ ! -L "conda-macos-64.lock" ]]; then
-  ln -s conda-osx-64.lock conda-macos-64.lock
-fi
-if [[ ! -L "conda-Linux-64.lock" ]]; then
-  ln -s conda-linux-64.lock conda-Linux-64.lock
-fi
 
 # BinderHub support
 ## Generate environment.yml for binder compatibility
