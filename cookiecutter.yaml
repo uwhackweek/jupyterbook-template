@@ -8,9 +8,11 @@ apply:
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  title: UW Hackweek 2022
+  title: UW Hackweek
   description: An awesome learning event.
-  dates: 12 - 15 Oct
+  start_date: 12 Oct
+  end_date: 15 Oct
+  year: 2022
   location: Seattle, WA
   links:
   - url: '#'
