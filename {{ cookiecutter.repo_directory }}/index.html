@@ -109,10 +109,14 @@
 		<div class="hero-block-mask"></div>
 		<div class="container">
 			<div class="hero-text-block">
-				<h1 class="hero-heading mb-2">{{ cookiecutter.banner.title }}</h1>
+				<h1 class="hero-heading mb-2">
+					{{ cookiecutter.banner.title }} {{ cookiecutter.banner.year }}
+				</h1>
 				<div class="hero-meta mb-3">
-					<i class="far fa-calendar-alt me-2"></i> {{ cookiecutter.banner.dates}}
-					<i class="fas fa-map-marker-alt mx-2"></i> {{ cookiecutter.banner.location }}
+					<i class="far fa-calendar-alt me-2"></i>
+					{{ cookiecutter.banner.start_date }} - {{ cookiecutter.banner.end_date }}
+					<i class="fas fa-map-marker-alt mx-2"></i>
+					{{ cookiecutter.banner.location }}
 				</div>
 				<div class="hero-intro mb-4">{{ cookiecutter.banner.description }}</div>
 				{%- if cookiecutter.banner.links %}
@@ -136,8 +140,24 @@
 			<div class="section-intro single-col-max mx-auto mb-4">
 				{{ cookiecutter.about }}
 			</div>
-			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg  mb-5"
-					href="{{ cookiecutter.hackweek_mission }}" target="_blank">Learn about "hackweeks" <i class="fas fa-external-link-alt"></i></a></div>
+			<div class="about-cta text-center mb-5">
+				<a class="btn btn-secondary btn-lg  mb-5"
+				   href="{{ cookiecutter.hackweek_mission }}"
+				   target="_blank">
+					Learn about "hackweeks"
+					<i class="fas fa-external-link-alt"></i>
+				</a>
+			</div>
+
+			<div id="countdown-intro" class="event-countdown text-center mb-3">
+				<h4 class="countdown-intro mb-2 text-center mb-3">
+					Event Starts In:
+				</h4>
+				<div id="countdown-box"
+					 class="countdown-box"
+					 data-start-date="{{ cookiecutter.banner.start_date }}/{{ cookiecutter.banner.year}}">
+				</div>
+			</div>
 		</div>
 		<!--//container-->
 
