@@ -1,5 +1,7 @@
 # eScience Hackweek Jupyterbook Template GitHub Actions
 
+This folder contains continuous integration workflows to perform a variety of tasks such as checking for spelling errors and broken links, ensuring new code and website pages are properly formatted, and publishing the website.
+
 ## Actions
 
 the `actions/` subfolder contains common [composite actions steps](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) that workflows can use.
