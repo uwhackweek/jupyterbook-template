@@ -17,5 +17,5 @@ dependencies:
   - mamba
   - pip
   - pygments>=2.6.1
-  - pymdown_extensions >= 7.1
+  - pymdown_extensions>=7.1
   - sphinxcontrib-bibtex
