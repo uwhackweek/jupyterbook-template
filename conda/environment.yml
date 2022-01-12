@@ -9,12 +9,13 @@ channels:
 dependencies:
   - cookiecutter
   - ipyleaflet
+  - jinja2>=2.11
   - jupyter-book=0.12
   - jupyterhub-singleuser
   - jupyterlab=3
   - jupyter-resource-usage
   - mamba
   - pip
+  - pygments>=2.6.1
+  - pymdown_extensions >= 7.1
   - sphinxcontrib-bibtex
-  - pip:
-    - jinja_markdown
