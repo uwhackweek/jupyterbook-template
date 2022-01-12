@@ -8,8 +8,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Bootstrap 5 Tech Conference Template">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<meta name="description" content="{{ cookiecutter.banner.description }}">
+	<meta name="author" content="{{ cookiecutter.name }}">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Google Font -->
@@ -109,10 +109,14 @@
 		<div class="hero-block-mask"></div>
 		<div class="container">
 			<div class="hero-text-block">
-				<h1 class="hero-heading mb-2">{{ cookiecutter.banner.title }}</h1>
+				<h1 class="hero-heading mb-2">
+					{{ cookiecutter.banner.title }} {{ cookiecutter.banner.year }}
+				</h1>
 				<div class="hero-meta mb-3">
-					<i class="far fa-calendar-alt me-2"></i> {{ cookiecutter.banner.dates}}
-					<i class="fas fa-map-marker-alt mx-2"></i> {{ cookiecutter.banner.location }}
+					<i class="far fa-calendar-alt me-2"></i>
+					{{ cookiecutter.banner.start_date }} - {{ cookiecutter.banner.end_date }}
+					<i class="fas fa-map-marker-alt mx-2"></i>
+					{{ cookiecutter.banner.location }}
 				</div>
 				<div class="hero-intro mb-4">{{ cookiecutter.banner.description }}</div>
 				{%- if cookiecutter.banner.links %}
@@ -136,8 +140,24 @@
 			<div class="section-intro single-col-max mx-auto mb-4">
 				{{ cookiecutter.about }}
 			</div>
-			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg  mb-5"
-					href="{{ cookiecutter.hackweek_mission }}" target="_blank">Learn about "hackweeks" <i class="fas fa-external-link-alt"></i></a></div>
+			<div class="about-cta text-center mb-5">
+				<a class="btn btn-secondary btn-lg  mb-5"
+				   href="{{ cookiecutter.hackweek_mission }}"
+				   target="_blank">
+					Learn about "hackweeks"
+					<i class="fas fa-external-link-alt"></i>
+				</a>
+			</div>
+
+			<div id="countdown-intro" class="event-countdown text-center mb-3">
+				<h4 class="countdown-intro mb-2 text-center mb-3">
+					Event Starts In:
+				</h4>
+				<div id="countdown-box"
+					 class="countdown-box"
+					 data-start-date="{{ cookiecutter.banner.start_date }}/{{ cookiecutter.banner.year}}">
+				</div>
+			</div>
 		</div>
 		<!--//container-->
 
@@ -432,7 +452,7 @@
 			{%- endif %}
 
 			<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			<small class="copyright">© 2021 {{ cookiecutter.name }}</small>
+			<small class="copyright">© <script type="text/javascript">document.write( new Date().getFullYear() );</script> {{ cookiecutter.name }}</small>
 			<br>
 			<small class="copyright">Designed with <i class="fas fa-heart" style="color: #EC645E;"></i> by <a
 					href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>

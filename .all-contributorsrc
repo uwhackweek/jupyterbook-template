@@ -50,6 +50,17 @@
         "ideas",
         "content"
       ]
+    },
+    {
+      "login": "jomey",
+      "name": "Joachim Meyer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178649?v=4",
+      "profile": "https://github.com/jomey",
+      "contributions": [
+        "code",
+        "ideas",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,

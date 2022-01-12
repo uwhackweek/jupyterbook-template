@@ -19,9 +19,22 @@ if [ -d "../book/_build/html/assets" ]; then
    rm -rf ../book/_build/html/assets
    echo "Removed jupyterbook assets"
 fi
-  
-echo "building the splash page"
+
+check_success() {
+  if [[ $? -ne 0 ]]; then
+    printf "\033[1;31m ERROR \033[0m\n"
+    exit 1
+  else
+    printf "\033[1;32m SUCCESS \033[0m\n"
+  fi
+}
+
+printf "Building the splash page -"
 cookiecutter ../. -f --no-input -o ../book/_build
 
-echo "Building the jupyter book"
+check_success
+
+echo "Building the Jupyter Book"
 jupyter-book build ../book/
+
+check_success
