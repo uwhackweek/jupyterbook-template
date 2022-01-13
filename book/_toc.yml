@@ -7,9 +7,9 @@ parts:
   chapters:
   - file: application
   - title: Schedule
-    url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=team
-  - title: Team
     url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
+  - title: Team
+    url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=team
   - file: mission
   - file: CoC
 - caption: Preparation
