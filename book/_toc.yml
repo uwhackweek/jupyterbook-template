@@ -6,9 +6,9 @@ parts:
 - caption: Details
   chapters:
   - file: application
-  - url: https://uwhackweek.github.io#schedule-section
+  - url: https://uwhackweek.github.io/jupyterbook-template/#schedule-section
     title: Schedule
-  - url: https://uwhackweek.github.io#team
+  - url: https://uwhackweek.github.io/jupyterbook-template/#team
     title: Team
   - file: mission
   - file: CoC
