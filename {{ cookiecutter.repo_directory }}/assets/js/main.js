@@ -1,39 +1,34 @@
 "use strict";
 
-/* ======= Header animation ======= */   
-const header = document.getElementById('header');  
+/* ======= Header animation ======= */
+const header = document.getElementById('header');
 
-window.onload=function() 
-{   
-    headerAnimation(); 
-
+window.onload=function()
+{
+    headerAnimation();
 };
 
-window.onresize=function() 
-{   
-    headerAnimation(); 
+window.onresize=function()
+{
+    headerAnimation();
+};
 
-}; 
+window.onscroll=function()
+{
+    headerAnimation();
+};
 
-window.onscroll=function() 
-{ 
-    headerAnimation(); 
-
-}; 
-    
 
 function headerAnimation () {
-
     var scrollTop = window.scrollY;
-	
-	if ( scrollTop > 100 ) {	    
-	    header.classList.add('header-shrink');    
-	    	    
+
+	if ( scrollTop > 100 ) {
+	    header.classList.add('header-shrink');
+
 	} else {
 	    header.classList.remove('header-shrink');
 	}
-
-};
+}
 
 /* ===== Smooth scrolling ====== */
 /*  Note: You need to include smoothscroll.min.js (smooth scroll behavior polyfill) on the page to cover some browsers */
@@ -42,34 +37,44 @@ function headerAnimation () {
 
 let scrollLinks = document.querySelectorAll('.scrollto');
 const pageNavWrapper = document.getElementById('navigation');
+const yOffset = 69; //page .header height
 
 scrollLinks.forEach((scrollLink) => {
-
 	scrollLink.addEventListener('click', (e) => {
-		
 		e.preventDefault();
 
 		let element = document.querySelector(scrollLink.getAttribute("href"));
-		
-		const yOffset = 69; //page .header height
-		
+
 		//console.log(yOffset);
-		
+
 		const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
-		
+
 		window.scrollTo({top: y, behavior: 'smooth'});
-		
-		
+
+
 		//Collapse mobile menu after clicking
 		if (pageNavWrapper.classList.contains('show')){
 			pageNavWrapper.classList.remove('show');
 		}
-
-		
     });
-	
 });
-    
+
+// Jump to section if requested via URL 'jump_to' parameter
+
+function jumpToSection() {
+  const section = new URLSearchParams(window.location.search).get('jump_to');
+
+  if (section.length > 0) {
+    window.scrollTo({
+      top: document.getElementById(section).offsetTop + yOffset,
+      behavior: 'smooth'
+    })
+  }
+}
+
+if (window.location.search.length > 1) {
+  jumpToSection();
+}
 
 /* ===== Gumshoe SrollSpy ===== */
 /* Ref: https://github.com/cferdinandi/gumshoe  */

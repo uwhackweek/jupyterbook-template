@@ -6,10 +6,10 @@ parts:
 - caption: Details
   chapters:
   - file: application
-  - url: https://uwhackweek.github.io/jupyterbook-template/#schedule-section
-    title: Schedule
-  - url: https://uwhackweek.github.io/jupyterbook-template/#team
-    title: Team
+  - title: Schedule
+    url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=team
+  - title: Team
+    url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
   - file: mission
   - file: CoC
 - caption: Preparation
