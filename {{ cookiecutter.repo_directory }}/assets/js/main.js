@@ -67,13 +67,7 @@ if (window.location.search.length > 1) {
 /* ===== Gumshoe SrollSpy ===== */
 /* Ref: https://github.com/cferdinandi/gumshoe  */
 // Get the sticky header
-
-
-// Initialize Gumshoe
-var spy = new Gumshoe('#navigation a', {
-  offset: 69 //page .header heights
-});
-
+const spy = new Gumshoe('#navigation a', { offset: yOffset });
 
 // variables for time units
 const counterDiv = document.getElementById("countdown-box");
