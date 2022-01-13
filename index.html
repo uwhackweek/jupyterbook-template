@@ -746,7 +746,9 @@
 	</div>
 	<section id="schedule-section" class="schedule-section section">
 		<div class="container">
-			<h3 class="section-heading text-center mb-5">Schedule</h3>
+			<h3 class="section-heading text-center mb-1">Schedule</h3>
+			<h4 class="text-center mb-5"> All times listed below are UTC -7 (Pacific Daylight Time).
+				You might want to consult this <a href="https://www.timeanddate.com/time/map/" target="_blank">Time Zone Map</a> to figure out times in your location.</h4>
 			<!-- Nav tabs -->
 			<ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
 				
@@ -786,6 +788,15 @@
 					</a>
 				</li>
 				
+				<li class="nav-item me-2">
+					<a class="nav-link " id="tab-5" data-bs-toggle="tab"
+						href="#tab-5-content" role="tab" aria-controls="tab-5-content"
+						aria-selected="false">
+						<span class="heading">Day 5</span>
+						<span class="meta">(Sun 16, Oct)</span>
+					</a>
+				</li>
+				
 			</ul>
 
 			<!-- Tab panes -->
@@ -801,10 +812,14 @@
 						<!--//meta-->
 						<div class="content">
 							<h3 class="title mb-3">Best Practices And Tips For Research Software</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Conference Room A</div>
-							<div class="desc">A talk about reproducible research</div>
+							
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>
+							Conference Room A
+							</div>
+							
+							<div class="desc"><p>A talk about reproducible research</p></div>
 							<div class="profile">
-								<h6 class="mb-1 mt-2"> Tutorial Lead(s)</h4>
+								<h6 class="mb-1 mt-2"> Tutorial Lead(s)</h6>
 									<div class="name"><a class="theme-link" href="#scott--henderson-modal"
 											data-bs-toggle="modal" data-bs-target="#scott--henderson-modal">Scott Henderson</a>
 									</div>
@@ -812,7 +827,10 @@
 											data-bs-toggle="modal" data-bs-target="#anthony--arendt-modal">Anthony Arendt</a>
 									</div>
 							</div>
-						</div>
+							<div>
+								<h6 class="mb-1 mt-2"> Resource(s)</h6>
+								<a href="https://youtu.be/cHQloxZFtOQ" target="_blank">SnowEx Hackweek 2021: Introductory Session</a>
+							</div></div>
 						<!--//content-->
 					</div>
 					
@@ -824,9 +842,12 @@
 						<!--//meta-->
 						<div class="content">
 							<h3 class="title mb-3">Coffee Break</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Room A5</div>
-							<div class="desc">Coffee and cakes lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-						</div>
+							
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>
+							Room A5
+							</div>
+							
+							<div class="desc"><p>Coffee and cakes lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div>
 						<!--//content-->
 					</div>
 					
@@ -834,9 +855,26 @@
 				</div>
 				<!--//tab-1-content-->
 				
-				<div class="tab-pane no-timeline" id="tab-2-content" role="tabpanel"
+				<div class="tab-pane " id="tab-2-content" role="tabpanel"
 					aria-labelledby="tab-2">
-					<h4 class="text-center py-5 text-muted">Day 2 Agenda Coming Soon...</h4>
+					<div class="item item-talk">
+						<div class="meta">
+							<h4 class="time mb-3">1:00 - 2:00 PM</h4>
+							<!--//profile-->
+						</div>
+						<!--//meta-->
+						<div class="content">
+							<h3 class="title mb-3">Coffee Break</h3>
+							
+							<div class="desc"><p>more refueling, but with a bulleted list:</p>
+<ul>
+<li>list1 </li>
+<li>list2</li>
+</ul></div></div>
+						<!--//content-->
+					</div>
+					
+					<!--//item-->
 				</div>
 				<!--//tab-2-content-->
 				
@@ -851,6 +889,12 @@
 					<h4 class="text-center py-5 text-muted">Day 4 Agenda Coming Soon...</h4>
 				</div>
 				<!--//tab-4-content-->
+				
+				<div class="tab-pane no-timeline" id="tab-5-content" role="tabpanel"
+					aria-labelledby="tab-5">
+					<h4 class="text-center py-5 text-muted">Day 5 Agenda Coming Soon...</h4>
+				</div>
+				<!--//tab-5-content-->
 				
 			</div>
 			<!--//schedule-tab-content-->
