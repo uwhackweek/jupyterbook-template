@@ -306,7 +306,9 @@
 	{%- if cookiecutter.schedule %}
 	<section id="schedule-section" class="schedule-section section">
 		<div class="container">
-			<h3 class="section-heading text-center mb-5">Schedule</h3>
+			<h3 class="section-heading text-center mb-1">Schedule</h3>
+			<h4 class="text-center mb-5"> All times listed below are {{ cookiecutter.schedule.timezone }}.
+				You might want to consult this <a href="https://www.timeanddate.com/time/map/" target="_blank">Time Zone Map</a> to figure out times in your location.</h4>
 			{%- if cookiecutter.schedule["tabs"] %}
 			<!-- Nav tabs -->
 			<ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
@@ -360,12 +362,19 @@
 						<!--//meta-->
 						<div class="content">
 							<h3 class="title mb-3">{{ content['title'] }}</h3>
-							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>{{ content['location']
-								}}</div>
-							<div class="desc">{{ content['description'] }}</div>
+							{% if 'location' in content %}
+							<div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>
+							{{ content['location'] }}
+							</div>
+							{% endif %}
+							<div class="desc">
+							{%- markdown -%}
+							{{ content['description']|safe }}
+							{%- endmarkdown -%}
+							</div>
 							{%- if 'leads' in content and content['leads']|length > 0 %}
 							<div class="profile">
-								<h6 class="mb-1 mt-2"> Tutorial Lead(s)</h4>
+								<h6 class="mb-1 mt-2"> Tutorial Lead(s)</h6>
 									{%- for lead in content['leads'] %}
 									{%- set person = cookiecutter.team['people']|selectattr('title', '==', lead)|list|first %}
 									{%- set modal_name = person['title']|lower|replace(' ', '--') %}
@@ -376,6 +385,14 @@
 									{%- endfor %}
 							</div>
 							{%- endif %}
+							{%- if 'resources' in content and content['resources']|length > 0 %}
+							<div>
+								<h6 class="mb-1 mt-2"> Resource(s)</h6>
+								{%- for resource in content['resources'] %}
+								<a href="{{resource['url']}}" target="_blank">{{resource['title']}}</a>
+								{%- endfor %}
+							</div>
+							{%- endif -%}
 						</div>
 						<!--//content-->
 					</div>
