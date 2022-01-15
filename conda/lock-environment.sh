@@ -3,13 +3,14 @@
 # Execution needs to be from inside the `conda` folder
 
 ENV_FILE="environment.yml"
-LOCK_ENV='CondaLock'
+LOCK_ENV="TMPLOCK"
 
 # Generate CondaLock environment unless present
 conda env list | grep ${LOCK_ENV} > /dev/null
 
 if [[ $? -eq 1 ]]; then
-  conda create -q -y -n ${LOCK_ENV} -c conda-forge conda-lock=0.13 mamba=0.17
+  printf "Creating temporary conda-lock environment \n"
+  conda env create -q -f lock-env.yml
 fi
 
 # https://github.com/conda/conda/issues/7980#issuecomment-492784093
@@ -23,17 +24,21 @@ if [[ ! -s "${ENV_FILE}" ]]; then
 fi
 
 # Local environments
-## Generate explicit lock files (optional -p win-64)
-conda-lock lock --mamba -f ${ENV_FILE} -p linux-64 -p osx-64
+printf "Generate conda environment files \n"
+conda-lock lock --mamba -f ${ENV_FILE}
 
-# BinderHub support
-## Generate environment.yml for binder compatibility
-printf "Generate environment.yml for BinderHub \n"
-conda-lock lock --mamba -f ${ENV_FILE} -p linux-64 -k env
-mv conda-linux-64.lock.yml ../binder/environment.yml
+## Generate explicit lock files
+conda-lock render --mamba --kind explicit
+
+## Generate full conda env files
+conda-lock render --mamba --kind env
+
+## Generate environment.yml for BinderHub compatibility
+cp conda-linux-64.lock.yml ../binder/environment.yml
 
 # Remove CondaLock environment when the last command was successful
 if [[ $? -eq 0 ]]; then
+  printf "Removing temporary conda-lock environment  \n"
   conda deactivate
   conda remove -q -y --name ${LOCK_ENV} --all
 fi

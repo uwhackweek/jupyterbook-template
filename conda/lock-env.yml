@@ -1,0 +1,11 @@
+# This defines a temporary environment needed to create reproducible lock files
+name: TMPLOCK
+channels:
+  - conda-forge
+dependencies:
+  - mamba=0.19
+  - python=3.9
+  - pip=21
+  - poetry=1.1
+  - pip:
+    - git+https://github.com/conda-incubator/conda-lock.git@main
