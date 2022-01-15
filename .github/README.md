@@ -1,10 +1,10 @@
 # eScience Hackweek Jupyterbook Template GitHub Actions
 
-This folder contains continuous integration workflows to perform a variety of tasks such as checking for spelling errors and broken links, ensuring new code and website pages are properly formatted, and publishing the website.
+This folder contains continuous integration workflows to perform a variety of tasks such as checking for spelling errors and broken links, ensuring HTML is generated without errors, and publishing the website.
 
 ## Actions
 
-the `actions/` subfolder contains common [composite actions steps](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) that workflows can use.
+the `actions/` subfolder contains common [composite actions steps](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) that any Workflow can use.
 
 #### [setupconda](./actions/setupconda/action.yaml)
 Steps to configure conda environment required to build the website.
@@ -30,11 +30,10 @@ Bypass usage of the cache to manually trigger a full rebuild of the Jupyterbook
 Creates public preview, via [netlify](https://jupyterbook.org/publish/netlify.html), of changes by building from a PR
 
 #### [qaqc.yaml](./actions/workflows/qaqc.yaml)
-Quality assessment and quality control.
-Standardizes formatting including spell check, hyperlink check, and clearing notebook outputs
+Quality assessment and quality control. Standardizes formatting including spell check, hyperlink check, and clearing notebook outputs
 
 #### [repo2docker.yaml](./actions/workflows/repo2docker.yaml)
-[Build a Docker image](https://github.com/jupyterhub/repo2docker-action) based on binder/ configuration files for JupyterHub/BinderHub
+[Build a Docker image](https://github.com/jupyterhub/repo2docker-action) for JupyterHub/BinderHub
 
 #### [test.yaml](./actions/workflows/repo2docker.yaml)
 Build the websites (JupyterBook and front page). Run on Pull Requests against every commit and via a 'cron' schedule to maintain caching [since otherwise the cache expires if untouched in 7 days](https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows#usage-limits-and-eviction-policy)

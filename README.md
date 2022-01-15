@@ -1,13 +1,11 @@
-# Hackweek Jupyterbook Template Repository
+# Hackweek Jupyterbook Template
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-**THIS IS A [TEMPLATE REPOSITORY](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template )**
+**THIS IS A [TEMPLATE REPOSITORY](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template )** for easily creating a Webpage and [Jupyter-book](https://jupyterbook.org/) of tutorial content for a [UW eScience Hackweek](https://uwhackweek.github.io/hackweeks-as-a-service/intro.html).
 
-To facilitate creating a [Jupyter-book](https://jupyterbook.org/) hosted via GitHub Pages for a UW eScience Hackweek.
-
-For an example of a hackweek jupyterbook website based on this template see https://snowex-hackweek.github.io/website/intro.html 
+For an example of a hackweek jupyterbook website based on this template see https://snowex-hackweek.github.io/website/intro.html
 
 ## Contributors ✨
 
