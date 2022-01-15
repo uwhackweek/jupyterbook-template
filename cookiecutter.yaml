@@ -8,15 +8,19 @@ apply:
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  title: UW Hackweek 2022
+  title: UW Hackweek
   description: An awesome learning event.
-  dates: 12 - 15 Oct
+  start_date: 12 Oct
+  end_date: 15 Oct
+  year: 2022
   location: Seattle, WA
   links:
   - url: '#'
     title: Event details coming soon
+    new_window: true
   - url: intro.html
     title: More info
+    new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
 applicant_info: UW Hackweek 2022 will take place in October 2022 (virtual or in-person
   TBD). Applications have not yet opened, but should be anticipated in September 2022.
@@ -37,3 +41,5 @@ footer:
     link: https://github.com/uwhackweek/
 _copy_without_render:
 - assets
+_extensions:
+- jinja_markdown.MarkdownExtension

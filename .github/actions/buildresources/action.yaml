@@ -14,12 +14,13 @@ inputs:
   token:
     description: 'A GitHub Personal Access Token (for publishing)'
     required: false
+    default: '0'
 
 runs:
   using: "composite"
   steps:
     - name: Setup JupyterBook Cache
-      if: ${{inputs.jb-cache}} == true
+      if: inputs.jb-cache == 'true'
       uses: actions/cache@v2
       with:
         path: ./book/_build
@@ -34,7 +35,7 @@ runs:
         ./scripts/build_resources.sh
 
     - name: Publish to GitHub Pages
-      if: ${{inputs.publish-to-gh}} == true
+      if: inputs.publish-to-gh == 'true'
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{inputs.token}}
@@ -42,7 +43,7 @@ runs:
         publish_branch: gh-pages
 
     - name: Save Build
-      if: ${{inputs.jb-save}} == true}} and ${{ always() }}
+      if: inputs.jb-save == 'true'
       uses: actions/upload-artifact@v2
       with:
         name: build
