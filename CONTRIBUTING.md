@@ -38,7 +38,7 @@ Ready to contribute? Here's a quick guide
 1. Make your desired changes and build the book locally
 
     ```sh
-    jb build book
+    ./scripts/build_resources.sh
     ```
     NOTE: to preview the changes open `book/build/html/index.html`
 
