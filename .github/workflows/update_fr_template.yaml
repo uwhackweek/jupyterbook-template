@@ -1,0 +1,52 @@
+name: Update repo from template
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+env:
+  TEMPLATE_REPO: uwhackweek/jupyterbook-template 
+  PYTHON_VERSION: 3.10
+
+jobs:
+  template-update:
+    name: Template Update
+    runs-on: ubuntu-20.04
+    if: github.repository != ${{ env.TEMPLATE_REPO}}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup python
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Setup Conda
+        uses: ./.github/actions/setupconda
+      - name: Install nodejs
+        shell: bash -l {0}
+        run: |
+          conda install --yes nodejs
+      - name: Install update-template
+        shell: bash -l {0}
+        run: |
+          which npm
+          npm install -g update-template
+      - name: Run update template
+        shell: bash -l {0}
+        run: |
+          which npx
+          npx update-template https://github.com/${{ env.TEMPLATE_REPO }}
+      - name: Commit changes
+        id: auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updating repository from template
+      - name: "Run if changes have been detected"
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        run: echo "Changes were detected!"
+      - name: "Run if no changes have been detected"
+        if: steps.auto-commit-action.outputs.changes_detected == 'false'
+        run: echo "No changes detected!"
