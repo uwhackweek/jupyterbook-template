@@ -6,9 +6,9 @@
 **THIS IS A [TEMPLATE REPOSITORY](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template )** designed to streamline creating two linked websites for a [UW eScience Hackweek](https://uwhackweek.github.io/hackweeks-as-a-service/intro.html):
 
 1. An event landing page built on a [Tech Conference Theme](https://themes.3rdwavemedia.com/demo/bs5/devconf/)
-1. A [Jupyter Book](https://jupyterbook.org/) for tutorial content
+1. A [JupyterBook](https://jupyterbook.org/) for event content (including tutorials)
 
-We've found that every hackweek benefits from a single-page website to get people's attention and consolidate important logistical details such as the 'who','what','why','when' of an event. In addition, Jupyter Book provides a convenient means to consolidate and present tutorials with dynamic content such as executable code and dynamic figures.
+We've found that every hackweek benefits from a single-page website to get people's attention and consolidate important logistical details such as the 'who','what','why','when' of an event. In addition, JupyterBook provides a convenient means to consolidate and present tutorials with dynamic content such as executable code and dynamic figures.
 
 ## Examples
 
@@ -24,10 +24,10 @@ You can use this template for your own event!
 1. Click the "Use this template" button at the top of the repo
 1. Select the account where you'd like to use the template.
 1. **Be sure to select the checkbox to include all branches!** Otherwise your book will not be rendered automatically. You can remove all branches except for `main` and `gh-pages` from your new repo.
-1. In your new repo, go to Settings > Pages to find the link to your Jupyter Book. We recommend adding this link to the home page.
+1. In your new repo, go to Settings > Pages to find the link to your JupyterBook. We recommend adding this link to the home page.
 1. There are a few files you'll need to edit to customize content for your event:
   * `cookiecutter.yaml`:  customize your landing page content
-  * `book/_config.yml`:  customize your Jupyter Book content
+  * `book/_config.yml`:  customize your JupyterBook content
   * `README.md`:  a basic description of your project
   * `CITATION.cff`:  add a standard citation file with all the event organizers
 

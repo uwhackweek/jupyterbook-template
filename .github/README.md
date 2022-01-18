@@ -21,10 +21,10 @@ The `workflows/` subfolder contains continuous integration workflows
 Create [binder](https://mybinder.readthedocs.io/en/latest/howto/gh-actions-badges.html) badges with links to test tutorial notebooks
 
 #### [deploy.yaml](./actions/workflows/deploy.yaml)
-Render and publish the website to GitHub Pages
+Render and publish the websites (JupyterBook and landing page) to GitHub Pages
 
 #### [manual.yaml](./actions/workflows/manual.yaml)
-Bypass usage of the cache to manually trigger a full rebuild of the Jupyterbook
+Bypass usage of the cache to manually trigger a full rebuild of the JupyterBook and landing page
 
 #### [netlifypreview.yaml](./actions/workflows/netlifypreview.yaml)
 Creates public preview, via [netlify](https://jupyterbook.org/publish/netlify.html), of changes by building from a PR
