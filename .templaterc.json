@@ -3,10 +3,6 @@
         ".github/*",
         "book/img/*",
         "book/preliminary/*",
-        "book/img/*",
-        "book/img/*",
-        "book/projects/example_workflow.md",
-        "book/projects/index.md",
         "book/projects/project_initialization.md",
         "book/projects/project_roadmap.md",
         "book/projects/project_roles.md",
@@ -15,9 +11,10 @@
         "book/_toc.md",
         "book/intro.md",
         "book/mission.md",
-        "conda/environment.yml",
         "scripts/*",
-        "{{ cookiecutter.repo_directory }}",
-        "CHANGELOG.md"
+        "{{ cookiecutter.repo_directory }}/*",
+        "CHANGELOG.md",
+        "LICENSE.md",
+        "README.md"
     ]
 }
