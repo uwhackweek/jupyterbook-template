@@ -1,6 +1,8 @@
 {
     "files": [
+        ".editorconfig",
         ".github/*",
+        ".gitignore",
         "book/img/*",
         "book/preliminary/*",
         "book/projects/project_initialization.md",
