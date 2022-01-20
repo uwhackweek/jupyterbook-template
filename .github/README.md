@@ -4,7 +4,7 @@ This folder contains continuous integration workflows to perform a variety of ta
 
 ## Actions
 
-the `actions/` subfolder contains common [composite actions steps](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) that any Workflow can use.
+the `actions/` subfolder contains common [composite actions steps](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) that any workflow can use.
 
 #### [setupconda](./actions/setupconda/action.yaml)
 Steps to configure conda environment required to build the website.
@@ -41,21 +41,4 @@ Build the websites (JupyterBook and front page). Run on Pull Requests against ev
 
 ## Security
 
-It's desirable for hackweek websites to have contributions from anyone, so the website repository should allow for changes via pull requests from forks. By default workflows running off forked repositories do not have access to secrets, but [following security best practices](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/) you can require adding a label to a pull request in order to run a workflow that requires secrets. We do this in [netlifypreview.yaml](./actions/workflows/netlifypreview.yaml):
-
-```yaml
-on:
-  pull_request_target:
-    types: [labeled]
-
-jobs:
-  add-preview:
-    runs-on: ubuntu-20.04
-    if: contains(github.event.pull_request.labels.*.name, 'preview')
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        ref: ${{ github.event.pull_request.head.sha }}
-```
+It's desirable for hackweek websites to have contributions from anyone, so the website repository should allow for changes via pull requests from forks. By default workflows running off forked repositories do not have access to secrets, but [following security best practices](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/) you can require adding a label to a pull request in order to run a workflow that requires secrets. For an example, see the [netlifypreview.yaml](./actions/workflows/netlifypreview.yaml) workflow.
