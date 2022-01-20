@@ -1,20 +1,46 @@
-# Hackweek Jupyterbook Template Repository
+# Hackweek Website Template
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-**THIS IS A [TEMPLATE REPOSITORY](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template )**
+**THIS IS A [TEMPLATE REPOSITORY](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template )** designed to streamline creating two linked websites for a [UW eScience Hackweek](https://uwhackweek.github.io/hackweeks-as-a-service/intro.html):
 
-To facilitate creating a [Jupyter-book](https://jupyterbook.org/) hosted via GitHub Pages for a UW eScience Hackweek.
+1. An event landing page built on a [Tech Conference Theme](https://themes.3rdwavemedia.com/demo/bs5/devconf/)
+1. A [JupyterBook](https://jupyterbook.org/) for event content (including tutorials)
 
-For an example of a hackweek jupyterbook website based on this template see https://snowex-hackweek.github.io/website/intro.html 
+We've found that every hackweek benefits from a single-page website to get people's attention and consolidate important logistical details such as the 'who','what','why','when' of an event. In addition, JupyterBook provides a convenient means to consolidate and present tutorials with dynamic content such as executable code and dynamic figures.
 
-### To Use this Template
+## Examples
+
+We've used this template for the following events:
+
+* SnowEx Hackweek 2021: https://snowex-hackweek.github.io/website/intro.html
+
+
+## How to use this template
+
+You can use this template for your own event!
+
 1. Click the "Use this template" button at the top of the repo
 1. Select the account where you'd like to use the template.
 1. **Be sure to select the checkbox to include all branches!** Otherwise your book will not be rendered automatically. You can remove all branches except for `main` and `gh-pages` from your new repo.
 1. In your new repo, go to Settings > Pages to find the link to your JupyterBook. We recommend adding this link to the home page.
-1. Starting with `book/_config.yml`, begin customizing your content!
+1. There are a few files you'll need to edit to customize content for your event:
+  * `cookiecutter.yaml`:  customize your landing page content
+  * `book/_config.yml`:  customize your JupyterBook content
+  * `README.md`:  a basic description of your project
+  * `CITATION.cff`:  add a standard citation file with all the event organizers
+
+
+## Design
+
+We've designed this template so that you should only have to edit a few files with intuitive syntax. When changes are pushed to GitHub, [continuous integration](./.github/README.md) takes care of converting these files into HTML and publishing the website.
+
+
+## How to contribute
+
+We are always trying to improve upon this template for future events and welcome contributions. Have a look at our [code of conduct](./CODE_OF_CONDUCT.md) and [contributing guide](./CONTRIBUTING.md).
+
 
 ## Contributors ✨
 

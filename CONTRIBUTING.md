@@ -23,7 +23,7 @@ Ready to contribute? Here's a quick guide
     git checkout -b name-of-your-bugfix-or-feature
     ```
 
-1. Create and activate the "hackweek" conda environment. 
+1. Create and activate the "hackweek" conda environment.
 
    __NOTE__: If you're running linux or Windows use `conda/conda-linux-64.lock`
 
@@ -32,13 +32,13 @@ Ready to contribute? Here's a quick guide
     conda activate hackweek
     ```
     __NOTE__: If you want to add packages or change the environment,
-    first edit `environment.yml` in the 'conda' folder, and then generate 
+    first edit `environment.yml` in the 'conda' folder, and then generate
     updated `.lock` files by executing `lock-environment.sh`.
 
 1. Make your desired changes and build the book locally
 
     ```sh
-    jb build book
+    ./scripts/build_resources.sh
     ```
     NOTE: to preview the changes open `book/build/html/index.html`
 
@@ -51,3 +51,8 @@ Ready to contribute? Here's a quick guide
     ```
 
 1. Open a pull request through the GitHub website: {{website_url}}
+
+
+## Releasing new versions
+
+Before using this template for events, make a git tag and GitHub Release. We follow a [calendar versioning scheme](https://calver.org), so tags are a date like `2021.05.05`. Don't forget to update the [Changelog](./CHANGELOG.md)!
