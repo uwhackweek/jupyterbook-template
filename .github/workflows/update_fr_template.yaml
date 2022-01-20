@@ -39,15 +39,10 @@ jobs:
         run: |
           which npx
           npx update-template https://github.com/${{ env.TEMPLATE_REPO }}
-      - name: Commit changes
-        id: auto-commit-action
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit changes and Open PR
+        uses: peter-evans/create-pull-request@v3
         with:
           commit_message: Updating repository from template
+          title: apply template updates
           branch: template-updates
-      - name: "Run if changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'true'
-        run: echo "Changes were detected!"
-      - name: "Run if no changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'false'
-        run: echo "No changes detected!"
+          base: main
