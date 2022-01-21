@@ -17,7 +17,7 @@ Steps to build the hackweek landing webpage and JupyterBook.
 
 The `workflows/` subfolder contains continuous integration workflows
 
-#### [binder-badge.yml](./actions/workflows/binder-badge.yaml)
+#### [binder-badge.yaml](./actions/workflows/binder-badge.yaml)
 Create [binder](https://mybinder.readthedocs.io/en/latest/howto/gh-actions-badges.html) badges with links to test tutorial notebooks
 
 #### [deploy.yaml](./actions/workflows/deploy.yaml)
@@ -35,9 +35,11 @@ Quality assessment and quality control. Standardizes formatting including spell 
 #### [repo2docker.yaml](./actions/workflows/repo2docker.yaml)
 [Build a Docker image](https://github.com/jupyterhub/repo2docker-action) for JupyterHub/BinderHub
 
-#### [test.yaml](./actions/workflows/repo2docker.yaml)
+#### [test.yaml](./actions/workflows/test.yaml)
 Build the websites (JupyterBook and front page). Run on Pull Requests against every commit and via a 'cron' schedule to maintain caching [since otherwise the cache expires if untouched in 7 days](https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows#usage-limits-and-eviction-policy)
 
+#### [update_fr_template.yaml](./actions/workflows/update_fr_template.yaml)
+Update the current repo from the original template (`uwhackweek/jupyterbook-template`). Run manually to collect any updates made to template files listed in `.templaterc.json`, commit them to a new branch, and submit a PR the repo created from the template.
 
 ## Security
 
