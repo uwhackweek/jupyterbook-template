@@ -38,10 +38,7 @@ do with the {{hackweek}} organization repository. A fork is also a first common 
 to contribute to open-source projects and further described in the
 [Pro Git book](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
 
-To make a fork of the website, go to the
-[GitHub repository]({{website_url}})
-and hit the 'Fork' button in the top right corner. In the follow-up dialog,
-choose your user account as the destination
+To make a fork of the website, go to the {{ '[GitHub repository]({url})'.format(url=website_url) }} and hit the 'Fork' button in the top right corner. In the follow-up dialog, choose your user account as the destination
 
 ![github-fork](../img/github-fork.png)
 

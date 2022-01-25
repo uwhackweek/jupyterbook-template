@@ -32,7 +32,7 @@ Visit our [GitHub instruction page](github) to learn how!
 ### Slack Account
 
 All of our communication throughout the hackweek will be done using the
-{{ "[{{hackweek}} Slack workspace]({url})".format(url=slack_workspace_url) }}.
+{{ '[`{hackweek}` Slack workspace]({url})'.format(hackweek=hackweek, url=slack_workspace_url)}}.
 With your invite to the hackweek, you should also have received a separate
 email to join the Slack workspace. Upon accepting the invite, please take a moment to
 [complete your Slack profile](https://slack.com/help/articles/204092246-Edit-your-profile).
