@@ -28,7 +28,7 @@ parts:
     - file: tutorials/index
       sections:
         - file: tutorials/jupyter
-        - file: tutorials/example/intro-ipyleaflet
+        - file: tutorials/example/tutorial-notebook
 - caption: Projects
   chapters:
     - file: projects/index

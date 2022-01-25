@@ -2,10 +2,10 @@
 
 We welcome all types of learners to our event, from professional software developers to people just getting started. Based on previous experience, participants gain more from our hackweeks when they arrive having a preliminary understand of some of the foundational tools of data science workflows. These skills include knowing how to:
 
-* navigate a [Jupyter Notebook](https://jupyter.org/) environment
-* conduct file management, text editing and other basic tasks from a command line interface
-* add and commit changes in Git, and push and pull content from GitHub
-* create simple scientific workflows in Python
+* Navigate a [Jupyter Notebook](https://jupyter.org/) environment
+* Conduct file management, text editing and other basic tasks from a command line interface
+* Add and commit changes in Git, and push and pull content from GitHub
+* Create simple scientific workflows in Python
 
 ## {{hackweek}} Software Carpentry Session
 

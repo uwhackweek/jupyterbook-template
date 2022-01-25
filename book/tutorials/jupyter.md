@@ -1,12 +1,12 @@
 # GitHub, Git, JupyterHub
 
 ```{admonition} Learning Objectives
-- use `git` to create copies of hackweek repositories on GitHub for modification
-- navigate the JupyterLab interface for writing and executing code
+- Use `git` to create copies of hackweek repositories on GitHub for modification
+- Navigate the JupyterLab interface for writing and executing code
 ```
 
-```{note}
-Before we go over this tutorial we expect that you have already gone through these preparation materials on your one:
+```{important}
+Before we go over this tutorial we expect that you have already gone through these preparation materials:
 - [JupyterHub login setup](../preliminary/jupyterhub)
 - [First time `git` setup](../preliminary/git)
 ```
