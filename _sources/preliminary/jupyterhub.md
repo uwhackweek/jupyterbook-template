@@ -3,16 +3,11 @@
 (event-jupyterhub)=
 ## Why are we using a shared cloud environment?
 
-Our hackweek tutorials are designed with executable code examples, which require
-certain combinations of Python software packages to run. Configuring reproducible
-software environments for all participants, each with different computers and
-operating systems, can be challenging. Our solution to this is to give
-everyone access to a cloud computing environment that can be accessed from any
-web browser, which eliminates the need for configuring each person's computer.
+We use {term}`JupyterHub` in an educational setting because it enables us to quickly begin working with code. Each participant connects to a computational environment hosted in the cloud. All that is required is a web browser, and a GitHub username for authentication:
 
-We will encourage you to use our shared resources for all the tutorials, and you
-can optionally use this for your projects as well.
+![jupyterhub-connectivity](../img/jupyterhub-connectivity.png)
 
+We encourage you to use these shared cloud environments for all the tutorials, and you can optionally use this for your projects as well.
 
 (accessing-jupyterhub)=
 ## How do I access the shared cloud environment?
