@@ -7,18 +7,11 @@ description:
 people:
 - title: Anthony Arendt
   avatar: https://avatars.githubusercontent.com/u/4993098?v=4?s=100
-  role: Principal Research Scientist
+  role: Senior Data Science Fellow
   organizations:
   - name: eScience Institute
-  - name: APL
-  bio: Bacon ipsum dolor amet turkey corned beef tenderloin frankfurter, short ribs
-    burgdoggen t-bone pork loin kevin porchetta. Fatback jerky biltong short ribs
-    capicola chicken shankle porchetta pastrami. Bacon beef ribs short loin turkey
-    kielbasa t-bone chuck boudin ham corned beef hamburger pastrami tail meatloaf.
-    Short ribs landjaeger frankfurter hamburger, kevin pig rump short loin alcatra.
-    Pastrami corned beef tongue biltong brisket cow drumstick frankfurter. Boudin
-    bresaola bacon, pig brisket jowl picanha frankfurter spare ribs shank pork burgdoggen.
-  expertise: [Hackweeks, Glaciers, Python]
+  bio: Anthony is leading the eScience Institute's Hackweek-as-a-Service program. He is an advocate for open, inclusive and collaborative science. He has experience teaching GIS and has been the lead organizer for multiple earth-science themed hackweeks. His background is in cryospheric science and remote sensing.
+  expertise: [Hackweeks, Community Building, Glaciers, Python]
   social:
   - icon: github
     icon_pack: fab
@@ -117,7 +110,7 @@ people:
   - name: University of Washington
   bio: I am a Research Software Engineer at the University of Washington with a
     strong focus in designing, developing, and maintaining scientific data analysis
-    systems. I am a contributor to various open source software. I learning new
+    systems. I am a contributor to various open source software. I enjoy learning new
     technologies and apply them in my work.
   expertise:
   - Geospatial Information Systems (GIS)
