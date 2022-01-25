@@ -5,13 +5,13 @@ format: jb-book
 parts:
 - caption: Details
   chapters:
-  - file: application
-  - title: Schedule
-    url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
-  - title: Team
-    url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=team
-  - file: mission
-  - file: CoC
+    - file: application
+    - title: Schedule
+      url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
+    - title: Team
+      url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=team
+    - file: mission
+    - file: CoC
 - caption: Preparation
   chapters:
     - file: preliminary/index
@@ -27,9 +27,7 @@ parts:
     - file: tutorials/index
       sections:
         - file: tutorials/jupyter
-        - file: tutorials/open_science
-        - file: tutorials/open_source_software
-        - file: tutorials/example/intro-ipyleaflet
+        - file: tutorials/example/tutorial-notebook
 - caption: Projects
   chapters:
     - file: projects/index
@@ -40,5 +38,7 @@ parts:
         - file: projects/list_of_projects
 - caption: Reference
   chapters:
-    - file: glossary
-    - file: bibliography
+    - file: reference/glossary
+    - file: reference/bibliography
+    - file: reference/open_science
+    - file: reference/open_source_software

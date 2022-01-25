@@ -28,9 +28,9 @@ Harassment includes, but is not limited to:
 We expect participants and instructors to act in ways that foster a supportive and welcoming [learning community](mission) at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.
 
 ## Reporting a violation
-Harassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. 
+Harassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible.
 
-If you feel comfortable contacting someone associated with our event, you may speak with one of the event organizers in person, send an e-mail to {{ '[{email}](mailto:{email})'.format(email=contact_email) }}, or contact an organizer on a private Slack channel. **You may also submit an anonymous comment to our [virtual comment box]({{anon_reporting_url}}).**
+If you feel comfortable contacting someone associated with our event, you may speak with one of the event organizers in person, send an e-mail to {{ '[`{email}`](mailto:{email})'.format(email=contact_email) }}, or contact an organizer on a private Slack channel. You may also submit an anonymous comment to our {{ '[virtual comment box]({url})'.format(url=anon_reporting_url) }}.
 
 If you have experienced or observed harassment, unethical or unprofessional behavior as described above (a violation of this code of conduct) and want to talk to someone not directly associated with our event about it, choose from these specialists below:
 

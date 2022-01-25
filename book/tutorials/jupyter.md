@@ -1,8 +1,15 @@
 # GitHub, Git, JupyterHub
 
-## [JupyterHub login setup](../preliminary/jupyterhub)
+```{admonition} Learning Objectives
+- Use `git` to create copies of hackweek repositories on GitHub for modification
+- Navigate the JupyterLab interface for writing and executing code
+```
 
-## [First time `git` setup](../preliminary/git)
+```{important}
+Before we go over this tutorial we expect that you have already gone through these preparation materials:
+- [JupyterHub login setup](../preliminary/jupyterhub)
+- [First time `git` setup](../preliminary/git)
+```
 
 ## Git review
 
@@ -12,9 +19,9 @@ during this event. A good summary is [this cheatsheet from GitHub](https://train
 These are a few commands we will use throughout the week:
 | Git command | What it does |
 |---|---|
-|`git add` | Adds a new, previously untracked file to version control and marks already tracked files to be committed with the next `commit' |
-|`git commit` | Saves the current state of the repository and creates an entry in the log |
-|`git log` | Shows the history for the repository |
+| `git add` | Adds a new, previously untracked file to version control and marks already tracked files to be committed with the next `commit' |
+| `git commit` | Saves the current state of the repository and creates an entry in the log |
+| `git log` | Shows the history for the repository |
 | `git clone` | Copies a repository to your local environment, including all the history |
 | `git pull` | Gets the latest changes of a previously cloned repository |
 | `git push` | Pushes your local changes to the remote repository, sharing them with others |
@@ -31,15 +38,16 @@ do with the {{hackweek}} organization repository. A fork is also a first common 
 to contribute to open-source projects and further described in the
 [Pro Git book](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
 
-To make a fork of the website, go to the
-[GitHub repository]({{website_url}})
-and hit the 'Fork' button in the top right corner. In the follow-up dialog,
-choose your user account as the destination
+To make a fork of the website, go to the {{ '[GitHub repository]({url})'.format(url=website_url) }} and hit the 'Fork' button in the top right corner. In the follow-up dialog, choose your user account as the destination
 
 ![github-fork](../img/github-fork.png)
 
 Next steps are the same as described in the follow section on how to get code
 copied to the JupyterHub.
+
+```{note}
+Remember that `JupyterHub` refers to the servers hosting our computing environment, and `JupyterLab` is the web-based user interface that we interact with.
+```
 
 ## How do I get code from GitHub to the JupyterHub?
 
@@ -76,8 +84,8 @@ state of the repository including the complete history.
    in step 1.
 
     ```{admonition} A note about cutting and pasting
-    Pasting something from your clipboard into the JupyterLab terminal can require holding 
-    down the "shift" key and right-clicking.  This is different from the usual Linux 
+    Pasting something from your clipboard into the JupyterLab terminal can require holding
+    down the "shift" key and right-clicking.  This is different from the usual Linux
     method that only requires a right click.
     ```
 
@@ -86,7 +94,7 @@ state of the repository including the complete history.
       This should be replaced with your GitHub username.
       <br/><br/>
       This step will also create a folder in the current location of your
-      terminal. The folder will be called `website`, which originates from the 
+      terminal. The folder will be called `website`, which originates from the
       name of the repository.
    ```
 
@@ -132,11 +140,11 @@ repository.
 ```{admonition} For advanced users: Using a branch for personal changes
 While it is not required to create a [branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)
 for your personal annotations, it is a common practice to do so when making changes
-to a repository. 
+to a repository.
 
-Think of the `main` branch as the tried and tested version of a repository and 
+Think of the `main` branch as the tried and tested version of a repository and
 a new branch from that is used to introduce a change that can slowly progress.
-Once ready, it will be merged to the `main` branch. 
+Once ready, it will be merged to the `main` branch.
 
 The chapter of [contributing to a project](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)
 describes more behind this principle.
@@ -168,7 +176,7 @@ A remote is defined with a label and a URL. In our case and command below,
 we are using `{{hackweek}}` as the label and `{{website_url}}.git`
 as the URL.
 
-```{Note} 
+```{Note}
 The chosen label `{{hackweek}}` is found in many projects as the `upstream`. Here we
 just went with a more descriptive label instead of the default value.
 ```
@@ -180,7 +188,7 @@ cd website
 git remote add {{hackweek}} {{website_url}}.git
 ```
 
-The command will not return any output. Instead, we verify by printing the 
+The command will not return any output. Instead, we verify by printing the
 list of known remotes for this repository:
 
 ```{attention}
@@ -229,7 +237,7 @@ git pull {{hackweek}} main
 ```
 
 ```{note}
-For more information about branches, see the 
+For more information about branches, see the
 [Pro Git book chapter](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 ```
 
@@ -253,7 +261,7 @@ next day.
 
 The user space has a total limit of 10 GB, which is a {{hackweek}} JupyterHub set limit.
 You can use `/tmp` for temporary large files and they **are not** persistet after
-logout. 
+logout.
 
 We also have an Amazon S3 bucket for larger files you need for your projects.
 Ping us on Slack for details on how to get your files onto there.
@@ -264,3 +272,14 @@ user interface in the browser. Below screenshot shows the location of the upload
 button (purple highlighted box), which will open a dialog in your browser.
 
 ![upload-file](../img/jupyterhub-upload.png)
+
+## Summary
+
+Congratulations! That's the end of our "GitHub, Git, JupyterHub" tutorial. You now are equipped with basic `git` commands and have familiarity with the JupyterHub computing environment.
+
+## References
+
+If you want to learn more about these topics, check out the following references:
+
+* [GitHub Official Documentation](https://docs.github.com)
+* [JupyterLab Official Documentation](https://jupyterlab.readthedocs.io/en/stable/)
