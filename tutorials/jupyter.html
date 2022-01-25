@@ -54,7 +54,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Open Science" href="open_science.html" />
+    <link rel="next" title="Example tutorial notebook" href="example/tutorial-notebook.html" />
     <link rel="prev" title="Tutorials" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -202,18 +202,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="open_science.html">
-     Open Science
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="open_source_software.html">
-     Open source software
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="example/intro-ipyleaflet.html">
-     An introduction to rasters
+    <a class="reference internal" href="example/tutorial-notebook.html">
+     Example tutorial notebook
     </a>
    </li>
   </ul>
@@ -265,13 +255,23 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../glossary.html">
+  <a class="reference internal" href="../reference/glossary.html">
    Glossaries
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../bibliography.html">
+  <a class="reference internal" href="../reference/bibliography.html">
    Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/open_science.html">
+   Open Science
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/open_source_software.html">
+   Open source software
   </a>
  </li>
 </ul>
@@ -364,26 +364,6 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyterhub-login-setup">
-   <span class="xref myst">
-    JupyterHub login setup
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#first-time-git-setup">
-   <span class="xref myst">
-    First time
-    <code class="docutils literal notranslate">
-     <span class="pre">
-      git
-     </span>
-    </code>
-    setup
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#git-review">
    Git review
   </a>
@@ -430,6 +410,16 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-can-i-upload-a-file-to-the-jupyterhub">
    How can I upload a file to the JupyterHub?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
   </a>
  </li>
 </ul>
@@ -453,26 +443,6 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyterhub-login-setup">
-   <span class="xref myst">
-    JupyterHub login setup
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#first-time-git-setup">
-   <span class="xref myst">
-    First time
-    <code class="docutils literal notranslate">
-     <span class="pre">
-      git
-     </span>
-    </code>
-    setup
-   </span>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#git-review">
    Git review
   </a>
@@ -521,6 +491,16 @@
    How can I upload a file to the JupyterHub?
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -532,11 +512,20 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="github-git-jupyterhub">
 <h1>GitHub, Git, JupyterHub<a class="headerlink" href="#github-git-jupyterhub" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="jupyterhub-login-setup">
-<h2><a class="reference internal" href="../preliminary/jupyterhub.html"><span class="doc std std-doc">JupyterHub login setup</span></a><a class="headerlink" href="#jupyterhub-login-setup" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">Learning Objectives</p>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">git</span></code> to create copies of hackweek repositories on GitHub for modification</p></li>
+<li><p>Navigate the JupyterLab interface for writing and executing code</p></li>
+</ul>
 </div>
-<div class="section" id="first-time-git-setup">
-<h2><a class="reference internal" href="../preliminary/git.html"><span class="doc std std-doc">First time <code class="docutils literal notranslate"><span class="pre">git</span></code> setup</span></a><a class="headerlink" href="#first-time-git-setup" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Before we go over this tutorial we expect that you have already gone through these preparation materials:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../preliminary/jupyterhub.html"><span class="doc std std-doc">JupyterHub login setup</span></a></p></li>
+<li><p><a class="reference internal" href="../preliminary/git.html"><span class="doc std std-doc">First time <code class="docutils literal notranslate"><span class="pre">git</span></code> setup</span></a></p></li>
+</ul>
 </div>
 <div class="section" id="git-review">
 <h2>Git review<a class="headerlink" href="#git-review" title="Permalink to this headline">¶</a></h2>
@@ -582,13 +571,14 @@ This also enables you to write to that repository, which in contrast you can not
 do with the uwhackweek organization repository. A fork is also a first common step
 to contribute to open-source projects and further described in the
 <a class="reference external" href="http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project">Pro Git book</a>.</p>
-<p>To make a fork of the website, go to the
-<span class="xref myst">GitHub repository</span>
-and hit the ‘Fork’ button in the top right corner. In the follow-up dialog,
-choose your user account as the destination</p>
+<p>To make a fork of the website, go to the <a class="reference external" href="https://uwhackweek.github.io/jupyterbook-template">GitHub repository</a> and hit the ‘Fork’ button in the top right corner. In the follow-up dialog, choose your user account as the destination</p>
 <p><img alt="github-fork" src="../_images/github-fork.png" /></p>
 <p>Next steps are the same as described in the follow section on how to get code
 copied to the JupyterHub.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember that <code class="docutils literal notranslate"><span class="pre">JupyterHub</span></code> refers to the servers hosting our computing environment, and <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> is the web-based user interface that we interact with.</p>
+</div>
 </div>
 <div class="section" id="how-do-i-get-code-from-github-to-the-jupyterhub">
 <h2>How do I get code from GitHub to the JupyterHub?<a class="headerlink" href="#how-do-i-get-code-from-github-to-the-jupyterhub" title="Permalink to this headline">¶</a></h2>
@@ -790,6 +780,18 @@ user interface in the browser. Below screenshot shows the location of the upload
 button (purple highlighted box), which will open a dialog in your browser.</p>
 <p><img alt="upload-file" src="../_images/jupyterhub-upload.png" /></p>
 </div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>Congratulations! That’s the end of our “GitHub, Git, JupyterHub” tutorial. You now are equipped with basic <code class="docutils literal notranslate"><span class="pre">git</span></code> commands and have familiarity with the JupyterHub computing environment.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>If you want to learn more about these topics, check out the following references:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com">GitHub Official Documentation</a></p></li>
+<li><p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab Official Documentation</a></p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -824,10 +826,10 @@ button (purple highlighted box), which will open a dialog in your browser.</p>
             <p class="prev-next-title">Tutorials</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="open_science.html" title="next page">
+    <a class='right-next' id="next-link" href="example/tutorial-notebook.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Open Science</p>
+        <p class="prev-next-title">Example tutorial notebook</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -202,18 +202,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="open_science.html">
-     Open Science
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="open_source_software.html">
-     Open source software
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="example/intro-ipyleaflet.html">
-     An introduction to rasters
+    <a class="reference internal" href="example/tutorial-notebook.html">
+     Example tutorial notebook
     </a>
    </li>
   </ul>
@@ -265,13 +255,23 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../glossary.html">
+  <a class="reference internal" href="../reference/glossary.html">
    Glossaries
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../bibliography.html">
+  <a class="reference internal" href="../reference/bibliography.html">
    Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/open_science.html">
+   Open Science
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/open_source_software.html">
+   Open source software
   </a>
  </li>
 </ul>
@@ -358,29 +358,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#organization">
-   Organization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#suggestions-for-tutorial-development">
-   Suggestions for tutorial development
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#listing-of-tutorials-during-the-event">
-   Listing of tutorials during the event
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -393,29 +370,6 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#organization">
-   Organization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#suggestions-for-tutorial-development">
-   Suggestions for tutorial development
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#listing-of-tutorials-during-the-event">
-   Listing of tutorials during the event
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -424,23 +378,6 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="tutorials">
 <h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="organization">
-<h2>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h2>
-<p>Each tutorial is a collection of jupyterbooks and files in its own subfolder under tutorials.
-For example in this template we have the <code class="docutils literal notranslate"><span class="pre">tutorials/example/intro-ipyleaflet.ipynb</span></code>.
-New tutorials need to be listed explicitly in the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file to show up in the rendered documentation.</p>
-</div>
-<div class="section" id="suggestions-for-tutorial-development">
-<h2>Suggestions for tutorial development<a class="headerlink" href="#suggestions-for-tutorial-development" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Use small example datasets, or have notebooks start by loading source data from the data provider. This captures the full workflow from data acquisition to final analysis.</p></li>
-<li><p>Increasingly there are ways to access data remotely in a streaming fashion so that you don’t have to download lots of files at all! This is a good option as well to facilitate data management and portability of your tutorial to run on different machines (hackweek jupyterhub, your personal computer, the computers of collaborators, some temporary server on the Cloud like <a class="reference external" href="http://mybinder.org">mybinder.org</a>, etc…)</p></li>
-<li><p>When adding new notebooks be sure to “Clear all Outputs” before saving. This keeps the book source code small, but outputs are still built for the HTML webpage by Jupyter Book.</p></li>
-<li><p>Make tutorials interactive, by incorporating exercises, quizzes, and practice the timing to make sure you can get through the content in the allotted time.</p></li>
-</ol>
-</div>
-<div class="section" id="listing-of-tutorials-during-the-event">
-<h2>Listing of tutorials during the event<a class="headerlink" href="#listing-of-tutorials-during-the-event" title="Permalink to this headline">¶</a></h2>
 <p>These tutorials consist of Jupyter Notebooks that can be run in our
 <a class="reference external" href="https://github.com/uwhackweek">preconfigured software environment</a>
 If you are attending the hackweek, you have access to a JupyterHub environment
@@ -448,9 +385,6 @@ with all the necessary Python software packages installed that are needed to run
 through these tutorials interactively. On JupyterHub, your home directory persists
 so any changes you make to the tutorials will be saved and be there for you next
 time you log in.</p>
-<p><a class="reference external" href="https://snowex.hackweek.io"><img alt="badge" src="https://img.shields.io/static/v1.svg?logo=Jupyter&amp;label=Launch&amp;message=SnowExJupyterHub&amp;color=orange" /></a></p>
-<p>Anyone can run these tutorials interactively on a temporary server via <a class="reference external" href="https://mybinder.org">MyBinder.org</a>, but notebooks requiring authenticated data access will run into errors:</p>
-<p><a class="reference external" href="https://gke.mybinder.org/v2/gh/snowex-hackweek/website/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fsnowex-hackweek%252Fwebsite%26urlpath%3Dlab%252Ftree%252Fwebsite/book/tutorials%252F%26branch%3Dmain"><img alt="badge" src="https://img.shields.io/static/v1.svg?logo=Jupyter&amp;label=MyBinder.org&amp;message=gcp-central&amp;color=blue" /></a></p>
 <p>All live tutorial recordings available via UW eScience <a class="reference external" href="https://www.youtube.com/playlist?list=PLA6PlfxWZPLSTUaS0uR8FMcNC2wqztwjJ">YouTube Playlist</a>. Or see the table below for links to specific tutorial notebooks and recordings:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -466,14 +400,13 @@ time you log in.</p>
 <td><p>n/a</p></td>
 <td><p><a class="reference external" href="https://youtu.be/rKhs5FLI5rc">Recording</a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="open_science.html"><span class="doc std std-doc">Open Science</span></a></p></td>
-<td><p>resources, open source software</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="example/tutorial-notebook.html"><span class="doc std std-doc">Example Notebook</span></a></p></td>
+<td><p>Jupyter Book formatting, ipyleaflet</p></td>
 <td><p>n/a</p></td>
-<td><p><a class="reference external" href="https://youtu.be/CRkP70ouDsA">Recording</a></p></td>
+<td><p>Not recorded</p></td>
 </tr>
 </tbody>
 </table>
-</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
