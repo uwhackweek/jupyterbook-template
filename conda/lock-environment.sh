@@ -2,7 +2,9 @@
 # This script will re-generate reproducible lockfiles
 # Execution needs to be from inside the `conda` folder
 
-ENV_FILE="environment.yml"
+TUT_ENV_FILE="environment.yml"
+TEMP_ENV_FILE="template_environment.yml"
+declare -a ENV_FILES=($TEMP_ENV_FILE $TUT_ENV_FILE)
 LOCK_ENV='CondaLock'
 
 # Generate CondaLock environment unless present
@@ -16,20 +18,27 @@ fi
 eval "$(conda shell.bash hook)"
 conda activate ${LOCK_ENV}
 
-if [[ ! -s "${ENV_FILE}" ]]; then
-    >&2 printf " Missing ${ENV_FILE} to generate environments with\n"
+if [[ ! -s "${TEMP_ENV_FILE}" ]]; then
+    >&2 printf " Missing ${TEMP_ENV_FILE} to generate environments with\n"
     >&2 printf " Are you inside the 'conda' folder?\n"
     exit 1
 fi
 
+LoopEnvFiles(){
+  for item in ${*} ; 
+    do 
+      echo "-f $item "
+    done
+}
+
 # Local environments
 ## Generate explicit lock files (optional -p win-64)
-conda-lock lock --mamba -f ${ENV_FILE} -p linux-64 -p osx-64
+conda-lock lock --mamba `LoopEnvFiles ${ENV_FILES[*]}` -p linux-64 -p osx-64
 
 # BinderHub support
 ## Generate environment.yml for binder compatibility
 printf "Generate environment.yml for BinderHub \n"
-conda-lock lock --mamba -f ${ENV_FILE} -p linux-64 -k env
+conda-lock lock --mamba `LoopEnvFiles ${ENV_FILES[*]}` -p linux-64 -k env
 mv conda-linux-64.lock.yml ../binder/environment.yml
 
 # Remove CondaLock environment when the last command was successful

@@ -1,4 +1,4 @@
-# Edit this file to add dependencies to environment,
+# Edit this file to add tutorial dependencies to environment,
 # Then run `./lock-environment.sh` to generate reproducible lock files
 
 # !!! If you are developing the website locally use the existing lock files
@@ -7,16 +7,4 @@ name: hackweek
 channels:
   - conda-forge
 dependencies:
-  - cookiecutter
-  - ipyleaflet
-  - jinja2>=2.11
-  - jupyter-book=0.12
-  - jupyterhub-singleuser
-  - jupyterlab=3
-  - jupyter-resource-usage
-  - mamba
-  - pip
-  - python=3.10
-  - pygments>=2.6.1
-  - pymdown-extensions>=7.1
-  - sphinxcontrib-bibtex
+  - icepyx

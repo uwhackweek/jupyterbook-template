@@ -14,6 +14,7 @@
         "book/intro.md",
         "book/mission.md",
         "conda/lock-environment.sh",
+        "conda/template_environment.yml",
         "scripts/*",
         "{{ cookiecutter.repo_directory }}/*",
         "CHANGELOG.md",
