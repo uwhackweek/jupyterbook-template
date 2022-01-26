@@ -9,7 +9,7 @@ LOCK_ENV='CondaLock'
 conda env list | grep ${LOCK_ENV} > /dev/null
 
 if [[ $? -eq 1 ]]; then
-  conda create -q -y -n ${LOCK_ENV} -c conda-forge python=3.9 conda-lock=0.13 mamba=0
+  conda create -q -y -n ${LOCK_ENV} -c conda-forge conda-lock=0.13 mamba=0.20
 fi
 
 # https://github.com/conda/conda/issues/7980#issuecomment-492784093
