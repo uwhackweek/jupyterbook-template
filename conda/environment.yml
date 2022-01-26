@@ -16,6 +16,7 @@ dependencies:
   - jupyter-resource-usage
   - mamba
   - pip
+  - python=3.10
   - pygments>=2.6.1
   - pymdown-extensions>=7.1
   - sphinxcontrib-bibtex
