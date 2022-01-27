@@ -20,7 +20,7 @@ https://github.com/uwhackweek/jupyterbook-template/compare/2021.05.05..main
 ## 2022-1-26
 
 ### Changed
-- Use Python 3.10 in base conda environment (#78)
+- Use Python 3.10 in base conda environment (#78, #48)
 - Improvements to 'Preparation' section of Jupyter Book (#76)
 - Improvements to 'Tutorial' section of Jupyter Book (#75)
 - Steamline GitHub actions (#44, #45)
