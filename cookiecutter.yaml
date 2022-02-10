@@ -10,8 +10,8 @@ hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.ht
 banner:
   title: UW Hackweek
   description: An awesome learning event.
-  start_date: 12 Oct
-  end_date: 15 Oct
+  start_date: XX Month
+  end_date: XX Month
   year: 2022
   location: Seattle, WA
   links:
@@ -19,7 +19,7 @@ banner:
     title: Event details coming soon
     new_window: true
   - url: intro.html
-    title: More info
+    title: Event Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
 applicant_info: UW Hackweek 2022 will take place in October 2022 (virtual or in-person
