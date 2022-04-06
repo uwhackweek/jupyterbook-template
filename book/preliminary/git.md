@@ -69,12 +69,13 @@ credential.helper=store
 ### 4. Authenticating with GitHub
 In order to interact with GitHub via the `git` command inside the JupyterHub environment,
 you need to set up an authentication method. One way to do this is to use your GitHub password.
-However, a better, more secure practice is to use a GitHub Personal Access Token, which offers 
-more customizable permissions and can be revoked without affecting your main GitHub user 
+However, a better, more secure practice is to use a GitHub Personal Access Token, which offers
+more customizable permissions and can be revoked without affecting your main GitHub user
 account password.
 
 Take a moment to work through the instructions on the [GitHub personal access tokens](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) page. For this hackweek, you need to check the **repo**, **admin:org**, and **workflow** scope.
 
+Screenshot from github.com setting up the token:
 ![github-token](../img/github-token.png)
 
 Once you have created your token, be sure to save it on your computer in case
