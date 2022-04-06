@@ -8,17 +8,20 @@ channels:
   - conda-forge
 dependencies:
   - cookiecutter
+  - git
   - ipyleaflet
   - jinja2>=2.11
   - jupyter-book=0.12
+  - jupyter-resource-usage
   - jupyterhub-singleuser
   - jupyterlab=3
-  - jupyter-resource-usage
   - pip
-  - python=3.10
   - pygments>=2.6.1
   - pymdown-extensions>=7.1
+  - python=3.10
   - sphinxcontrib-bibtex
+  - vim
+  - wget
   - pip:
     - jinja-markdown==1.210911
 platforms:
