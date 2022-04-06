@@ -14,7 +14,6 @@ dependencies:
   - jupyterhub-singleuser
   - jupyterlab=3
   - jupyter-resource-usage
-  - mamba
   - pip
   - python=3.10
   - pygments>=2.6.1
