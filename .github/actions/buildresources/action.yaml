@@ -35,9 +35,10 @@ runs:
         ./scripts/build_resources.sh
         
     - name: Dump Build Logs
+      if: always()
       shell: bash -l {0}
       run: |
-        cat ./book/_build/html/reports/*log 
+        if (test -a book/_build/html/reports/*log); then cat book/_build/html/reports/*log ; fi
 
     - name: Publish to GitHub Pages
       if: inputs.publish-to-gh == 'true'
@@ -48,7 +49,7 @@ runs:
         publish_branch: gh-pages
 
     - name: Save Build
-      if: inputs.jb-save == 'true'
+      if: ${{ always() && inputs.jb-save == 'true'}} 
       uses: actions/upload-artifact@v2
       with:
         name: build
