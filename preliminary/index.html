@@ -43,15 +43,14 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Software Carpentry Training" href="swc.html" />
@@ -215,6 +214,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/list_of_projects.html">
+   List of Projects
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/index.html">
    Projects
@@ -238,11 +242,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/project_initialization.html">
      Project Initialization
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../projects/list_of_projects.html">
-     List of Projects
     </a>
    </li>
   </ul>
@@ -271,7 +270,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../reference/open_source_software.html">
-   Open source software
+   Open-source Software
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/questions.html">
+   How to Get Help
   </a>
  </li>
 </ul>
@@ -412,18 +416,6 @@
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-information">
-   Additional information
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pangeo">
-     Pangeo
-    </a>
-   </li>
-  </ul>
- </li>
 </ul>
 
             </nav>
@@ -493,18 +485,6 @@
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-information">
-   Additional information
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pangeo">
-     Pangeo
-    </a>
-   </li>
-  </ul>
- </li>
 </ul>
 
                         </nav>
@@ -525,11 +505,7 @@
 </ul>
 <div class="section" id="uwhackweek-software-carpentry-session">
 <h2>uwhackweek Software Carpentry Session<a class="headerlink" href="#uwhackweek-software-carpentry-session" title="Permalink to this headline">¶</a></h2>
-<p>We will be offering a preliminary training session for anyone wishing to brush up on fundamentals, or for those of you who are new to open source workflows. This will be a two day event modeled after a <a class="reference external" href="https://software-carpentry.org/">Software Carpentry</a> training.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>We will be hosting a uwhackweek Software Carpentry training as a virtual event during June 21 - 22.</strong></p>
-</div>
+<p>We strongly encourage participants to review this two-day recorded fundamentals of Python and open-source workflows crash course (<a class="reference internal" href="swc.html"><span class="doc std std-doc">Software Carpentry Schedule</span></a>) in advance of the hackweek. You may choose whichever topics you’d like to brush up on or learn. Office hours in the weeks leading up the hackweek will provide an opportunity for asking questions and troubleshooting any issues you’ve encountered.</p>
 <p>You can view our <a class="reference internal" href="swc.html"><span class="doc std std-doc">Software Carpentry Schedule</span></a> for more information.</p>
 </div>
 <div class="section" id="required-setup">
@@ -578,13 +554,6 @@ Visit our <a class="reference internal" href="earthdata.html"><span class="doc s
 <h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
 <p>Dive deeper into how <a class="reference internal" href="python.html"><span class="doc std std-doc">Python is managed and installed</span></a> on the JupyterHub
 and how you can install that on your personal machine.</p>
-</div>
-</div>
-<div class="section" id="additional-information">
-<h2>Additional information<a class="headerlink" href="#additional-information" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="pangeo">
-<h3>Pangeo<a class="headerlink" href="#pangeo" title="Permalink to this headline">¶</a></h3>
-<p>Learn more about the <span class="xref myst">technical cloud environment</span> the hackweek is using.</p>
 </div>
 </div>
 <div class="toctree-wrapper compound">

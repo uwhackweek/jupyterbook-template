@@ -52,7 +52,7 @@ scrollLinks.forEach((scrollLink) => {
 function jumpToSection() {
   const section = new URLSearchParams(window.location.search).get('jump_to');
 
-  if (section.length > 0) {
+  if (section && section.length > 0) {
     window.scrollTo({
       top: document.getElementById(section).offsetTop + yOffset,
       behavior: 'smooth'
@@ -124,3 +124,21 @@ function startCountDown(counterDiv) {
 }
 
 startCountDown(counterDiv);
+
+/* === Select schedule tab of current day */
+
+function today(){
+  const today = new Date();
+  const weekday = new Intl.DateTimeFormat('en', { weekday: 'long' }).format(today);
+  const month = new Intl.DateTimeFormat('en', { month: 'long' }).format(today);
+  const day = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(today);
+
+  return [weekday, day, month].join(' ')
+}
+
+function selectScheduleDay() {
+  const tab = document.querySelector(`[data-schedule-day="${today()}"]`)
+  if(tab) { tab.click() }
+}
+
+selectScheduleDay()

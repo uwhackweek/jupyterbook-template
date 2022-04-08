@@ -43,19 +43,18 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Bibliography" href="bibliography.html" />
-    <link rel="prev" title="List of Projects" href="../projects/list_of_projects.html" />
+    <link rel="prev" title="Project Initialization" href="../projects/project_initialization.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -215,6 +214,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/list_of_projects.html">
+   List of Projects
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/index.html">
    Projects
@@ -238,11 +242,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/project_initialization.html">
      Project Initialization
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../projects/list_of_projects.html">
-     List of Projects
     </a>
    </li>
   </ul>
@@ -271,7 +270,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="open_source_software.html">
-   Open source software
+   Open-source Software
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="questions.html">
+   How to Get Help
   </a>
  </li>
 </ul>
@@ -473,9 +477,10 @@ you to use the app, you can still interface with Slack in a web browser.</p>
 <div class="section" id="topical-event-specific">
 <h2>Topical (event specific)<a class="headerlink" href="#topical-event-specific" title="Permalink to this headline">¶</a></h2>
 <dl class="glossary simple">
-<dt id="term-SnowEx"><a class="reference external" href="https://snow.nasa.gov/campaigns/snowex">SnowEx</a><a class="headerlink" href="#term-SnowEx" title="Permalink to this term">¶</a></dt><dd><p>5-year NASA funded effort to address the most important gaps in our snow
-remote sensing knowledge, and thus lay the groundwork for a future snow
-satellite mission.</p>
+<dt id="term-ICESat-2"><a class="reference external" href="https://icesat-2.gsfc.nasa.gov">ICESat-2</a><a class="headerlink" href="#term-ICESat-2" title="Permalink to this term">¶</a></dt><dd><p>Ice, Cloud, and land Elevation Satellite (2).
+Launched in September 2018, the ICESat-2 satellite continues the ICESat and IceBridge missions to
+collect multi-year elevation data.
+Mission science goals focus on assessing changing land and sea ice and forest heights.</p>
 </dd>
 </dl>
 </div>
@@ -506,11 +511,11 @@ satellite mission.</p>
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../projects/list_of_projects.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../projects/project_initialization.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">List of Projects</p>
+            <p class="prev-next-title">Project Initialization</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="bibliography.html" title="next page">
