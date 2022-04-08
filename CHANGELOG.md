@@ -8,13 +8,18 @@ and this project adheres to [Calendar Versioning](https://calver.org)
 To compare changes between tags:
 https://github.com/uwhackweek/jupyterbook-template/compare/2021.05.05..main
 
-## 2022-?-?
+## 2022-04-08
 
 ### Changed
-
-### Removed
-
-### Added
+- Incorporated many changes from ICESat-2 Hackweek 2022 (#97)
+    - Improved GitHub Actions to actually report failures with build errors
+    - Use conda-lock>=1.0 for environment management
+    - Clarified local development instructions in CONTRIBUTING.md
+    - Allow for Jupytext notebooks
+    - Added improved support decision tree graphic
+    - Updated preliminary conda, git, python instructions
+    - Updated team.yml and schedule.yml compatibility with splash page
+    - Generalized tutorials/jupyter.md
 
 
 ## 2022-1-26
