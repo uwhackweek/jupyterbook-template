@@ -16,7 +16,7 @@ dependencies:
   - libunistring=0.9.10=h0d85af4_0
   - libzlib=1.2.11=h6c3fc93_1014
   - llvm-openmp=13.0.1=hcb1a161_1
-  - ncurses=6.3=he49afe7_0
+  - ncurses=6.3=h96cf925_1
   - pandoc=2.17.1.1=h694c41f_0
   - perl=5.32.1=2_h0d85af4_perl5
   - tzdata=2022a=h191b570_0
@@ -93,6 +93,7 @@ dependencies:
   - sphinxcontrib-htmlhelp=2.0.0=pyhd8ed1ab_0
   - sphinxcontrib-jsmath=1.0.1=py_0
   - sphinxcontrib-qthelp=1.0.3=py_0
+  - sphinxcontrib-serializinghtml=1.1.5=pyhd8ed1ab_2
   - testpath=0.6.0=pyhd8ed1ab_0
   - text-unidecode=1.3=py_0
   - toml=0.10.2=pyhd8ed1ab_0
@@ -107,7 +108,7 @@ dependencies:
   - zipp=3.8.0=pyhd8ed1ab_0
   - asttokens=2.0.5=pyhd8ed1ab_0
   - babel=2.9.1=pyh44b312d_0
-  - beautifulsoup4=4.10.0=pyha770c72_0
+  - beautifulsoup4=4.11.0=pyha770c72_0
   - certifi=2021.10.8=py310h2ec42d9_2
   - cffi=1.15.0=py310hcc37b68_0
   - chardet=4.0.0=py310h2ec42d9_3
@@ -151,13 +152,13 @@ dependencies:
   - arrow=1.2.2=pyhd8ed1ab_0
   - backports.functools_lru_cache=1.6.4=pyhd8ed1ab_0
   - binaryornot=0.4.4=py_1
-  - bleach=4.1.0=pyhd8ed1ab_0
+  - bleach=5.0.0=pyhd8ed1ab_0
   - brotlipy=0.7.0=py310h1961e1f_1004
   - cryptography=36.0.2=py310hd6fa1ae_1
   - gitpython=3.1.27=pyhd8ed1ab_0
   - jinja2=3.1.1=pyhd8ed1ab_0
   - jsonschema=3.2.0=pyhd8ed1ab_3
-  - jupyter_client=7.2.1=pyhd8ed1ab_0
+  - jupyter_client=7.2.2=pyhd8ed1ab_1
   - mako=1.2.0=pyhd8ed1ab_1
   - markdown=3.3.6=pyhd8ed1ab_0
   - mdit-py-plugins=0.2.8=pyhd8ed1ab_0
@@ -166,7 +167,7 @@ dependencies:
   - pybtex=0.24.0=pyhd8ed1ab_2
   - pygments=2.11.2=pyhd8ed1ab_0
   - ruamel.yaml=0.17.21=py310h1961e1f_1
-  - sqlalchemy=1.4.34=py310h1961e1f_1
+  - sqlalchemy=1.4.35=py310h1961e1f_0
   - stack_data=0.2.0=pyhd8ed1ab_0
   - terminado=0.13.3=py310h2ec42d9_1
   - alembic=1.7.7=pyhd8ed1ab_0
@@ -196,25 +197,14 @@ dependencies:
   - jupyter_server=1.16.0=pyhd8ed1ab_1
   - jupyterhub-base=2.2.2=pyhd8ed1ab_1
   - nbconvert-pandoc=6.4.5=pyhd8ed1ab_2
+  - sphinx=4.5.0=pyh6c4a22f_0
   - jupyter-resource-usage=0.6.1=pyhd8ed1ab_0
   - jupyter-server-mathjax=0.2.5=pyhc268e32_0
   - jupyterlab_server=2.12.0=pyhd8ed1ab_0
+  - myst-parser=0.15.2=pyhd8ed1ab_0
   - nbconvert=6.4.5=pyhd8ed1ab_2
   - notebook-shim=0.1.0=pyhd8ed1ab_0
-  - nbdime=3.1.1=pyhd8ed1ab_0
-  - notebook=6.4.10=pyha770c72_0
-  - jupyter-cache=0.4.3=pyhd8ed1ab_0
-  - nbclassic=0.3.7=pyhd8ed1ab_0
-  - widgetsnbextension=3.6.0=py310h2ec42d9_0
-  - ipywidgets=7.7.0=pyhd8ed1ab_0
-  - jupyterlab=3.3.2=pyhd8ed1ab_0
-  - ipyleaflet=0.15.0=pyhd8ed1ab_3
-  - jupyterhub-singleuser=2.2.2=pyhd8ed1ab_1
-  - jupyter-sphinx=0.3.2=pyhd8ed1ab_1
-  - myst-parser=0.15.2=pyhd8ed1ab_0
   - pydata-sphinx-theme=0.7.2=pyhd8ed1ab_0
-  - sphinx=4.5.0=pyh6c4a22f_0
-  - sphinx-book-theme=0.1.10=pyhd8ed1ab_0
   - sphinx-comments=0.0.3=pyh9f0ad1d_0
   - sphinx-copybutton=0.5.0=pyhd8ed1ab_0
   - sphinx-external-toc=0.2.3=pyhd8ed1ab_0
@@ -224,10 +214,18 @@ dependencies:
   - sphinx-thebe=0.1.1=pyhd8ed1ab_0
   - sphinx-togglebutton=0.2.3=pyhd3deb0d_0
   - sphinxcontrib-bibtex=2.4.1=pyhd8ed1ab_0
-  - sphinxcontrib-serializinghtml=1.1.5=pyhd8ed1ab_1
+  - nbdime=3.1.1=pyhd8ed1ab_0
+  - notebook=6.4.10=pyha770c72_0
+  - sphinx-book-theme=0.1.10=pyhd8ed1ab_0
+  - jupyter-cache=0.4.3=pyhd8ed1ab_0
+  - nbclassic=0.3.7=pyhd8ed1ab_0
+  - widgetsnbextension=3.6.0=py310h2ec42d9_0
+  - ipywidgets=7.7.0=pyhd8ed1ab_0
+  - jupyterlab=3.3.3=pyhd8ed1ab_0
+  - ipyleaflet=0.15.0=pyhd8ed1ab_3
+  - jupyter-sphinx=0.3.2=pyhd8ed1ab_1
+  - jupyterhub-singleuser=2.2.2=pyhd8ed1ab_1
   - myst-nb=0.13.1=pyhd8ed1ab_0
   - jupyter-book=0.12.2=pyhd8ed1ab_0
   - pip:
     - jinja-markdown === 1.210911 
-    - git+https://github.com/fastice/nisardev.git@4fa6429a93b6716e4e7a6522d98340b9966d7d9d
-    - git+https://github.com/fastice/grimpfunc.git@512a8d35731c83771e74cbd5b0ade273fff680bd
