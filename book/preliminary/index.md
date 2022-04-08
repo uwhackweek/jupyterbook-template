@@ -9,11 +9,7 @@ We welcome all types of learners to our event, from professional software develo
 
 ## {{hackweek}} Software Carpentry Session
 
-We will be offering a preliminary training session for anyone wishing to brush up on fundamentals, or for those of you who are new to open source workflows. This will be a two day event modeled after a [Software Carpentry](https://software-carpentry.org/) training.
-
-```{note}
-**We will be hosting a {{hackweek}} Software Carpentry training as a virtual event during June 21 - 22.**
-```
+We strongly encourage participants to review this two-day recorded fundamentals of Python and open-source workflows crash course ([Software Carpentry Schedule](swc)) in advance of the hackweek. You may choose whichever topics you'd like to brush up on or learn. Office hours in the weeks leading up the hackweek will provide an opportunity for asking questions and troubleshooting any issues you've encountered.
 
 You can view our [Software Carpentry Schedule](swc) for more information.
 
