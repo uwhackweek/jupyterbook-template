@@ -20,17 +20,19 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      
     - name: Configure NASA Earthdata Login
-      if: ${{ 'EARTHDATA_USER' in secrets }}
+      continue-on-error: true
       env:
         EARTHDATA_USER: ${{ secrets.EARTHDATA_USER}}
         EARTHDATA_PASS: ${{ secrets.EARTHDATA_PASS }}
       run: |
         echo "machine urs.earthdata.nasa.gov login $EARTHDATA_USER password $EARTHDATA_PASS" > ~/.netrc
         chmod 0600 ~/.netrc
+        
     - uses: ./.github/actions/buildresources
       with:
-        jb-cache: true
+        jb-cache: false
         publish-to-gh: true
         jb-save: true
         token:  ${{ secrets.GH_PAT }}
