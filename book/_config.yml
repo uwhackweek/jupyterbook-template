@@ -21,6 +21,7 @@ parse:
     contact_email: "uwhackweek@github.com"
     dataset: "ICESat-2"
     anon_reporting_url: "https://INSERT_FORM_LINK"
+    project_spreadsheet_url: "https://INSERT_GOOGLE_SHEET"
   myst_enable_extensions:
     # Defaults
     - dollarmath
@@ -35,7 +36,8 @@ parse:
 execute:
   # NOTE: 'cache' to use jupyter-cache, or 'force' to run all
   execute_notebooks: 'force'
-  exclude_patterns: ["*rendered*", "*skip*", "uavsar-download.ipynb"]
+  exclude_patterns: 
+    - "**/geospatial-advanced.ipynb"
   allow_errors: false
   # Per-cell notebook execution limit (seconds)
   timeout: 300
@@ -47,7 +49,8 @@ latex:
 
 # Configure your Binder links, such as the URL of the BinderHub.
 launch_buttons:
-  binderhub_url: ''
+  notebook_interface: jupyterlab
+  binderhub_url: "https://mybinder.org"
 
 # Information about where the book exists on the web
 repository:
