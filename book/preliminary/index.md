@@ -61,8 +61,3 @@ Visit our [Earthdata](earthdata) page to learn how to access and Earthdata login
 ### Python
 Dive deeper into how [Python is managed and installed](python) on the JupyterHub
 and how you can install that on your personal machine.
-
-## Additional information
-
-### Pangeo
-Learn more about the [technical cloud environment](pangeo) the hackweek is using.
