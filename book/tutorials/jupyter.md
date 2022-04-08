@@ -185,7 +185,7 @@ just went with a more descriptive label instead of the default value.
 # Change to the website folder, it was created with the `clone`
 cd website
 # Add the remote
-git remote add Hackweek https://github.com/ICESAT-2HackWeek/website2022.git
+git remote add Hackweek {{ '`{url}.git`'.format(url=website_url) }}
 ```
 
 The command will not return any output. Instead, we verify by printing the
@@ -198,8 +198,8 @@ list of known remotes for this repository:
 
 ```shell
  git remote -v
- Hackweek	https://github.com/ICESAT-2HackWeek/website2022.git (fetch)
- Hackweek	https://github.com/ICESAT-2HackWeek/website2022.git (push)
+ Hackweek	{{ '`{url}.git`'.format(url=website_url) }} (fetch)
+ Hackweek	{{ '`{url}.git`'.format(url=website_url) }} (push)
  origin	https://github.com/<github-username>/website.git (fetch)
  origin	https://github.com/<github-username>/website.git (push)
 ```

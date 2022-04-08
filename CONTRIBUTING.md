@@ -14,7 +14,7 @@ Ready to contribute? Here's a quick guide
 To build our website, we need specific Python packages which are managed with the `conda` and `mamba` tools. If you already do not already have those tools installed, we recommend using the [Mambaforge Installer](https://github.com/conda-forge/miniforge#mambaforge):
 
 
-1. Fork this hackweek's website repo on GitHub (https://github.com/ICESAT-2HackWeek/website2022).
+1. Fork this hackweek's website repo on GitHub.
 
 1. Clone your fork locally:
 
