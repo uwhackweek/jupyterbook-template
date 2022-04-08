@@ -3,13 +3,8 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'LICENSE'
-      - 'README.md'
-      - '.gitignore'
-
-env:
-  DOCKER_IMAGE: uwhackweek/template
+    paths:
+      - 'conda/**'
 
 jobs:
   build-image-and-push:
@@ -27,14 +22,15 @@ jobs:
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        IMAGE_NAME: ${{ env.DOCKER_IMAGE }}
+        IMAGE_NAME: ${{ secrets.DOCKER_IMAGE }}
         ADDITIONAL_TAG: ${{ steps.calver.outputs.version }}
+        MYBINDERORG_TAG: ${{ github.event.ref }} # This builds the container on mybinder.org
 
     - name: Also Push To quay.io
       id: push-to-quay
       uses: redhat-actions/push-to-registry@v2
       with:
-        image: ${{ env.DOCKER_IMAGE }}
+        image: ${{ secrets.DOCKER_IMAGE }}
         tags: ${{ steps.calver.outputs.version }}
         registry: quay.io
         username: ${{ secrets.QUAY_USERNAME }}
@@ -47,4 +43,4 @@ jobs:
       if: always()
       run: |
         docker images
-        docker run uwhackweek/template:latest conda list --export
+        docker run ${{secrets.DOCKER_IMAGE}}:latest conda list --export

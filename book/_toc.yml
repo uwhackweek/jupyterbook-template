@@ -30,15 +30,16 @@ parts:
         - file: tutorials/example/tutorial-notebook
 - caption: Projects
   chapters:
+    - file: projects/list_of_projects
     - file: projects/index
       sections:
         - file: projects/project_roles
         - file: projects/project_roadmap
         - file: projects/project_initialization
-        - file: projects/list_of_projects
 - caption: Reference
   chapters:
     - file: reference/glossary
     - file: reference/bibliography
     - file: reference/open_science
     - file: reference/open_source_software
+    - file: reference/questions

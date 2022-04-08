@@ -7,6 +7,8 @@ on:
       - '{{ cookiecutter.repo_directory }}/**'
       - 'scripts/**'
       - '.github/workflows/deploy.yaml'
+      - '.github/actions/**'
+      - 'cookiecutter.yaml'
 
     branches:
       - main
@@ -18,10 +20,19 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
+      
+    - name: Configure NASA Earthdata Login
+      continue-on-error: true
+      env:
+        EARTHDATA_USER: ${{ secrets.EARTHDATA_USER}}
+        EARTHDATA_PASS: ${{ secrets.EARTHDATA_PASS }}
+      run: |
+        echo "machine urs.earthdata.nasa.gov login $EARTHDATA_USER password $EARTHDATA_PASS" > ~/.netrc
+        chmod 0600 ~/.netrc
+        
     - uses: ./.github/actions/buildresources
       with:
-        jb-cache: true
+        jb-cache: false
         publish-to-gh: true
         jb-save: true
         token:  ${{ secrets.GH_PAT }}

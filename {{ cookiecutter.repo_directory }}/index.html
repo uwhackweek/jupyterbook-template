@@ -62,13 +62,20 @@
 				<nav class="main-nav navbar navbar-expand-lg">
 					<div class="site-logo">
 						<a class="scrollto" href="#hero-block">
-							<span class="logo-icon-text">Hackweek</span>
+							<span class="logo-icon-text">UW eScience Hackweek</span>
 						</a>
 					</div>
 
 					{%- if cookiecutter.apply %}
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="{{ cookiecutter.apply.url }}"
-							target="_blank">{{ cookiecutter.apply.title }}</a>
+					<div class="navbar-btn order-lg-2">
+                        <a class="btn btn-secondary"
+                           {%- if 'url' in cookiecutter.apply %}
+                           href="{{ cookiecutter.apply.url }}"
+                           target="_blank"
+                           {%- endif %}
+                        >
+                            {{ cookiecutter.apply.title }}
+                        </a>
 					</div>
 					{%- endif %}
 
@@ -209,7 +216,7 @@
 								more &rarr;</a>
 						</div>
 						<!--//card-->
-						{%- if person['social'] %}
+						{%- if 'social' in person %}
 						<div class="card-footer text-muted">
 							<ul class="social-list list-inline mb-0">
 								{%- for social in person['social'] %}
@@ -247,15 +254,17 @@
 												<h2 class="name mb-2">{{person['title']}}</h2>
 												<div class="meta">{{ person['role'] }}</div>
 												<div class="meta mb-2">{{person['organizations']|map(attribute='name')|join(' &amp; ')}}</div>
-												<ul class="social-list list-inline mb-0">
-													{%- for social in person['social'] %}
-													<li class="list-inline-item">
-														<a href="{{social['link']}}">
-															<i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
-														</a>
-													</li>
-													{%- endfor %}
-												</ul>
+                                                {%- if 'social' in person %}
+                                                    <ul class="social-list list-inline mb-0">
+                                                        {%- for social in person['social'] %}
+                                                        <li class="list-inline-item">
+                                                            <a href="{{social['link']}}">
+                                                                <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
+                                                            </a>
+                                                        </li>
+                                                        {%- endfor %}
+                                                    </ul>
+                                                {%- endif %}
 												<!--//social-list-->
 											</div>
 											<!--//col-->
@@ -313,17 +322,23 @@
 			<!-- Nav tabs -->
 			<ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
 				{% for tab in cookiecutter.schedule["tabs"] %}
+                {%- set link_class = '' %}
+                {%- set link_state = 'false' %}
 				{%- if loop.index == 1 %}
-				{%- set link_class = 'active' %}
-				{%- set link_state = 'true' %}
-				{%- else %}
-				{%- set link_class = '' %}
-				{%- set link_state = 'false' %}
+                    {%- set link_class = 'active' %}
+                    {%- set link_state = 'true' %}
 				{%- endif %}
 				<li class="nav-item me-2">
-					<a class="nav-link {{ link_class }}" id="tab-{{ loop.index }}" data-bs-toggle="tab"
-						href="#tab-{{ loop.index }}-content" role="tab" aria-controls="tab-{{ loop.index }}-content"
-						aria-selected="{{ link_state }}">
+					<a class="nav-link {{ link_class }}"
+                       id="schedule-tab-{{ loop.index }}"
+                       data-bs-toggle="tab"
+                       data-bs-target="#schedule-{{ loop.index }}-content"
+                       href="#tab-{{ loop.index }}-content"
+                       role="tab"
+                       aria-controls="schedule-tab-{{ loop.index }}-content"
+                       aria-selected="{{ link_state }}"
+                       data-schedule-day="{{ tab['date'] }}"
+                    >
 						<span class="heading">{{ tab['title'] }}</span>
 						<span class="meta">({{ tab['date'] }})</span>
 					</a>
@@ -348,8 +363,10 @@
 				{%- else %}
 				{%- set tab_class = 'no-timeline' %}
 				{%- endif %}
-				<div class="tab-pane {{ tab_class }}" id="tab-{{ loop.index }}-content" role="tabpanel"
-					aria-labelledby="tab-{{ loop.index }}">
+				<div class="tab-pane {{ tab_class }}"
+                     id="schedule-{{ loop.index }}-content"
+                     role="tabpanel"
+                     aria-labelledby="schedule-tab-{{ loop.index }}">
 					{%- if 'no-timeline' in tab_class %}
 					<h4 class="text-center py-5 text-muted">{{ tab['title'] }} Agenda Coming Soon...</h4>
 					{%- else %}
@@ -368,29 +385,47 @@
 							</div>
 							{% endif %}
 							<div class="desc">
-							{%- markdown -%}
-							{{ content['description']|safe }}
-							{%- endmarkdown -%}
+                                {% if 'description' in content and content['description'] is not none %}
+                                    {%- markdown -%}
+                                        {{ content['description']|safe }}
+                                    {%- endmarkdown -%}
+                                {%- endif %}
 							</div>
 							{%- if 'leads' in content and content['leads']|length > 0 %}
 							<div class="profile">
 								<h6 class="mb-1 mt-2"> Tutorial Lead(s)</h6>
 									{%- for lead in content['leads'] %}
-									{%- set person = cookiecutter.team['people']|selectattr('title', '==', lead)|list|first %}
-									{%- set modal_name = person['title']|lower|replace(' ', '--') %}
-									{%- set modal_key = '{}-modal'.format(modal_name) %}
-									<div class="name"><a class="theme-link" href="#{{modal_key}}"
-											data-bs-toggle="modal" data-bs-target="#{{modal_key}}">{{ lead }}</a>
-									</div>
+									{%- set person = cookiecutter.team['people']|selectattr('title', '==', lead)|list %}
+                                        {%- if person|length > 0 %}
+                                            {%- set modal_name = person[0]['title']|lower|replace(' ', '--') %}
+									        {%- set modal_key = '{}-modal'.format(modal_name) %}
+									        <div class="name">
+                                                <a class="theme-link"
+                                                   href="#{{modal_key}}"
+                                                   data-bs-toggle="modal"
+                                                   data-bs-target="#{{modal_key}}">
+                                                    {{ lead }}
+                                                </a>
+									        </div>
+                                        {%- else %}
+                                            <div class="name">{{ lead }}</div>
+                                        {%- endif %}
 									{%- endfor %}
 							</div>
 							{%- endif %}
-							{%- if 'resources' in content and content['resources']|length > 0 %}
+							{%- if 'resources' in content and content['resources'] is not none %}
 							<div>
 								<h6 class="mb-1 mt-2"> Resource(s)</h6>
-								{%- for resource in content['resources'] %}
-								<a href="{{resource['url']}}" target="_blank">{{resource['title']}}</a>
-								{%- endfor %}
+                                <ul>
+                                    {%- for resource in content['resources'] %}
+                                        <li>
+                                            <a href="{{resource['url']}}"
+                                               target="_blank">
+                                                {{resource['title']}}
+                                            </a>
+                                        </li>
+                                    {%- endfor %}
+                                </ul>
 							</div>
 							{%- endif -%}
 						</div>
