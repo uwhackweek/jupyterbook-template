@@ -181,168 +181,17 @@
 </section>
 <!--//about-section-->
 
-{%- if cookiecutter.team %}
-<section id="team" class="team section">
-    <div class="container">
-        <h3 class="section-heading text-center mb-3">Meet the team</h3>
-        <div class="section-intro text-center single-col-max mx-auto mb-5">{{
-            cookiecutter.team['description'] }}
-        </div>
-        {%- if cookiecutter.team['people'] %}
-        <div class="row">
-            {%- for person in cookiecutter.team['people'] %}
-            {%- set modal_name = person['title']|lower|replace(' ', '--') %}
-            {%- set modal_key = '{}-modal'.format(modal_name) %}
-            <div class="col-6 col-lg-3 mb-4">
-                <div class="card rounded-0">
-                    <a href="#{{ modal_key }}" data-bs-toggle="modal"
-                       data-bs-target="#{{ modal_key }}"><img
-                        src="{{ person['avatar'] }}"
-                        class="card-img-top rounded-0" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title mb-2">{{ person['title'] }}</h5>
-                        <div class="card-text mb-3">
-                            <div class="meta">{{ person['role'] }}</div>
-                            <div class="meta">
-                                {%- for group in person['user_groups'] %}
-                                <img
-                                    src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"/>
-                                {%- endfor %}
-                            </div>
-                        </div>
-                        <!--//card-text-->
-                        <a href="#{{ modal_key }}" data-bs-toggle="modal"
-                           data-bs-target="#{{ modal_key }}">Read
-                            more &rarr;</a>
-                    </div>
-                    <!--//card-->
-                    {%- if 'social' in person %}
-                    <div class="card-footer text-muted">
-                        <ul class="social-list list-inline mb-0">
-                            {%- for social in person['social'] %}
-                            <li class="list-inline-item">
-                                <a href="{{social['link']}}">
-                                    <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
-                                </a>
-                            </li>
-                            {%- endfor %}
-                        </ul>
-                        <!--//social-list-->
-                    </div>
-                    {%- endif %}
-                </div>
-                <!--//card-->
-                <!-- Modal Speaker -->
-                <div class="modal modal-speaker modal-speaker-1"
-                     id="{{ modal_key }}" tabindex="-1" role="dialog"
-                     aria-labelledby="{{ modal_name }}-ModalLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-hidden="true">&times;
-                                </button>
-                                <h4 id="{{modal_name}}-ModalLabel"
-                                    class="modal-title sr-only">
-                                    {{person['title']}}</h4>
-                            </div>
-                            <div class="modal-body p-0">
-                                <div class="theme-bg-light p-5">
-                                    <div class="row">
-                                        <div
-                                            class="col-12 col-md-auto text-center">
-                                            <img
-                                                class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto"
-                                                src="{{ person['avatar'] }}"
-                                                alt=""/>
-                                        </div>
-
-                                        <div
-                                            class="col text-center text-md-start mx-auto">
-                                            <h2 class="name mb-2">
-                                                {{person['title']}}</h2>
-                                            <div class="meta">{{ person['role']
-                                                }}
-                                            </div>
-                                            <div class="meta mb-2">
-                                                {{person['organizations']|map(attribute='name')|join('
-                                                &amp; ')}}
-                                            </div>
-                                            {%- if 'social' in person %}
-                                            <ul class="social-list list-inline mb-0">
-                                                {%- for social in
-                                                person['social'] %}
-                                                <li class="list-inline-item">
-                                                    <a href="{{social['link']}}">
-                                                        <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
-                                                    </a>
-                                                </li>
-                                                {%- endfor %}
-                                            </ul>
-                                            {%- endif %}
-                                            <!--//social-list-->
-                                        </div>
-                                        <!--//col-->
-                                    </div>
-                                    <!--//row-->
-                                </div>
-                                <div class="desc p-4 p-lg-5">
-                                    <div class="mb-2">
-                                        {%- for group in person['user_groups']
-                                        %}
-                                        <img
-                                            src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"/>
-                                        {%- endfor %}
-                                    </div>
-                                    {{person['bio']}}
-                                    {%- if person['expertise']|length > 0 %}
-                                    <div class="mt-1">
-                                        <h5>Interests / Expertise</h5>
-                                        <ul>
-                                            {%- for ex in person['expertise']
-                                            %}
-                                            <li>{{ex}}</li>
-                                            {%- endfor %}
-                                        </ul>
-                                    </div>
-                                    {%- endif %}
-                                </div>
-                            </div>
-                            <!--//modal-body-->
-                        </div>
-                        <!--//modal-content-->
-                    </div>
-                    <!--//modal-dialog-->
-                </div>
-                <!--//modal-->
-            </div>
-            <!--//col-->
-            {%- endfor %}
-        </div>
-        <!--//row-->
-        {%- endif %}
-    </div>
-    <!--//container-->
-
-</section>
-<!--//team-->
-{%- endif %}
-
-<div class="container">
-    <hr>
-</div>
-
 {%- if cookiecutter.schedule %}
 <section id="schedule" class="schedule-section section">
     <div class="container">
         <h3 class="section-heading text-center mb-1">Schedule</h3>
-        <h4 class="text-center mb-5"> All times listed below are {{
-            cookiecutter.schedule.timezone }}.
-            You might want to consult this <a
-                href="https://www.timeanddate.com/time/map/" target="_blank">Time
-                Zone Map</a> to figure out times in your location.</h4>
+        <h4 class="text-center mb-5">
+            All times listed below are {{ cookiecutter.schedule.timezone }}.
+            You might want to consult this
+            <a href="https://www.timeanddate.com/time/map/" target="_blank">
+                Time Zone Map
+            </a>
+            to figure out times in your location.</h4>
         {%- if cookiecutter.schedule["tabs"] %}
         <!-- Nav tabs -->
         <ul class="schedule-nav nav nav-pills nav-fill" id="myTab"
@@ -394,45 +243,45 @@
                  role="tabpanel"
                  aria-labelledby="schedule-tab-{{ loop.index }}">
                 {%- if 'no-timeline' in tab_class %}
-                <h4 class="text-center py-5 text-muted">{{ tab['title'] }}
-                    Agenda Coming Soon...</h4>
+                <h4 class="text-center py-5 text-muted">
+                    {{ tab['title'] }} Agenda Coming Soon...
+                </h4>
                 {%- else %}
                 {%- for content in tab['contents'] %}
                 <div class="item item-talk">
                     <div class="meta">
-                        <h4 class="time mb-3">{{ content['time'] }}</h4>
-                        <!--//profile-->
+                        <h4 class="time mb-3">
+                            {{ content['time'] }}
+                        </h4>
                     </div>
-                    <!--//meta-->
+
                     <div class="content">
-                        <h3 class="title mb-3">{{ content['title'] }}</h3>
+                        <h3 class="title mb-3">
+                            {{ content['title'] }}
+                        </h3>
+
                         {% if 'location' in content %}
                         <div class="location mb-3"><i
                             class="fas fa-map-marker-alt me-2"></i>
                             {{ content['location'] }}
                         </div>
                         {% endif %}
+
                         <div class="desc">
-                            {% if 'description' in content and
-                            content['description'] is not none %}
+                            {% if 'description' in content and content['description'] is not none %}
                             {%- markdown -%}
                             {{ content['description']|safe }}
                             {%- endmarkdown -%}
                             {%- endif %}
                         </div>
-                        {%- if 'leads' in content and content['leads']|length >
-                        0 %}
+                        {%- if 'leads' in content and content['leads']|length > 0 %}
                         <div class="profile">
                             <h6 class="mb-1 mt-2"> Tutorial Lead(s)</h6>
                             {%- for lead in content['leads'] %}
-                            {%- set person =
-                            cookiecutter.team['people']|selectattr('title',
-                            '==', lead)|list %}
+                            {%- set person = cookiecutter.team['people']|selectattr('title', '==', lead)|list %}
                             {%- if person|length > 0 %}
-                            {%- set modal_name =
-                            person[0]['title']|lower|replace(' ', '--') %}
-                            {%- set modal_key = '{}-modal'.format(modal_name)
-                            %}
+                            {%- set modal_name = person[0]['title']|lower|replace(' ', '--') %}
+                            {%- set modal_key = '{}-modal'.format(modal_name) %}
                             <div class="name">
                                 <a class="theme-link"
                                    href="#{{modal_key}}"
@@ -447,8 +296,7 @@
                             {%- endfor %}
                         </div>
                         {%- endif %}
-                        {%- if 'resources' in content and content['resources']
-                        is not none %}
+                        {%- if 'resources' in content and content['resources'] is not none %}
                         <div>
                             <h6 class="mb-1 mt-2"> Resource(s)</h6>
                             <ul>
@@ -464,7 +312,6 @@
                         </div>
                         {%- endif -%}
                     </div>
-                    <!--//content-->
                 </div>
                 {% endfor %}
                 <!--//item-->
@@ -474,17 +321,164 @@
             {% endfor %}
         </div>
         <!--//schedule-tab-content-->
-        <!-- <div class="schedule-cta text-center mx-auto"><a
-					href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
-					class="btn btn-primary btn-lg me-md-2 d-block d-md-inline-block mb-3 mb-md-0"
-					target="_blank">Download Schedule</a>
-			</div> -->
         {%- endif %}
     </div>
     <!--//container-->
 </section>
 <!--//schedule-section-->
 {% endif %}
+
+<div class="container">
+    <hr>
+</div>
+
+{%- if cookiecutter.team %}
+<section id="team" class="team section">
+    <div class="container">
+        <h3 class="section-heading text-center mb-3">Meet the team</h3>
+        <div class="section-intro text-center single-col-max mx-auto mb-5">
+            {{ cookiecutter.team['description'] }}
+        </div>
+        {%- if cookiecutter.team['people'] %}
+        <div class="row">
+            {%- for person in cookiecutter.team['people'] %}
+            {%- set modal_name = person['title']|lower|replace(' ', '--') %}
+            {%- set modal_key = '{}-modal'.format(modal_name) %}
+            <div class="col-6 col-lg-3 mb-4">
+                <div class="card rounded-0">
+                    <a href="#{{ modal_key }}" data-bs-toggle="modal"
+                       data-bs-target="#{{ modal_key }}"><img
+                        src="{{ person['avatar'] }}"
+                        class="card-img-top rounded-0" alt=""></a>
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">{{ person['title'] }}</h5>
+                        <div class="card-text mb-3">
+                            <div class="meta">{{ person['role'] }}</div>
+                            <div class="meta">
+                                {%- for group in person['user_groups'] %}
+                                <img
+                                    src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"/>
+                                {%- endfor %}
+                            </div>
+                        </div>
+                        <!--//card-text-->
+                        <a href="#{{ modal_key }}"
+                           data-bs-toggle="modal"
+                           data-bs-target="#{{ modal_key }}">
+                            Read more &rarr;
+                        </a>
+                    </div>
+                    <!--//card-->
+                    {%- if 'social' in person %}
+                    <div class="card-footer text-muted">
+                        <ul class="social-list list-inline mb-0">
+                            {%- for social in person['social'] %}
+                            <li class="list-inline-item">
+                                <a href="{{social['link']}}">
+                                    <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
+                                </a>
+                            </li>
+                            {%- endfor %}
+                        </ul>
+                        <!--//social-list-->
+                    </div>
+                    {%- endif %}
+                </div>
+                <!--//card-->
+                <!-- Modal Speaker -->
+                <div class="modal modal-speaker modal-speaker-1"
+                     id="{{ modal_key }}" tabindex="-1" role="dialog"
+                     aria-labelledby="{{ modal_name }}-ModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-hidden="true">&times;
+                                </button>
+                                <h4 id="{{modal_name}}-ModalLabel"
+                                    class="modal-title sr-only">
+                                    {{person['title']}}
+                                </h4>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="theme-bg-light p-5">
+                                    <div class="row">
+                                        <div
+                                            class="col-12 col-md-auto text-center">
+                                            <img
+                                                class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto"
+                                                src="{{ person['avatar'] }}"
+                                                alt=""/>
+                                        </div>
+
+                                        <div
+                                            class="col text-center text-md-start mx-auto">
+                                            <h2 class="name mb-2">
+                                                {{person['title']}}
+                                            </h2>
+                                            <div class="meta">
+                                                {{ person['role'] }}
+                                            </div>
+                                            <div class="meta mb-2">
+                                                {{person['organizations']|map(attribute='name')|join(' &amp; ')}}
+                                            </div>
+                                            {%- if 'social' in person %}
+                                            <ul class="social-list list-inline mb-0">
+                                                {%- for social in person['social'] %}
+                                                <li class="list-inline-item">
+                                                    <a href="{{social['link']}}">
+                                                        <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
+                                                    </a>
+                                                </li>
+                                                {%- endfor %}
+                                            </ul>
+                                            {%- endif %}
+                                            <!--//social-list-->
+                                        </div>
+                                        <!--//col-->
+                                    </div>
+                                    <!--//row-->
+                                </div>
+                                <div class="desc p-4 p-lg-5">
+                                    <div class="mb-2">
+                                        {%- for group in person['user_groups'] %}
+                                        <img
+                                            src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"/>
+                                        {%- endfor %}
+                                    </div>
+                                    {{ person['bio'] }}
+                                    {%- if person['expertise']|length > 0 %}
+                                    <div class="mt-1">
+                                        <h5>Interests / Expertise</h5>
+                                        <ul>
+                                            {%- for ex in person['expertise'] %}
+                                            <li>{{ex}}</li>
+                                            {%- endfor %}
+                                        </ul>
+                                    </div>
+                                    {%- endif %}
+                                </div>
+                            </div>
+                            <!--//modal-body-->
+                        </div>
+                        <!--//modal-content-->
+                    </div>
+                    <!--//modal-dialog-->
+                </div>
+                <!--//modal-->
+            </div>
+            <!--//col-->
+            {%- endfor %}
+        </div>
+        <!--//row-->
+        {%- endif %}
+    </div>
+    <!--//container-->
+</section>
+<!--//team-->
+{%- endif %}
 
 {%- if cookiecutter.sponsors %}
 <section id="sponsors-section" class="sponsors-section section theme-bg-light">
