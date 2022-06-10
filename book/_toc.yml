@@ -30,6 +30,7 @@ parts:
   chapters:
     - file: tutorials/index
       sections:
+        - file: tutorials/basic-git 
         - file: tutorials/jupyter
         - file: tutorials/example/tutorial-notebook
 - caption: Projects
