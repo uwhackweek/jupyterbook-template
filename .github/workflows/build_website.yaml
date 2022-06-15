@@ -1,4 +1,4 @@
-name: Test
+name: Test website build across operating systems
 
 on:
   schedule:
@@ -34,7 +34,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: ${{ github.event.pull_request.head.sha }}
-        
+
     - name: Configure NASA Earthdata Login
       continue-on-error: true
       env:
@@ -43,7 +43,7 @@ jobs:
       run: |
         echo "machine urs.earthdata.nasa.gov login $EARTHDATA_USER password $EARTHDATA_PASS" > ~/.netrc
         chmod 0600 ~/.netrc
-        
+
     - uses: ./.github/actions/buildresources
       with:
         jb-cache: false
