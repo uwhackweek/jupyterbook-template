@@ -44,3 +44,4 @@ parts:
     - file: reference/open_science
     - file: reference/open_source_software
     - file: reference/questions
+    - file: reference/social
