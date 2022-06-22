@@ -128,7 +128,7 @@ There are tons of winerys just 30 minutes outside of Seattle. Here is a map of t
 An easy way to get from the UW to Capitol Hill, Downtown, International District, and as far as the Airport. The light rail comes every 5 or so minutes.
 
 ### Bus
-Busses can get you to almost anywhere within the Seattle area.
+Buses can get you to almost anywhere within the Seattle area.
 
 ### Uber/Lyft
 
