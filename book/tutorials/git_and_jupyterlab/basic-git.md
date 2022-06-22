@@ -1,14 +1,14 @@
 # Basic Git/GitHub Skills Using `jupyterlab-git`
 
 ```{admonition} Learning Objectives
-- Set up Git in the JupyterHub using [First time `git` setup](../preliminary/git)
+- Set up Git in the JupyterHub using [First time `git` setup](../../preliminary/git)
 - Learn how to use the `jupyterlab-git` GUI in JupyterLab
 - Practice 4 basic Git/GitHub skills: cloning, committing, push/pull
 ```
 
 ```{important}
 Before we go over this tutorial we expect that you have already gone through this preparation material:
-- [JupyterHub login setup](../preliminary/jupyterhub)
+- [JupyterHub login setup](../../preliminary/jupyterhub)
 ```
 
 ## What is Git and GitHub?
@@ -17,7 +17,7 @@ Before we go over this tutorial we expect that you have already gone through thi
 
 **GitHub** A website to host these repositories and allow you to sync local copies (on your computer) to the website. *Lots* of functionality built on top of this.
 
-![](../img/git-repo-structure.png){width=200px}
+![](../../img/git-repo-structure.png){width=200px}
 
 ## Some basic Git jargon
 
@@ -42,13 +42,13 @@ Today I will cover the four basic Git/GitHub skills. We will not work with branc
 
 We'll do this
 
-![](../img/git-linear-flow-2.png)
+![](../../img/git-linear-flow-2.png)
 
 ## Setting up Git
 
 Before we can work with Git in JupyterLab, we need to do some set up.
 
-[First time `git` setup](../preliminary/git)
+[First time `git` setup](../../preliminary/git)
 
 1. Tell Git who you are and to store your credentials (GitHub login info)
 
@@ -75,13 +75,13 @@ It will ask for your GitHub username and password. At the password part, paste i
 
 When the instructions say to use or open or click on `jupyterlag-git`, click the icon in the left navbar marked by the red arrow.
 
-![](../img/jupyterlab-git.jpg)
+![](../../img/jupyterlab-git.jpg)
 
 ## The Key Skills
 
 * Skill 1: Create a blank repo on GitHub
 * Skill 2: Clone your **GitHub** repo onto the JupyterHub
-* Skill 0: Open your repository in the JupyterLab. 
+* Skill 0: Open your repository in the JupyterLab.
 * Skill 3: Make some changes and commit those local changes
 * Skill 4: Push the changes to GitHub
 
@@ -113,7 +113,7 @@ When the instructions say to use or open or click on `jupyterlag-git`, click the
 
 ### Skill 3: Make some changes and commit your changes
 
-1. Make some changes to the README.md file in the Test repo. 
+1. Make some changes to the README.md file in the Test repo.
 2. Click the `jupyterlab-git` icon, and stage the change(s) by rolling over the modified file and clicking the +.
 2. Open GitHub Desktop, click the little checkboxes next to the changes.
 3. Add a commit comment, click commit.

@@ -7,14 +7,15 @@
 
 ```{important}
 Before we go over this tutorial we expect that you have already gone through these preparation materials:
-- [JupyterHub login setup](../preliminary/jupyterhub)
-- [First time `git` setup](../preliminary/git)
+- [JupyterHub login setup](../../preliminary/jupyterhub)
+- [First time `git` setup](../../preliminary/git)
 ```
 
 ## Git review
 
 Here we will do a quick refresher on the different commands you will be using
-during this event. A good summary is [this cheatsheet from GitHub](https://training.github.com/downloads/github-git-cheat-sheet.pdf).
+during this event. A good summary is
+[this cheatsheet from GitHub](https://training.github.com/downloads/github-git-cheat-sheet.pdf).
 
 These are a few commands we will use throughout the week:
 | Git command | What it does |
@@ -38,9 +39,12 @@ do with the {{hackweek}} organization repository. A fork is also a first common 
 to contribute to open-source projects and further described in the
 [Pro Git book](http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project).
 
-To make a fork of the website, go to the {{ '[GitHub repository]({url})'.format(url=website_url) }} and hit the 'Fork' button in the top right corner. In the follow-up dialog, choose your user account as the destination
+To make a fork of the website, go to
+the [GitHub repository](https://github.com/snowex-hackweek/website2022) and hit
+the 'Fork' button in the top right corner. In the follow-up dialog, choose your
+user account as the destination
 
-![github-fork](../img/github-fork.png)
+![github-fork](../../img/github-fork.png)
 
 Next steps are the same as described in the follow section on how to get code
 copied to the JupyterHub.
@@ -62,7 +66,7 @@ state of the repository including the complete history.
 
    The URL to clone the repository can be found after clicking on the green 'Code' button.
 
-   ![github-code](../img/github-clone-url.png)
+   ![github-code](../../img/github-clone-url.png)
    <br/><br/>
 
 2. On the JupyterHub, open a new Terminal using the 'Launcher' or via the menu
@@ -98,7 +102,8 @@ state of the repository including the complete history.
       name of the repository.
    ```
 
-   Your command should look similar to this before hitting the Enter key to execute it:
+   Your command should look similar to this before hitting the Enter key to
+   execute it:
     ```shell
     git clone https://github.com/<github-username>/website2022
     ```
@@ -129,10 +134,12 @@ state of the repository including the complete history.
    ```
 
    You will also see the folder on the left-hand side in the file explorer:
-   ![jupyterhub-website-folder](../img/jupyterhub-website-folder.png)
+   ![jupyterhub-website-folder](../../img/jupyterhub-website-folder.png)
 
 You are now set up to follow along with all tutorials, including making changes
-and then saving those by [recording changes with `git`](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
+and then saving those by
+[recording changes with `git`](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+.
 
 To store your commits to GitHub, don't forget to issue a `git push` from your
 repository.
@@ -161,12 +168,12 @@ Commands for branches:
 ## How do I keep up with changes to the initial forked repository?
 
 By making a fork of the website, you are creating a copy of the website as
-of the date you clicked the 'Fork' button. This also means that your version will not
-get any updates automatically if the website repository is changed after
+of the date you clicked the 'Fork' button. This also means that your version
+will not get any updates automatically if the website repository is changed after
 your fork was created.
 
-To update your forked version with changes from the {{hackweek}} version, you need to
-do a one time setup. This process is also called
+To update your forked version with changes from the {{hackweek}} version, you
+need to do a one time setup. This process is also called
 ['working with a remote'](http://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 for a git repository.
 
@@ -185,7 +192,7 @@ just went with a more descriptive label instead of the default value.
 # Change to the website folder, it was created with the `clone`
 cd website
 # Add the remote
-git remote add Hackweek {{ '`{url}.git`'.format(url=website_url) }}
+git remote add Hackweek https://github.com/snowex-hackweek/website2022.git
 ```
 
 The command will not return any output. Instead, we verify by printing the
@@ -198,8 +205,8 @@ list of known remotes for this repository:
 
 ```shell
  git remote -v
- Hackweek	{{ '`{url}.git`'.format(url=website_url) }} (fetch)
- Hackweek	{{ '`{url}.git`'.format(url=website_url) }} (push)
+ Hackweek	https://github.com/snowex-hackweek/website2022.git (fetch)
+ Hackweek	https://github.com/snowex-hackweek/website2022.git (push)
  origin	https://github.com/<github-username>/website.git (fetch)
  origin	https://github.com/<github-username>/website.git (push)
 ```
@@ -211,18 +218,19 @@ fetch from the website.
 
 To update your fork of the website, you first need to fetch and then pull
 the changes. A fetch is a pre-step that reads all the changes that need to
-be applied to your fork. The `{{hackweek}}` command options indicates from which
-source the changes will be queried from.
+be applied to your fork. The `{{hackweek}}` command options indicates from
+which source the changes will be queried from.
 
 Reading changes from the remote '{{hackweek}}':
+
 ```shell
 git fetch Hackweek
 ```
 
 To now also get and apply those changes, you need to issue a `pull` command.
 In contrast to the above, you also need to specify which branch you want
-to get the changes from. In most cases, this will be the 'main' or 'master' branch
-of a repository.
+to get the changes from. In most cases, this will be the 'main' or 'master'
+branch of a repository.
 
 ```{attention}
 It is __highly__ recommend to have no uncommitted changes in your
@@ -232,6 +240,7 @@ output.
 ```
 
 Applying changes from the remote '{{hackweek}}':
+
 ```shell
 git pull Hackweek main
 ```
@@ -248,7 +257,7 @@ git push
 
 ### Overview of a forked and then updated repository
 
-![git-fork-clone-update](../img/git-fork-clone-update.png)
+![git-fork-clone-update](../../img/git-fork-clone-update.png)
 
 ## How can I upload a file to the JupyterHub?
 
@@ -268,18 +277,21 @@ Ping us on Slack for details on how to get your files onto there.
 ```
 
 Uploading a file to your userspace on the JupyterHub can be done using the
-user interface in the browser. Below screenshot shows the location of the upload
-button (purple highlighted box), which will open a dialog in your browser.
+user interface in the browser. Below screenshot shows the location of the
+upload button (purple highlighted box), which will open a dialog in your browser.
 
-![upload-file](../img/jupyterhub-upload.png)
+![upload-file](../../img/jupyterhub-upload.png)
 
 ## Summary
 
-Congratulations! That's the end of our "GitHub, Git, JupyterHub" tutorial. You now are equipped with basic `git` commands and have familiarity with the JupyterHub computing environment.
+Congratulations! That's the end of our "GitHub, Git, JupyterHub" tutorial. You
+now are equipped with basic `git` commands and have familiarity with the
+JupyterHub computing environment.
 
 ## References
 
-If you want to learn more about these topics, check out the following references:
+If you want to learn more about these topics, check out the following
+references:
 
 * [GitHub Official Documentation](https://docs.github.com)
 * [JupyterLab Official Documentation](https://jupyterlab.readthedocs.io/en/stable/)
