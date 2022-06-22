@@ -1,15 +1,25 @@
 # Preliminary Work
 
-We welcome all types of learners to our event, from professional software developers to people just getting started. Based on previous experience, participants gain more from our hackweeks when they arrive having a preliminary understand of some of the foundational tools of data science workflows. These skills include knowing how to:
+We welcome all types of learners to our event, from professional software
+developers to people just getting started. Based on previous experience,
+participants gain more from our hackweeks when they arrive having a preliminary
+understand of some of the foundational tools of data science workflows. These
+skills include knowing how to:
 
 * Navigate a [Jupyter Notebook](https://jupyter.org/) environment
-* Conduct file management, text editing and other basic tasks from a command line interface
+* Conduct file management, text editing and other basic tasks from a command
+  line interface
 * Add and commit changes in Git, and push and pull content from GitHub
 * Create simple scientific workflows in Python
 
 ## {{hackweek}} Software Carpentry Session
 
-We strongly encourage participants to review this two-day recorded fundamentals of Python and open-source workflows crash course ([Software Carpentry Schedule](swc)) in advance of the hackweek. You may choose whichever topics you'd like to brush up on or learn. Office hours in the weeks leading up the hackweek will provide an opportunity for asking questions and troubleshooting any issues you've encountered.
+We strongly encourage participants to review this two-day recorded fundamentals
+of Python and open-source workflows crash course
+([Software Carpentry Schedule](swc)) in advance of the hackweek. You may
+choose whichever topics you'd like to brush up on or learn. Office hours in the
+weeks leading up the hackweek will provide an opportunity for asking questions
+and troubleshooting any issues you've encountered.
 
 You can view our [Software Carpentry Schedule](swc) for more information.
 
@@ -44,16 +54,22 @@ Visit our [Introduction to Jupyter Hub](jupyterhub) page to learn more!
 ### Git
 
 All content of the hackweek will be shared via GitHub and interacting with the
-website will be done via the `git` command. Visit [Setting up the `git` command](git)
-to learn how to configure that!
+website will be done via the `git` command.
+Visit [Setting up the `git` command](git) to learn how to configure that!
 
 ### EarthData Login
 
 We'll have you download some data from NSIDC for your tutorials and projects.
-Visit our [Earthdata](earthdata) page to learn how to access and Earthdata login account if you don't already have one!
+Visit our [Earthdata](earthdata) page to learn how to access and Earthdata
+login account if you don't already have one!
 
-## Optional setup
+## Supplemental Material
 
 ### Python
-Dive deeper into how [Python is managed and installed](python) on the JupyterHub
-and how you can install that on your personal machine.
+
+Dive deeper into how [Python is managed and installed](supplemental/python) on
+the JupyterHub and how you can install that on your personal machine.
+
+### Conda
+A basic intro to manage Python environments using the
+[conda package manager](supplemental/conda)
