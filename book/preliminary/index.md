@@ -28,6 +28,28 @@ You can view our [Software Carpentry Schedule](swc) for more information.
 ```{attention}
 Please make sure to find some time to go through the below material before
 the hackweek.
+
+__Upon completion you__:
+<div>
+  <input type="checkbox" name="a1">
+  <label for="a1">Joined the Slack workspace</label>
+</div>
+<div>
+  <input type="checkbox" name="a2">
+  <label for="a2">Created a EarthData Login</label>
+</div>
+<div>
+  <input type="checkbox" name="a3">
+  <label for="a3">Created a GitHub account</label>
+</div>
+<div>
+  <input type="checkbox" name="a4">
+  <label for="a4">Can login to the JupyterHub</label>
+</div>
+<div>
+  <input type="checkbox" name="a5">
+  <label for="a5">Setup the `git` command after logging into the JupyterHub</label>
+</div>
 ```
 
 ### GitHub Account
