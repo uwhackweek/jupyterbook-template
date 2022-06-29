@@ -34,7 +34,7 @@ for notebook in ipynbs:
     print(f'Checking {notebook}...')
     nb = nbformat.read(notebook, as_version=nbformat.NO_CONVERT)
     result = nbc.check_notebook(nb,
-                                remove_empty_cells=True,
+                                remove_empty_cells=False,
                                 preserve_cell_metadata=True)
     results.append(result)
 
