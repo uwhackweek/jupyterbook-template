@@ -6,10 +6,10 @@ This folder contains continuous integration workflows to perform a variety of ta
 
 the `actions/` subfolder contains common [composite actions steps](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) that any workflow can use.
 
-#### [setupconda](./actions/setupconda/action.yaml)
+#### [setupconda](./setupconda/action.yaml)
 Steps to configure conda environment required to build the website.
 
-#### [buildresources](./actions/buildresources/action.yaml)
+#### [buildresources](./buildresources/action.yaml)
 Steps to build the hackweek landing webpage and JupyterBook.
 
 
@@ -17,28 +17,28 @@ Steps to build the hackweek landing webpage and JupyterBook.
 
 The `workflows/` subfolder contains continuous integration workflows
 
-#### [binder-badge.yaml](./actions/workflows/binder-badge.yaml)
+#### [binder-badge.yaml](../workflows/binder-badge.yaml)
 Create [binder](https://mybinder.readthedocs.io/en/latest/howto/gh-actions-badges.html) badges with links to test tutorial notebooks
 
-#### [deploy.yaml](./actions/workflows/deploy.yaml)
+#### [deploy.yaml](../workflows/deploy.yaml)
 Render and publish the websites (JupyterBook and landing page) to GitHub Pages
 
-#### [manual.yaml](./actions/workflows/manual.yaml)
+#### [manual.yaml](../workflows/manual.yaml)
 Bypass usage of the cache to manually trigger a full rebuild of the JupyterBook and landing page
 
-#### [netlifypreview.yaml](./actions/workflows/netlifypreview.yaml)
+#### [netlifypreview.yaml](../workflows/netlifypreview.yaml)
 Creates public preview, via [netlify](https://jupyterbook.org/publish/netlify.html), of changes by building from a PR
 
-#### [qaqc.yaml](./actions/workflows/qaqc.yaml)
+#### [qaqc.yaml](../workflows/qaqc.yaml)
 Quality assessment and quality control. Standardizes formatting including spell check, hyperlink check, and clearing notebook outputs
 
-#### [repo2docker.yaml](./actions/workflows/repo2docker.yaml)
+#### [repo2docker.yaml](../workflows/repo2docker.yaml)
 [Build a Docker image](https://github.com/jupyterhub/repo2docker-action) for JupyterHub/BinderHub
 
-#### [test.yaml](./actions/workflows/test.yaml)
+#### [test.yaml](../workflows/test.yaml)
 Build the websites (JupyterBook and front page). Run on Pull Requests against every commit and via a 'cron' schedule to maintain caching [since otherwise the cache expires if untouched in 7 days](https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows#usage-limits-and-eviction-policy)
 
-#### [update_fr_template.yaml](./actions/workflows/update_fr_template.yaml)
+#### [update_fr_template.yaml](../workflows/update_fr_template.yaml)
 Update the current repo from the original template (`uwhackweek/jupyterbook-template`). Run manually to collect any updates made to template files listed in `.templaterc.json`, commit them to a new branch, and submit a PR the repo created from the template.
 
 ## Security
