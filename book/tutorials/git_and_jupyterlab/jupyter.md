@@ -205,8 +205,8 @@ list of known remotes for this repository:
 
 ```shell
  git remote -v
- Hackweek	https://github.com/snowex-hackweek/website2022.git (fetch)
- Hackweek	https://github.com/snowex-hackweek/website2022.git (push)
+ Hackweek	{{ '{url}.git'.format(url=website_url) }} (fetch)
+ Hackweek	{{ '{url}.git'.format(url=website_url) }} (push)
  origin	https://github.com/<github-username>/website.git (fetch)
  origin	https://github.com/<github-username>/website.git (push)
 ```
