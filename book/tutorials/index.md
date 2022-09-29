@@ -13,5 +13,4 @@ All live tutorial recordings available via UW eScience [YouTube Playlist](https:
 
 | Tutorial | Topics | Datasets |  Recording Link |
 | -  | - | - |  - |
-| [Open Science Tools](./jupyter.md) | Git, GitHub, JupyterHub | n/a | [Recording](https://youtu.be/rKhs5FLI5rc)  |
 | [Example Notebook](./example/tutorial-notebook.ipynb) | Jupyter Book formatting, ipyleaflet | n/a |  Not recorded |

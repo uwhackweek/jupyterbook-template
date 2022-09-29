@@ -6,6 +6,7 @@ parts:
 - caption: Details
   chapters:
     - file: application
+    - file: logistics
     - title: Schedule
       url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
     - title: Team
@@ -16,18 +17,25 @@ parts:
   chapters:
     - file: preliminary/index
       sections:
-        - file: preliminary/swc
         - file: preliminary/github
         - file: preliminary/jupyterhub
         - file: preliminary/git
         - file: preliminary/earthdata
-        - file: preliminary/python
+        - file: preliminary/swc
+        - file: preliminary/supplemental_index
+          sections:
+          - file: preliminary/supplemental/python
+          - file: preliminary/supplemental/conda
 - caption: Tutorials
   chapters:
     - file: tutorials/index
       sections:
-        - file: tutorials/jupyter
         - file: tutorials/example/tutorial-notebook
+        - file: tutorials/git_and_jupyterlab/index
+          title: Git, GitHub, and JupyterLab
+          sections:
+            - file: tutorials/git_and_jupyterlab/basic-git
+            - file: tutorials/git_and_jupyterlab/jupyter
 - caption: Projects
   chapters:
     - file: projects/list_of_projects
@@ -43,3 +51,4 @@ parts:
     - file: reference/open_science
     - file: reference/open_source_software
     - file: reference/questions
+    - file: reference/social

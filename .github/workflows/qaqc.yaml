@@ -49,6 +49,7 @@ jobs:
 
     - name: Check External Links
       continue-on-error: true
+      timeout-minutes: 5
       if: always()
       run: |
         jb build book --builder linkcheck
