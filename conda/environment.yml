@@ -10,18 +10,20 @@ dependencies:
   - cookiecutter
   - git
   - ipyleaflet
-  - jinja2>=2.11
-  - jupyter-book=0.12
+  - jupyter-book=0.13
   - jupyter-resource-usage
   - jupyterhub-singleuser
   - jupyterlab=3
+  - jupytext
   - pip
-  - pygments>=2.6.1
-  - pymdown-extensions>=7.1
   - python=3.10
   - sphinxcontrib-bibtex
   - vim
   - wget
+  # Dependencies of jinja-markdown:
+  - jinja2>=2.11
+  - pygments>=2.6.1
+  - pymdown-extensions>=7.1
   - pip:
     - jinja-markdown==1.210911
 platforms:

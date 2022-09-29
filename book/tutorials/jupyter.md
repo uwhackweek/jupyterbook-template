@@ -255,7 +255,7 @@ git push
 ```{attention}
 The below description works well for smaller files (<10 MB) or zipped archives.
 
-Your files are persisted acrosss server shutdowns and startups and you don't have
+Your files are persisted across server shutdowns and startups and you don't have
 to upload them again when you log out at the end of the day and restart anew the
 next day.
 
