@@ -2,6 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![Deploy](https://github.com/uwhackweek/jupyterbook-template/actions/workflows/deploy.yaml/badge.svg)](https://github.com/uwhackweek/jupyterbook-template/actions/workflows/deploy.yaml)
 
 **THIS IS A [TEMPLATE REPOSITORY](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template )** designed to streamline creating two linked websites for a [UW eScience Hackweek](https://uwhackweek.github.io/hackweeks-as-a-service/intro.html):
 
