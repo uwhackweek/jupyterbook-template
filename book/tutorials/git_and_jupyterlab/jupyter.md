@@ -192,7 +192,7 @@ just went with a more descriptive label instead of the default value.
 # Change to the website folder, it was created with the `clone`
 cd website
 # Add the remote
-git remote add Hackweek https://github.com/snowex-hackweek/website2022.git
+git remote add Hackweek {{ '{url}.git'.format(url=website_url) }}
 ```
 
 The command will not return any output. Instead, we verify by printing the
