@@ -6,57 +6,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Project Roles &#8212; Hackweek Template</title>
+    <title>Git and JupyterLab &#8212; Hackweek Template</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Project Roadmap" href="project_roadmap.html" />
-    <link rel="prev" title="Projects" href="index.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Basic Git/GitHub Skills Using jupyterlab-git" href="basic-git.html" />
+    <link rel="prev" title="Example tutorial notebook" href="../example/tutorial-notebook.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -91,19 +91,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="../_static/logo.png" class="logo" alt="logo">
+      <img src="../../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Hackweek Template</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
+                <a class="reference internal" href="../../intro.html">
                     Welcome to uwhackweek!
                 </a>
             </li>
@@ -123,12 +123,12 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../application.html">
+  <a class="reference internal" href="../../application.html">
    Application
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../logistics.html">
+  <a class="reference internal" href="../../logistics.html">
    Event Logistics
   </a>
  </li>
@@ -143,12 +143,12 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../mission.html">
+  <a class="reference internal" href="../../mission.html">
    Hackweek Mission
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../CoC.html">
+  <a class="reference internal" href="../../CoC.html">
    Event Code of Conduct
   </a>
  </li>
@@ -160,7 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../preliminary/index.html">
+  <a class="reference internal" href="../../preliminary/index.html">
    Preliminary Work
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -170,32 +170,32 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../preliminary/github.html">
+    <a class="reference internal" href="../../preliminary/github.html">
      GitHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../preliminary/jupyterhub.html">
+    <a class="reference internal" href="../../preliminary/jupyterhub.html">
      JupyterHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../preliminary/git.html">
+    <a class="reference internal" href="../../preliminary/git.html">
      Git
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../preliminary/earthdata.html">
+    <a class="reference internal" href="../../preliminary/earthdata.html">
      Earthdata Login
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../preliminary/swc.html">
+    <a class="reference internal" href="../../preliminary/swc.html">
      Software Carpentry Training
     </a>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../preliminary/supplemental_index.html">
+    <a class="reference internal" href="../../preliminary/supplemental_index.html">
      Supplemental Material
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -205,12 +205,12 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../preliminary/supplemental/python.html">
+      <a class="reference internal" href="../../preliminary/supplemental/python.html">
        Python
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../preliminary/supplemental/conda.html">
+      <a class="reference internal" href="../../preliminary/supplemental/conda.html">
        Conda
       </a>
      </li>
@@ -224,34 +224,34 @@ const thebe_selector_output = ".output, .cell_output"
   Tutorials
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../tutorials/index.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
    Tutorials
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../tutorials/example/tutorial-notebook.html">
+    <a class="reference internal" href="../example/tutorial-notebook.html">
      Example tutorial notebook
     </a>
    </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../tutorials/git_and_jupyterlab/index.html">
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
      Git, GitHub, and JupyterLab
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
     <label for="toctree-checkbox-4">
      <i class="fas fa-chevron-down">
      </i>
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../tutorials/git_and_jupyterlab/basic-git.html">
+      <a class="reference internal" href="basic-git.html">
        Basic Git/GitHub Skills Using
        <code class="docutils literal notranslate">
         <span class="pre">
@@ -261,7 +261,7 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../tutorials/git_and_jupyterlab/jupyter.html">
+      <a class="reference internal" href="jupyter.html">
        GitHub, Git, JupyterHub
       </a>
      </li>
@@ -275,34 +275,34 @@ const thebe_selector_output = ".output, .cell_output"
   Projects
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="list_of_projects.html">
+  <a class="reference internal" href="../../projects/list_of_projects.html">
    List of Projects
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="index.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../projects/index.html">
    Projects
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../projects/project_roles.html">
      Project Roles
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="project_roadmap.html">
+    <a class="reference internal" href="../../projects/project_roadmap.html">
      Project Roadmap
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="project_initialization.html">
+    <a class="reference internal" href="../../projects/project_initialization.html">
      Project Initialization
     </a>
    </li>
@@ -316,32 +316,32 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../reference/glossary.html">
+  <a class="reference internal" href="../../reference/glossary.html">
    Glossaries
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../reference/bibliography.html">
+  <a class="reference internal" href="../../reference/bibliography.html">
    Bibliography
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../reference/open_science.html">
+  <a class="reference internal" href="../../reference/open_science.html">
    Open Science
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../reference/open_source_software.html">
+  <a class="reference internal" href="../../reference/open_source_software.html">
    Open-source Software
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../reference/questions.html">
+  <a class="reference internal" href="../../reference/questions.html">
    How to Get Help
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../reference/social.html">
+  <a class="reference internal" href="../../reference/social.html">
    Things to do in Seattle
   </a>
  </li>
@@ -435,7 +435,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/uwhackweek/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2Fprojects/project_roles.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/uwhackweek/jupyterbook-template/issues/new?title=Issue%20on%20page%20%2Ftutorials/git_and_jupyterlab/index.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -452,7 +452,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/uwhackweek/jupyterbook-template/edit/main/book/projects/project_roles.md"
+        <a href="https://github.com/uwhackweek/jupyterbook-template/edit/main/book/tutorials/git_and_jupyterlab/index.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -480,7 +480,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/projects/project_roles.md"
+        <a href="../../_sources/tutorials/git_and_jupyterlab/index.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -540,42 +540,9 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-leadership">
-   <strong>
-    Project Leadership
-   </strong>
+  <a class="reference internal nav-link" href="#preliminary-work">
+   Preliminary Work
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lead-project-coordinator">
-     Lead Project Coordinator
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#collaboration-consultant">
-     Collaboration Consultant
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-teams">
-   <strong>
-    Project Teams
-   </strong>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-team-lead">
-     Project Team Lead
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-helper">
-     Project Helper
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -586,7 +553,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Project Roles</h1>
+                <h1>Git and JupyterLab</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -597,42 +564,9 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-leadership">
-   <strong>
-    Project Leadership
-   </strong>
+  <a class="reference internal nav-link" href="#preliminary-work">
+   Preliminary Work
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lead-project-coordinator">
-     Lead Project Coordinator
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#collaboration-consultant">
-     Collaboration Consultant
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-teams">
-   <strong>
-    Project Teams
-   </strong>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-team-lead">
-     Project Team Lead
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-helper">
-     Project Helper
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -644,43 +578,38 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="project-roles">
-<h1>Project Roles<a class="headerlink" href="#project-roles" title="Permalink to this headline">#</a></h1>
-<p>We find it helps to have clearly defined roles for everyone who is engaged in hackweek projects:</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/project-roles.png"><img alt="diagram of the purpose of hackwek project work" class="bg-primary mb-1 align-center" src="../_images/project-roles.png" style="width: 450px;" /></a>
-<section id="project-leadership">
-<h2><strong>Project Leadership</strong><a class="headerlink" href="#project-leadership" title="Permalink to this headline">#</a></h2>
-<section id="lead-project-coordinator">
-<h3>Lead Project Coordinator<a class="headerlink" href="#lead-project-coordinator" title="Permalink to this headline">#</a></h3>
-<p>The Lead Project Coordinator will help to assess what projects are possible and to align projects with programmatic objectives if applicable. They will be active on communication platforms such as Slack to encourage participants to pitch ideas before the hackweek, and to communicate the process, roles and responsibilities of working in collaborative teams. During the event they might facilitate project team formation and embed with teams to guide collaborations, resolve conflicts and define what is possible within the allotted time.</p>
-</section>
-<section id="collaboration-consultant">
-<h3>Collaboration Consultant<a class="headerlink" href="#collaboration-consultant" title="Permalink to this headline">#</a></h3>
-<p>The Collaboration Consultant is a member of the UW eScience Team who helps to create the conditions for participants and organizers to function well together in teams. They will share best practices to guide project formation, team building and collaboation, conflict resolution and generating random connections through social interactions.</p>
-</section>
-</section>
-<section id="project-teams">
-<h2><strong>Project Teams</strong><a class="headerlink" href="#project-teams" title="Permalink to this headline">#</a></h2>
-<p>We invite everyone to be a participant in a project team. There are two additional roles for participants that we encourage you to consider:</p>
-<section id="project-team-lead">
-<h3>Project Team Lead<a class="headerlink" href="#project-team-lead" title="Permalink to this headline">#</a></h3>
-<p>The role of Project Team Lead is to guide the collaborative project work before, during and sometimes after the hackweek. Specific tasks could include:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="git-and-jupyterlab">
+<h1>Git and JupyterLab<a class="headerlink" href="#git-and-jupyterlab" title="Permalink to this headline">#</a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Before we go over this tutorial we expect that you have already gone through
+these preparation materials:</p>
 <ul class="simple">
-<li><p>pitching an idea for a project</p></li>
-<li><p>gathering together a team and helping each person get clear on their individual goals during the project work</p></li>
-<li><p>facilitating relationship-building and development of collaborative structures among the team</p></li>
-<li><p>helping everyone design project work that is within the scope of the hackweek</p></li>
+<li><p><a class="reference internal" href="../../preliminary/jupyterhub.html"><span class="doc std std-doc">JupyterHub login setup</span></a></p></li>
 </ul>
-</section>
-<section id="project-helper">
-<h3>Project Helper<a class="headerlink" href="#project-helper" title="Permalink to this headline">#</a></h3>
-<p>Each project might have one or several Project Helpers. Their role is often to:</p>
+</div>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">Learning Objectives</p>
 <ul class="simple">
-<li><p>offer technical guidance on a specific data science tool or topic in which they have expertise</p></li>
-<li><p>help team members navigate collaboration technologies like JupyterHub and GitHub</p></li>
-<li><p>offer a deeper-dive on content touched on during tutorials</p></li>
+<li><p>Set up Git in the JupyterHub using <a class="reference internal" href="../../preliminary/git.html"><span class="doc std std-doc">First time <code class="docutils literal notranslate"><span class="pre">git</span></code> setup</span></a></p></li>
+<li><p>Learn how to use the <code class="docutils literal notranslate"><span class="pre">jupyterlab-git</span></code> GUI in JupyterLab</p></li>
+<li><p>Practice four basic Git/GitHub skills: <code class="docutils literal notranslate"><span class="pre">clone</span></code>, <code class="docutils literal notranslate"><span class="pre">commit</span></code>, <code class="docutils literal notranslate"><span class="pre">push</span></code>, and <code class="docutils literal notranslate"><span class="pre">pull</span></code></p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">git</span></code> to create copies of hackweek repositories on GitHub for modification</p></li>
+<li><p>Navigate the JupyterLab interface for writing and executing code</p></li>
 </ul>
-</section>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic-git.html">Basic Git/GitHub Skills Using <code class="docutils literal notranslate"><span class="pre">jupyterlab-git</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">GitHub, Git, JupyterHub</a></li>
+</ul>
+</div>
+<section id="preliminary-work">
+<h2>Preliminary Work<a class="headerlink" href="#preliminary-work" title="Permalink to this headline">#</a></h2>
+<p>Additional information around the <code class="docutils literal notranslate"><span class="pre">git</span></code> command, <a class="reference external" href="https://github.com">GitHub</a>,
+and our <a class="reference external" href="https://jupyter.org/hub">JupyterHub</a> environment that provides the
+<a class="reference external" href="https://jupyter.org/">JupyterLab</a> can be found under the
+<a class="reference internal" href="../../preliminary/index.html"><span class="doc std std-doc">preliminary content</span></a>.</p>
 </section>
 </section>
 
@@ -697,7 +626,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./projects"
+            path: "./tutorials/git_and_jupyterlab"
         },
         predefinedOutput: true
     }
@@ -711,17 +640,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../example/tutorial-notebook.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Projects</p>
+            <p class="prev-next-title">Example tutorial notebook</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="project_roadmap.html" title="next page">
+    <a class='right-next' id="next-link" href="basic-git.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Project Roadmap</p>
+        <p class="prev-next-title">Basic Git/GitHub Skills Using <code class="docutils literal notranslate"><span class="pre">jupyterlab-git</span></code></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -746,7 +675,7 @@ title="Print to PDF"
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>
