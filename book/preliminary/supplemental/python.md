@@ -15,7 +15,7 @@ If you open a terminal on your computer, chances are if you type 'python' you wi
 ## Installing a specific Python version
 
 We will be using Python 3 during the week.
-You can create envionments with different versions of Python using the following commands:
+You can create environments with different versions of Python using the following commands:
 
 ``` bash
 conda create --name py39 python=3.9
