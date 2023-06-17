@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ cookiecutter.banner.description }}">
     <meta name="author" content="{{ cookiecutter.name }}">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
 
     <!-- Google Font -->
     <link
@@ -107,7 +107,7 @@
     <div class="container">
         <div class="hero-text-block">
             <h1 class="hero-heading mb-2">
-                {{ cookiecutter.banner.title }} {{ cookiecutter.banner.year }}
+                {{ cookiecutter.name }} {{ cookiecutter.banner.year }}
             </h1>
             <div class="hero-meta mb-3">
                 <i class="far fa-calendar-alt me-2"></i>
@@ -144,21 +144,37 @@
         <h3 class="section-heading text-center mb-3">
             About {{ cookiecutter.name }}
         </h3>
-        <div class="section-intro single-col-max mx-auto mb-4">
-            {{ cookiecutter.about }}
+        <div class="section-intro single-col-max mx-auto mb-3">
+            {{ cookiecutter.about.description }}
         </div>
-        <div class="about-cta text-center mb-5">
-            <a class="btn btn-secondary btn-lg  mb-5"
-               href="{{ cookiecutter.hackweek_mission }}"
+        <div class="about-cta text-center mb-4">
+            <a class="btn btn-secondary btn-lg"
+               href="{{ cookiecutter.about.learn_more }}"
                target="_blank">
-                Learn about "hackweeks"
+                Learn about "Hackweeks"
                 <i class="fas fa-external-link-alt"></i>
             </a>
         </div>
 
-        <div id="countdown-intro" class="event-countdown text-center mb-3">
-            <h4 class="countdown-intro mb-2 text-center mb-3">
-                Event Starts In:
+        {%- if 'links' in cookiecutter.about %}
+            <div class="hero-cta text-center mb-4">
+                <h4 class="mb-3 text-center">
+                    Past Events:
+                </h4>
+                {%- for link in cookiecutter.about.links %}
+                    <a class="btn btn-primary btn-lg mb-3 mx-2"
+                       href="{{ link.url }}"
+                        {{ 'target="_blank"' if link.new_window == 'True' else '' }}
+                    >
+                        {{ link.title }}
+                    </a>
+                {%- endfor %}
+            </div>
+        {%- endif %}
+
+        <div id="countdown-intro" class="event-countdown text-center mb-4">
+            <h4 class="countdown-intro mb-2 text-center">
+                {{ cookiecutter.banner.year }} Event Starts In:
             </h4>
             <div id="countdown-box"
                  class="countdown-box"
@@ -173,7 +189,7 @@
                 Information for Applicants
             </h4>
             <div
-                class="section-intro text-center single-col-max mx-auto text-white mb-5">
+                class="section-intro text-center single-col-max mx-auto text-white mb-3">
                 {{cookiecutter.applicant_info}}
             </div>
         </div>
@@ -357,7 +373,8 @@
                             <div class="meta">
                                 {%- for group in person['user_groups'] %}
                                 <img
-                                    src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"/>
+                                    src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"
+                                    alt="{{ group }} badge"/>
                                 {%- endfor %}
                             </div>
                         </div>
@@ -445,7 +462,9 @@
                                     <div class="mb-2">
                                         {%- for group in person['user_groups'] %}
                                         <img
-                                            src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"/>
+                                            src="https://img.shields.io/badge/Hackweek-{{ group }}-purple?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAACXBIWXMAAAHKAAABygHMtnUxAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAMNJREFUGBltwcEqwwEcAOAfc1F2sNsOTqSlNUopSv5jW1YzHHYY/6YtLa1Jy4mbl3Bz8QIeyKM4fMaUxr4vZnEpjWnmLMSYCysxTcddhF25+EvJia5hhCudULAePyRalvUteXIfBgYxJufRuaKuprKsbDjVUrUj40FNQ11PTzEmrCmrevPhRcVQai8m1PRVvOPZgX2JttWYsGhD3atbHWcyUqX4oqDtJkJiJHUYv+R1JbaNHJmP/+Q1HLu2GbNoSm3Ft0+Y1YMdPSTSwQAAAABJRU5ErkJggg==&style=plastic"
+                                            alt="{{ group }} badge"
+                                        />
                                         {%- endfor %}
                                     </div>
                                     {{ person['bio'] }}
@@ -527,7 +546,7 @@
         <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
         <small class="copyright">©
             <script type="text/javascript">
-                document.write(new Date().getFullYear());
+                document.write(new Date().getFullYear().toString());
             </script>
             {{ cookiecutter.name }}
         </small>

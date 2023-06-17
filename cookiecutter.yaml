@@ -1,14 +1,10 @@
 repo_directory: html
 name: UW Hackweek
-about: Hackweeks are participant-driven events that strive to create welcoming spaces
-  for participants to learn new things, build community and gain hands-on experience
-  with collaboration and team science
 apply:
   url: '#'
   title: Application coming soon
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  title: UW Hackweek
   description: An awesome learning event.
   start_date: XX Month
   end_date: XX Month
@@ -19,6 +15,15 @@ banner:
     title: Event Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
+about:
+  description: Hackweeks are participant-driven events that strive to create
+    welcoming spaces for participants to learn new things, build community and
+    gain hands-on experience with collaboration and team science
+  learn_more: https://escience.washington.edu/using-data-science/hackweeks
+  links:
+    - url: '#'
+      title: A sample link
+      new_window: True
 applicant_info: UW Hackweek 2022 will take place in October 2022 (virtual or in-person
   TBD). Applications have not yet opened, but should be anticipated in September 2022.
 team:
