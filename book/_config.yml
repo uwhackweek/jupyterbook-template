@@ -17,8 +17,8 @@ parse:
     website_url: "https://book-template.hackweek.io"
     jupyterhub_url: "https://INSERT_JUPYTERHUB_URL"
     slack_workspace_url: "https://INSERT_SLACK_URL"
-    contact_email: "uwhackweek@github.com"
-    dataset: "ICESat-2"
+    contact_email: "INSERT_CONTACT_EMAIL@UW.COM"
+    dataset: "INSERT_DATA_SET_NAME"
     anon_reporting_url: "https://INSERT_FORM_LINK"
     project_spreadsheet_url: "https://INSERT_GOOGLE_SHEET"
   myst_enable_extensions:
