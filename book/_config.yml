@@ -14,7 +14,7 @@ parse:
     dates: "October ? to ?, 2021"
     github_org_url: "https://github.com/uwhackweek"
     book_repo: "jupyterbook-template"
-    website_url: "https://uwhackweek.github.io/jupyterbook-template"
+    website_url: "https://book-template.hackweek.io"
     jupyterhub_url: "https://INSERT_JUPYTERHUB_URL"
     slack_workspace_url: "https://INSERT_SLACK_URL"
     contact_email: "uwhackweek@github.com"
