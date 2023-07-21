@@ -8,11 +8,11 @@ LOCK_ENV='CondaLock'
 check_success() {
   if [[ $1 -ne 0 ]]; then
     printf "\033[1;31m ERROR \033[0m "
-    printf "$2"
+    printf "$2\n"
     exit 1
   else
     printf "\033[1;32m SUCCESS \033[0m "
-    printf "$2"
+    printf "$2\n"
   fi
 }
 
