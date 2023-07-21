@@ -7,8 +7,6 @@ name: hackweek
 channels:
   - conda-forge
 dependencies:
-  - cookiecutter
-  - git
   - ipyleaflet
   - jupyter-book=0.13
   - jupyter-resource-usage
@@ -18,8 +16,8 @@ dependencies:
   - pip
   - python=3.10
   - sphinxcontrib-bibtex
-  - vim
-  - wget
+  # For building the Splashpage
+  - cookiecutter
   # Dependencies of jinja-markdown:
   - jinja2>=2.11
   - pygments>=2.6.1
