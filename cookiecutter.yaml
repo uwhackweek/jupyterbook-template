@@ -15,6 +15,8 @@ banner:
     title: Event Jupyter Book
     new_window: false
   image: https://geohackweek.github.io/assets/images/banner.jpg
+# The opening session of the event with UTC offset
+event_countdown: "2024-08-07T08:30:00-07:00"
 about:
   description: Hackweeks are participant-driven events that strive to create
     welcoming spaces for participants to learn new things, build community and
