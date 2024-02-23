@@ -40,7 +40,7 @@ We've designed this template so that you should only have to edit a few files wi
 
 ### Additional options to consider
 [ReviewNB](https://www.reviewnb.com/) is a great tool for viewing changes in Jupyter Notebooks.
-Someone with admin privelages must activate it for each repository you create from this template.
+Someone with admin privileges must activate it for each repository you create from this template.
 To activate:
 
 1. Go to [reviewnb.com](https://www.reviewnb.com/).
