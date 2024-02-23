@@ -1,3 +1,11 @@
 # THIS FILE CANNOT BE SYNCED
 # use glob patterns as in .gitignore
 # recommend listing non-basics tutorial directories here
+
+# environment lock files
+./conda/*lock.yml
+
+# general book files
+./book/team.yaml
+
+# event-specific tutorials
