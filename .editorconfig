@@ -31,5 +31,6 @@ indent_size = unset
 [*.rst]
 indent_size = unset
 
-[{*.yml, *.yaml}]
+[*.{yml,yaml}]
 indent_size = 2
+max_line_length = 100
