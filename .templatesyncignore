@@ -2,10 +2,14 @@
 # use glob patterns as in .gitignore
 # recommend listing non-basics tutorial directories here
 
+# configuration files
+cookiecutter.yaml
+
 # environment lock files
 ./conda/*lock.yml
 
-# general book files
+# book files (configuration, usage-specific)
+./book/_config.yml
 ./book/team.yaml
 
 # event-specific tutorials
