@@ -14,7 +14,7 @@ We've found that every hackweek benefits from a single-page website to get peopl
 
 We've used this template for the following events:
 
-* ICESat-2 Hackweek 2022: https://icesat-2.hackweek.io
+* ICESat-2 Hackweek 2022 + 2023: https://icesat-2.hackweek.io
 * SnowEx Hackweek 2021: https://snowex-hackweek.github.io/website/intro.html
 
 
