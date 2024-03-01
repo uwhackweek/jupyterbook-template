@@ -3,7 +3,7 @@ description: 'Get updates to the Jupyterbook from the template repo'
 
 on:
   # cronjob trigger (minute, hour, day, month, day-of-week; here 1st of month)
-  schedule:
+  # schedule:
   # - cron:  "0 0 1 * *"
   # manual trigger
   workflow_dispatch:
