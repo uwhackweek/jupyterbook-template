@@ -20,6 +20,9 @@ The `workflows/` subfolder contains continuous integration workflows
 #### [binder-badge.yaml](../workflows/binder-badge.yaml)
 Create [binder](https://mybinder.readthedocs.io/en/latest/howto/gh-actions-badges.html) badges with links to test tutorial notebooks
 
+#### [build-website.yaml](../workflows/build-website.yaml)
+Build the websites (JupyterBook and front page). Run on Pull Requests against every commit and via a 'cron' schedule to maintain caching [since otherwise the cache expires if untouched in 7 days](https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows#usage-limits-and-eviction-policy)
+
 #### [deploy.yaml](../workflows/deploy.yaml)
 Render and publish the websites (JupyterBook and landing page) to GitHub Pages
 
@@ -35,8 +38,12 @@ Quality assessment and quality control. Standardizes formatting including spell 
 #### [repo2docker.yaml](../workflows/repo2docker.yaml)
 [Build a Docker image](https://github.com/jupyterhub/repo2docker-action) for JupyterHub/BinderHub
 
-#### [test.yaml](../workflows/test.yaml)
-Build the websites (JupyterBook and front page). Run on Pull Requests against every commit and via a 'cron' schedule to maintain caching [since otherwise the cache expires if untouched in 7 days](https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows#usage-limits-and-eviction-policy)
+#### [template-sync.yaml](../workflows/template-sync.yaml)
+Open a PR to update the templated repo to incorporate changes made to the
+[template repo](https://github.com/uwhackweek/jupyterbook-template).
+Template users should fill out the [.templatesyncignore](../../../.templatesyncignore)
+to specify which files they do not want updated from the template.
+
 
 ## Security
 
