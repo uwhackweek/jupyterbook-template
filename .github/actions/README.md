@@ -41,6 +41,8 @@ Quality assessment and quality control. Standardizes formatting including spell 
 #### [template-sync.yaml](../workflows/template-sync.yaml)
 Open a PR to update the templated repo to incorporate changes made to the
 [template repo](https://github.com/uwhackweek/jupyterbook-template).
+Template users should fill out the [.templatesyncignore](../../../.templatesyncignore)
+to specify which files they do not want updated from the template.
 
 
 ## Security

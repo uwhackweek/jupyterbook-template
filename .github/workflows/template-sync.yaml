@@ -4,7 +4,7 @@ description: 'Get updates to the Jupyterbook from the template repo'
 on:
   # cronjob trigger (minute, hour, day, month, day-of-week; here 1st of month)
   schedule:
-  - cron:  "0 0 1 * *"
+  # - cron:  "0 0 1 * *"
   # manual trigger
   workflow_dispatch:
 
@@ -29,6 +29,5 @@ jobs:
         uses: AndreasAugustin/actions-template-sync@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_repo_path: <owner/repo>
-          upstream_branch: <target_branch> # defaults to main
-          pr_labels: <label1>,<label2>[,...] # defaults to template_sync
+          source_repo_path: uwhackweek/jupyterbook-template
+          upstream_branch: main # defaults to main
