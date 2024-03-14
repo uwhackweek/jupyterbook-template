@@ -8,9 +8,9 @@ on:
   pull_request_target:
     types: [labeled, synchronize]
     paths:
-      - '.github/**'
+      - '.github/**/*'
       - '{{ cookiecutter.repo_directory }}/**'
-      - 'book/**'
+      - 'book/**/*'
       - 'conda/**'
       - 'scripts/**'
       - 'cookiecutter.yaml'
