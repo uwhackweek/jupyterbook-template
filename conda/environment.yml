@@ -8,13 +8,13 @@ channels:
   - conda-forge
 dependencies:
   - ipyleaflet
-  - jupyter-book=0.13
+  - jupyter-book<2
   - jupyter-resource-usage
   - jupyterhub-singleuser
-  - jupyterlab=3
+  - jupyterlab
   - jupytext
   - pip
-  - python=3.10
+  - python
   - sphinxcontrib-bibtex
   # For building the Splashpage
   - cookiecutter
