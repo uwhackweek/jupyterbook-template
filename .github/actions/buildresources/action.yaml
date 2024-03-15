@@ -54,6 +54,6 @@ runs:
       if: ${{ always() && inputs.jb-save == 'true'}}
       uses: actions/upload-artifact@v4
       with:
-        name: build
+        name: build-{{inputs.os}}
         path: book/_build/
 
