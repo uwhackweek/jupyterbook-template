@@ -1,7 +1,8 @@
 # List of Projects
 
-Here is where we will be listing the projects during the {{dates}} {{ hackweek }} hackweek:
+Here is our current list of project for our {{dates}} {{ hackweek }} hackweek:
 
-| Project Name (with link to GitHub repo) | slack channel | final presentation | 
+| Project Name (with link to GitHub repo) | Short Description | Project Lead(s) | 
 |:--------|:--------|:-----|
-| [Snow Temperature Changes](https://github.com/snowex-hackweek/hot-pow) | [#Hot-Pow](https://snowexhackweek2021.slack.com/archives/C027RBZ9JH3) | [Video](https://youtu.be/lV3to0c_KtA)  |
+| [Snow-Extrapolation](https://github.com/geo-smart/Snow-Extrapolation) | Goal: Improve National Snow Model (NSM) prediction performance in the Sierra Nevada mountains through domain constraints and the exploration of different ML algorithms. | Ryan Johnson | 
+
