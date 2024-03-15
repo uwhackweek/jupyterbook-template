@@ -5,7 +5,6 @@ format: jb-book
 parts:
 - caption: Details
   chapters:
-    - file: application
     - file: logistics
     - title: Schedule
       url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
