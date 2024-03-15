@@ -20,7 +20,7 @@ check_success() {
 conda env list | grep ${LOCK_ENV} > /dev/null
 
 if [[ $? -eq 1 ]]; then
-  conda create -q -y -n ${LOCK_ENV} -c conda-forge conda-lock=2.1.1 mamba=1.4.9
+  conda create -q -y -n ${LOCK_ENV} -c conda-forge conda-lock=2 mamba=1
 fi
 
 # https://github.com/conda/conda/issues/7980#issuecomment-492784093
@@ -38,7 +38,7 @@ rm *lock.yml
 
 # Local environments
 ## Generate explicit lock files
-conda-lock lock --mamba -f ${ENV_FILE}
+conda-lock lock -f ${ENV_FILE}
 lock_success=$?
 check_success lock_success "  Building local environments"
 
