@@ -3,7 +3,6 @@ name: UW Hackweek
 apply:
   url: '#'
   title: Application coming soon
-hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   description: An awesome learning event.
   start_date: XX Month
