@@ -41,11 +41,5 @@ parts:
   chapters:
     - file: reference/glossary
     - file: reference/bibliography
-    - file: reference/open_science
-    - file: reference/open_source_software
     - file: reference/questions
-    - file: reference/social
-    - file: reference/supplemental_index
-      sections:
-        - file: reference/supplemental/python
-        - file: reference/supplemental/conda
+
