@@ -38,6 +38,21 @@ You can use this template for your own event!
 We've designed this template so that you should only have to edit a few files with intuitive syntax. When changes are pushed to GitHub, [continuous integration](./.github/README.md) takes care of converting these files into HTML and publishing the website.
 
 
+### Additional options to consider
+[ReviewNB](https://www.reviewnb.com/) is a great tool for viewing changes in Jupyter Notebooks.
+Someone with admin privileges must activate it for each repository you create from this template.
+To activate:
+
+1. Go to [reviewnb.com](https://www.reviewnb.com/).
+1. Select the "Connect to GitHub" button.
+1. Select "+/- REPOSITORIES" from the menu or bottom of the page.
+1. Choose the organization where your repo lives.
+1. Toggle the "Only select repositories" button and choose your repo from the dropdown.
+1. Select "Install".
+
+Great! Now ReviewNB will post a rich-diff of your notebooks each time a PR is opened.
+
+
 ## How to contribute
 
 We are always trying to improve upon this template for future events and welcome contributions. Have a look at our [code of conduct](./CODE_OF_CONDUCT.md) and [contributing guide](./CONTRIBUTING.md).
