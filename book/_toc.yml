@@ -13,15 +13,8 @@ parts:
     - file: CoC
 - caption: Preparation
   chapters:
-    - file: preliminary/checklist_index
-      sections:
-      - file: preliminary/checklist/github
-      - file: preliminary/checklist/jupyterhub
-      - file: preliminary/checklist/git
-      - file: preliminary/checklist/earthdata
-    - file: preliminary/skills_refresher_index
-      sections:
-        - file: preliminary/skills-refresher/swc
+    - file: preliminary/index
+    - file: preliminary/git
 - caption: Tutorials
   chapters:
     - file: tutorials/index
