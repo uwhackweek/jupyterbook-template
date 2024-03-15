@@ -25,7 +25,7 @@ Harassment includes, but is not limited to:
 
 ## Expectations
 
-We expect participants and instructors to act in ways that foster a supportive and welcoming [learning community](mission) at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.
+We expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.
 
 ## Reporting a violation
 Harassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible.
