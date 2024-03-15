@@ -14,7 +14,7 @@ You are not required to know Git in advance of this event, but come prepared to 
 
 Below are instructions to get you setup with `git` on the {{hackweek}} hackweek
 JupyterHub. These are only basic instructions to get started. See the
-[Software Carpentry Git](http://swcarpentry.github.io/git-novice/02-setup/index.html)
+[Software Carpentry Git](https://swcarpentry.github.io/git-novice/index.html)
 instructions for a more thorough explanation and background information.
 
 ### 1. Login to JupyterHub
