@@ -5,7 +5,6 @@ format: jb-book
 parts:
 - caption: Details
   chapters:
-    - file: application
     - file: logistics
     - title: Schedule
       url: https://uwhackweek.github.io/jupyterbook-template/index.html?jump_to=schedule
@@ -14,15 +13,9 @@ parts:
     - file: CoC
 - caption: Preparation
   chapters:
-    - file: preliminary/checklist_index
-      sections:
-      - file: preliminary/checklist/github
-      - file: preliminary/checklist/jupyterhub
-      - file: preliminary/checklist/git
-      - file: preliminary/checklist/earthdata
-    - file: preliminary/skills_refresher_index
-      sections:
-        - file: preliminary/skills-refresher/swc
+    - file: preliminary/index
+    - file: preliminary/checklist
+    - file: preliminary/git
 - caption: Tutorials
   chapters:
     - file: tutorials/index
