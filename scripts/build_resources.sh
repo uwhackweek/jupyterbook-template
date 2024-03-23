@@ -14,6 +14,7 @@ if [ -f "$YAML_FILE" ]; then
    python yaml2json.py "$YAML_FILE" "$JSON_FILE"
 fi
 
+./build_team_yaml.sh
 
 if [ -d "../book/_build/html/assets" ]; then
    rm -rf ../book/_build/html/assets
