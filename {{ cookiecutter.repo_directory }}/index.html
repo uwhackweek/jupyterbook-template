@@ -398,7 +398,7 @@
                             {%- for social in person['social'] %}
                             <li class="list-inline-item">
                                 <a href="{{social['link']}}">
-                                    <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
+                                    <i class="fab fa-{{social['icon']}}"></i>
                                 </a>
                             </li>
                             {%- endfor %}
@@ -452,7 +452,7 @@
                                                 {%- for social in person['social'] %}
                                                 <li class="list-inline-item">
                                                     <a href="{{social['link']}}">
-                                                        <i class="{{social['icon_pack']}} fa-{{social['icon']}}"></i>
+                                                        <i class="fab fa-{{social['icon']}}"></i>
                                                     </a>
                                                 </li>
                                                 {%- endfor %}
@@ -541,7 +541,7 @@
             {%- for soc in cookiecutter.footer['social'] %}
             <li class="list-inline-item me-3">
                 <a href="{{ soc['link'] }}">
-                    <i class="{{ soc['icon_pack'] }} fa-{{ soc['icon'] }}"></i>
+                    <i class="fab fa-{{ soc['icon'] }}"></i>
                 </a>
             </li>
             {%- endfor %}

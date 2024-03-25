@@ -12,6 +12,8 @@
 # cookiecutter webpage things
 cookiecutter.json
 /book/_build/html/assets
+## Temporary files created by build scripts
+/team/team.yaml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
