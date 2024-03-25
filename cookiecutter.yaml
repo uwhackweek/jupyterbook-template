@@ -40,7 +40,6 @@ sponsors:
 footer:
   social:
   - icon: github
-    icon_pack: fab
     link: https://github.com/uwhackweek/
 _copy_without_render:
 - assets

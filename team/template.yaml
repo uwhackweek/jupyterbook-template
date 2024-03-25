@@ -10,8 +10,11 @@
     - skill 2
   social:
     - icon: github
-      icon_pack: fab
       link: Link to your GitHub profile
+    - icon: twitter
+      link: Link to your Twitter profile
+    - icon: linkedin
+      link: Link to your LinkedIn profile
   user_groups:
     - The role in the hackweek. Examples: Tutorial Lead, Project Helper
 

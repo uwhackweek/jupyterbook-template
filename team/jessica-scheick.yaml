@@ -18,10 +18,8 @@
     - ICESat-2/icepyx
   social:
     - icon: github
-      icon_pack: fab
       link: https://github.com/jessicas11
     - icon: github
-      icon_pack: fab
       link: https://github.com/icesat2py
   user_groups:
     - Lead Hackweek Organizer
