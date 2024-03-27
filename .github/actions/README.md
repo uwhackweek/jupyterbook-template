@@ -43,6 +43,9 @@ Open a PR to update the templated repo to incorporate changes made to the
 [template repo](https://github.com/uwhackweek/jupyterbook-template).
 Template users should fill out the [.templatesyncignore](../../../.templatesyncignore)
 to specify which files they do not want updated from the template.
+Note that if you want the GitHub action and workflow files to be updated,
+you will need to [create a personal access token(PAT)](https://github.com/AndreasAugustin/actions-template-sync?tab=readme-ov-file#troubleshooting).
+Alternatively, you must add ".github/**" to your `.templatesyncignore` file, and your actions will not be updated.
 
 
 ## Security
