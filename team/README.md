@@ -8,7 +8,7 @@ Follow these steps to add yourself:
 * Use the provided 'template.yaml' file and copy the file.
 * Create a copy of the 'template.yaml' file and rename the file to your name
    ```
-    cp template.yaml FirstName_LastName.yaml
+    cp template.yaml FirstName-LastName.yaml
    ```
 * Open the new file you just created in your favorite editor and fill out the
   details, replacing the placeholder text.

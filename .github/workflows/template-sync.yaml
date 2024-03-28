@@ -1,5 +1,4 @@
 name: 'Sync to Template'
-description: 'Get updates to the Jupyterbook from the template repo'
 
 on:
   # cronjob trigger (minute, hour, day, month, day-of-week; here 1st of month)
@@ -20,14 +19,15 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
-        # https://github.com/actions/checkout#usage
-        # uncomment if you use submodules within the source repository
-        # with:
-        #   submodules: true
+        # comment token (and add .github path to .templatesyncignore)
+        # if you do not want actions and workflows updated
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: actions-template-sync
-        uses: AndreasAugustin/actions-template-sync@v1
+        uses: AndreasAugustin/actions-template-sync@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: uwhackweek/jupyterbook-template
           upstream_branch: main # defaults to main
+          is_force_deletion: True
