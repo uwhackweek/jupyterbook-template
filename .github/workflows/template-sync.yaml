@@ -22,7 +22,7 @@ jobs:
         # comment token (and add .github path to .templatesyncignore)
         # if you do not want actions and workflows updated
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
 
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
