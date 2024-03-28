@@ -19,12 +19,9 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
-        # https://github.com/actions/checkout#usage
-        # uncomment if you use submodules within the source repository
         # comment token (and add .github path to .templatesyncignore)
         # if you do not want actions and workflows updated
         with:
-        #   submodules: true
           token: ${{ secrets.GH_PAT }}
 
       - name: actions-template-sync
