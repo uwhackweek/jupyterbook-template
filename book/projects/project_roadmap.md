@@ -46,7 +46,7 @@ We facilitate a project team formation session on the first day of the hackweek.
 * each team has 15 minutes to share what was learned, what challenges arose, what might be worth trying next
 * individual contributions to the group effort are recognized and celebrated
 
-##**Communities of practice**
+## **Communities of practice**
 
 ### After the event
 
