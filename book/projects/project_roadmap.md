@@ -26,14 +26,14 @@ Around the time of the second meeting, hackweek participants will be browsing al
 
 We facilitate a project team formation session on the first day of the hackweek. During this time we will finalize project goals and objectives. Hackweek organizers and facilitators will help each team set reasonable goals and develop a roadmap for task completion.
 
-* kick-off meeting focuses on hearing from each team member:
+* The first team meeting focuses on hearing from each team member:
     * What are your unique learning goals? 
     * How do you work best? What level of group interaction works for you?
     * What skills and background are you most excited to share with the team?
     * When are you available to meet?
-* set up team computing infrastructure on Slack and GitHub ([Project Initialization](project_initialization)) 
-* project work begins and teams have regular check-ins to chart progress
-* project outputs are recorded in a GitHub repository
+* Set up team computing infrastructure on Slack and GitHub ([Project Initialization](project_initialization)) 
+* Project work begins and teams have regular check-ins to chart progress
+* Project outputs are recorded in a GitHub repository
 
 ## **Project teamwork**
 
