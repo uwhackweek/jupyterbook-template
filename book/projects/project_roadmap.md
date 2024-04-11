@@ -31,7 +31,7 @@ We facilitate a project team formation session on the first day of the hackweek.
     * [x] How do you work best? What level of group interaction works for you?
     * [x] What skills and background are you most excited to share with the team?
     * [x] When are you available to meet?
-* [x] This is also a good time to review the [code of conduct](https://book-template.hackweek.io/CoC.html) and discuss as a team:
+* [x] This is also a good time to review the [code of conduct](../../CoC.html) and discuss as a team:
     * [x] How is the team going to communicate?
     * [x] How is the team going to discuss ideas and make decisions?
     * [x] How are tasks going to be assigned?
