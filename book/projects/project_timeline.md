@@ -1,6 +1,6 @@
 # Project Timeline
 
-Each project will progress through these stages: 
+Each project will progress through these stages:
 
 ```{image} ../img/project-timeline.png
 :alt: flowchart of typical hackweek project timelines
