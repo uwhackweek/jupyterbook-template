@@ -8,6 +8,10 @@ Each hackweek’s community of research scientists and domain practitioners gene
 * **Deepening tutorial learning with hands-on experience with data sets/tools**
 * **Developing a new community tool or library**
 
+# How projects are designed
+
+On the following pages you will find more details on how projects are designed. This information is provided to help guide project leaders, but can be for all hackweek participants to be familiar with. 
+
 We encourage all project leaders to be creative with their ideas and when planning out the project’s group work and learning opportunities. *The organizers will help each lead think through how to best scope the project* to match the desired outcomes for the group work. In the meantime, leads can consider the range of scoping options described in the table below to get a sense of where their idea may fall.
 
 On the left, the project is less structured so that it can be adapted to where team members would like to take the project based on what they can contribute and want to learn. On the right, the project work is much more structured allowing participants to make quick progress on project goals and/or focused learning experiences. Then some projects are in between, a blend of focused, structured, and adaptable. 
