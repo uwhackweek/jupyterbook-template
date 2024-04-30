@@ -16,7 +16,7 @@ On the left, the project is less structured so that it can be adapted to where t
 | --- | --- | --- |
 | Scoped to explore an area of interest together | Scoped to be focused but with some adaptability | Scoped to clear goals & learning objectives |
 | Project is centered on exploring a reserach challenge but can also be shaped to incorporate team's learning interests | Project is focues on 1-3 goals but can be shaped by team's areas of interest | Project is focused on advancing goals & team practicing specific skills |
-| * Team creatively applies knowledge & skills to challenge by co-shaping project on Day 1 | * Hands-on experience into a tutorial topic * Application of data sets to research areas | * Developing community products & libraries * Experience with ML data sets and research |
+| Team creatively applies knowledge & skills to challenge by co-shaping project on Day 1 | Hands-on experience into a tutorial topic; Application of data sets to research areas | Developing community products & libraries; Experience with ML data sets and research |
 | + Preparation to explain problem & define tasks and skills | ++ Design & preparation to enable team to quickly organize & collaborate on tasks | ++ Design & preparation may be higher, if using AI/ML methods |
 
 ```{image} ../img/project-scope.png
