@@ -15,7 +15,7 @@ Each hackweek’s community of research scientists and domain practitioners gene
 :align: center
 ```
 
-# How projects are designed
+## How projects are designed
 
 On the following pages, you will find more details on how projects are designed. This information is provided to help guide project leaders, but it is also useful for all hackweek participants to be familiar with. 
 
@@ -29,7 +29,7 @@ On the left, the project is less structured so that it can be adapted to where t
 | **Preparation** | <ul><li>Project leaders provide example data, code, and tutorial-like content | <ul><li>Project leaders provide well-defined and measureable goals</li></ul>  |
 | **Teamwork** | <ul><li>Team members can pursue their own specific learning goals within the broad project topic</li> <li>Project leaders spend more time teaching and guiding team members through the project topic</li></ul>  |  <ul><li>Team members work on specific tasks to accomplish project goals</li> <li>Project leaders spend more time coordinating specific tasks and lead design discussions</li></ul> |
 
-# Project Timeline
+## Project Timeline
 
 Each project will progress through these stages:
 
@@ -40,14 +40,14 @@ Each project will progress through these stages:
 :align: center
 ```
 
-## **Project ideation and team formation**
+### **Project ideation and team formation**
 
 Though project ideation begins well before the hackweek event, it is expected that the process is ongoing and iterative, and will continue through the event itself with input from participants helping to shape or adapt project goals.
 
-## **Project teamwork**
+### **Project teamwork**
 
 During the hackweek, participants will spend time with tutorials and with project work. The following is a suggested outline for daily check-in meetings. On the final day of the event, teams will want to set aside some time to gather material that they would like to share with the entire group to showcase what they worked on.
 
-## **Communities of practice**
+### **Communities of practice**
 
 We aspire to keep projects going after the hackweek! This is an optional (ideal) outcome of hackweek project work.
