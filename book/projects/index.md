@@ -28,3 +28,26 @@ On the left, the project is less structured so that it can be adapted to where t
 | **Scope** | <ul><li>Your team explores a variety of aspects with a new data set, tool, or method</li></ul>  | <ul><li>Your team works to develop a specific software tool or answer a specific research question</li></ul> |
 | **Preparation** | <ul><li>Project leaders provide example data, code, and tutorial-like content | <ul><li>Project leaders provide well-defined and measureable goals</li></ul>  |
 | **Teamwork** | <ul><li>Team members can pursue their own specific learning goals within the broad project topic</li> <li>Project leaders spend more time teaching and guiding team members through the project topic</li></ul>  |  <ul><li>Team members work on specific tasks to accomplish project goals</li> <li>Project leaders spend more time coordinating specific tasks and lead design discussions</li></ul> |
+
+# Project Timeline
+
+Each project will progress through these stages:
+
+```{image} ../img/project-timeline.png
+:alt: flowchart of typical hackweek project timelines
+:class: bg-primary mb-1
+:width: 800px
+:align: center
+```
+
+## **Project ideation and team formation**
+
+Though project ideation begins well before the hackweek event, it is expected that the process is ongoing and iterative, and will continue through the event itself with input from participants helping to shape or adapt project goals.
+
+## **Project teamwork**
+
+During the hackweek, participants will spend time with tutorials and with project work. The following is a suggested outline for daily check-in meetings. On the final day of the event, teams will want to set aside some time to gather material that they would like to share with the entire group to showcase what they worked on.
+
+## **Communities of practice**
+
+We aspire to keep projects going after the hackweek! This is an optional (ideal) outcome of hackweek project work.
