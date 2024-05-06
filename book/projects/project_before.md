@@ -1,4 +1,4 @@
-# Before the event
+# Before the hackweek
 
 ## **Project ideation and team formation**
 
