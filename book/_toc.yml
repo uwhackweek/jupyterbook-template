@@ -23,12 +23,12 @@ parts:
         - file: tutorials/example/tutorial-notebook
 - caption: Projects
   chapters:
-    - file: projects/list_of_projects
     - file: projects/index
       sections:
         - file: projects/project_before
         - file: projects/project_during
         - file: projects/project_after
+    - file: projects/list_of_projects
 - caption: Reference
   chapters:
     - file: reference/glossary
