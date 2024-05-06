@@ -1,10 +1,8 @@
 # During the hackweek
 
-## **Project teamwork**
-
 During the hackweek, participants will spend time with tutorials and with project work. The following is a suggested outline for daily check-in meetings. On the final day of the event, teams will want to set aside some time to gather material that they would like to share with the entire group to showcase what they worked on.
 
-### Day 1 of the event
+## Day 1 of the hackweek: Getting started
 
 We facilitate a project team formation session on the first day of the hackweek. During this time we will finalize project goals and objectives. Hackweek organizers and facilitators will help each team set reasonable goals and develop a roadmap for task completion.
 
@@ -23,7 +21,7 @@ We facilitate a project team formation session on the first day of the hackweek.
     * [x] As progress is made, project outputs (code, notebooks, figures, documentation, etc.) are recorded in the team's GitHub repository
 * [x] All team members check back in at the end of the day, review progress towards tasks, anything preventing progress, and planned next steps
 
-### Days 2 - 4: Project work
+## Days 2 - 4: Project work
 
 * [x] Begin each day with a team meeting to discuss:
     * [x] Progress made on the previous day
@@ -34,7 +32,7 @@ We facilitate a project team formation session on the first day of the hackweek.
     * [x] Anything preventing progress
     * [x] Planned next steps for tomorrow
 
-### Day 5: Sharing results
+## Day 5: Sharing results
 
 * [x] Begin the day with a team meeting to discuss:
     * [x] Progress made on the previous day
