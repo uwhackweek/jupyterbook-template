@@ -23,7 +23,7 @@ We encourage all project leaders to be creative with their ideas when planning o
 
 On the left, the project is less structured so that it can be adapted to where team members would like to take the project based on what they can contribute and want to learn. On the right, the project work is much more structured allowing participants to make quick progress on project goals and/or focused learning experiences. **Most projects will fit somewhere in between, a blend of focused, structured, and adaptable.**
 
-| | <img src="../img/project-icon-3.svg"  alt="Exploration" width="100px" > | <img src="../img/project-icon-4.svg"  alt="Focused" width="100px" > |
+| | <img src="../img/project-icon-3.svg"  alt="Exploration" width="100px" align="center" > | <img src="../img/project-icon-4.svg"  alt="Focused" width="100px" align="center" > |
 | --- | --- | --- |
 | **Scope** | <ul><li>Your team explores a variety of aspects with a new data set, tool, or method</li></ul>  | <ul><li>Your team works to develop a specific software tool or answer a specific research question</li></ul> |
 | **Preparation** | <ul><li>Project leaders provide example data, code, and tutorial-like content | <ul><li>Project leaders provide well-defined and measureable goals</li></ul>  |
