@@ -40,14 +40,14 @@ Each project will progress through these stages:
 :align: center
 ```
 
-### [Project ideation and team formation](projects/project_before.md)
+### [Project ideation and team formation](project_before.md)
 
 Though project ideation begins well before the hackweek event, it is expected that the process is ongoing and iterative, and will continue through the event itself with input from participants helping to shape or adapt project goals.
 
-### [Project teamwork](projects/project_during.md)
+### [Project teamwork](project_during.md)
 
 During the hackweek, participants will spend time with tutorials and with project work. We have provided suggested outlines for daily check-in meetings and tasks that a project leader can guide their team through.
 
-### [Communities of practice](projects/project_after.md)
+### [Communities of practice](project_after.md)
 
 We aspire to keep projects going after the hackweek! This is an optional (yet ideal) outcome of hackweek project work.
