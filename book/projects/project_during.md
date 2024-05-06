@@ -16,7 +16,7 @@ We facilitate a project team formation session on the first day of the hackweek.
     * [x] How is the team going to discuss ideas and make decisions?
     * [x] How are tasks going to be assigned?
 * [x] Identify connections between each participant's personal goals and the specific project tasks
-* [x] Set up team organization infrastructure on Slack and GitHub (see [Organizing your project on GitHub](project_before#organizing-your-project-on-github)) 
+* [x] Set up team organization infrastructure on Slack and GitHub (see [Organizing your project on GitHub](project_before)) 
 * [x] Project work begins!
     * [x] As progress is made, project outputs (code, notebooks, figures, documentation, etc.) are recorded in the team's GitHub repository
 * [x] All team members check back in at the end of the day, review progress towards tasks, anything preventing progress, and planned next steps
