@@ -24,8 +24,8 @@ You can use this template for your own event!
 
 1. Click the "Use this template" button at the top of the repo
 1. Select the account where you'd like to use the template.
-1. **Be sure to select the checkbox to include all branches!** Otherwise your book will not be rendered automatically. You can remove all branches except for `main` and `gh-pages` from your new repo.
-1. In your new repo, go to Settings > Pages to find the link to your JupyterBook. We recommend adding this link to the home page.
+1. In your new repo, got to Settings --> Pages --> Source = GitHub Actions
+  1. Enter a Custom Domain if you have one, or use the default GitHub Pages URL
 1. There are a few files you'll need to edit to customize content for your event:
   * `cookiecutter.yaml`:  customize your landing page content
   * `book/_config.yml`:  customize your JupyterBook content
