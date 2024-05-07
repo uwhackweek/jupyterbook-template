@@ -44,7 +44,7 @@ runs:
       if: inputs.publish-to-gh == 'true'
       uses: actions/upload-pages-artifact@v3
       with:
-        path: _build/html
+        path: book/_build/html
 
     - name: Setup GitHub Pages
       if: inputs.publish-to-gh == 'true'
