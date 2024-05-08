@@ -14,7 +14,8 @@ find . -type f -name '*.yaml' \
   sort | xargs -I '{}' cat '{}' > team_people.yaml
 
 # Indent to proper yaml
-sed -i 's/^/  /' team_people.yaml
+sed -i.bkp -e 's/^/  /' team_people.yaml
+rm team_people.yaml.bkp
 
 # Create the final team file
 cat header.yaml team_people.yaml > team.yaml
