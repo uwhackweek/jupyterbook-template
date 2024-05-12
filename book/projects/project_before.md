@@ -7,6 +7,10 @@ Though project ideation begins well before the hackweek event, it is expected th
 ### Project ideation
 
 We invite those who are interested in leading a project to join our organizing team in the months before the hackweek. At a first kick-off meeting, the group of project leads will be guided through brainstorming, identifying overlaps or connections between project ideas, and identifying common needs in hackweek tutorial content that will help projects be successful. After this initial meeting, project leads will work on defining their project by creating a github repository from the project template, defining project tasks, and outlining the anticipated skills that participants will apply in the project. This is all information that hackweek participants will be using to help them select a project team to join. Though projects may change and evolve during the ideation process, and during the hackweek event itself, it is important to begin outlining your initial ideas.
+- Think about the following as you begin your project ideation:
+  - What problem do you want to solve or explore with your project?
+  - What would you like you and your team to learn from the project work?
+  - What tools or datasets might your team use?
 - Create a project repository from the template (see instructions below)
 - Begin filling out basic project information in the README file
   - *Title* and *Introduction*
