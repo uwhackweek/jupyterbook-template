@@ -18,7 +18,7 @@ We facilitate a project team formation session on the first day of the hackweek.
 * Identify connections between each participant's personal goals and the specific project tasks
 * Set up team organization infrastructure on Slack and GitHub (see [Organizing your project on GitHub](project_before.md)) 
 * Project work begins!
-    * As progress is made, project outputs (code, notebooks, figures, documentation, etc.) are recorded in the team's GitHub repository
+    * As progress is made, project outputs (code, notebooks, figures, documentation, etc.) are recorded in the team's GitHub repository (a good place for team members to get started is by making their own folder under the *contributors* directory)
 * All team members check back in at the end of the day, review progress towards tasks, anything preventing progress, and planned next steps
 
 ## Days 2 - 4: Project work
