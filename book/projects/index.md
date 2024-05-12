@@ -8,6 +8,18 @@ Each hackweek’s community of research scientists and domain practitioners gene
 * **Deepening tutorial learning with hands-on experience with data sets/tools**
 * **Developing a new community tool or library**
 
+The goal of these project teams is to provide hackweek participants with a learning environment to:
+* Practice new skills with data science tools, cloud computing, teamwork, collaboration, and open science
+* Advance personal goals in a team setting, which required open communication and clarifying project team member roles and tasks
+* Build a foundation for future collaboration, where the work performed during the hackweek event and the connections made with other participants set the stage for new work to emerge
+
+Project leaders are expected to:
+* Design a project ahead of the hackweek so that participants can start to select what project they might want to work on during the event
+* Participate in a peer review of each other's projects to provide and recieve suggestions for improvement
+* Ensure that any datasets, sample code, or other resources are available and ready to be used on day one of the event
+* (Optional) Assist in other hackweek organization tasks, such as identifying tutorials that will help your project team be successful
+
+
 ```{image} ../img/projects-montage.png
 :alt: picture of people interacting during hackweek project work
 :class: bg-primary mb-1
