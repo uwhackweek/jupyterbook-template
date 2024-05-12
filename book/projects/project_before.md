@@ -4,11 +4,30 @@
 
 Though project ideation begins well before the hackweek event, it is expected that the process is ongoing and iterative, and will continue through the event itself with input from participants helping to shape or adapt project goals.
 
-We invite those who are interested in leading a project to join our organizing team in the months before the hackweek. At a first kick-off meeting, project leads will be guided through brainstorming, identifying overlaps or connections between project ideas, and identifying common needs in hackweek tutorial content that will help projects be successful. After this initial meeting, project leads will work on defining their project by creating a github repository from the project template, defining project tasks, and outlining the anticipated skills that participants will apply in the project. This is all information that hackweek participants will be using to help them select a project team to join.
+### Project ideation
 
-At a second meeting, project leads will again share their projects with one another. This gives them an opportunity to solicit feedback on the feasibility of the project scope, or raise any questions. During this meeting hackweek organizers will present information on how to effectively lead a group project, and guide the project leads through some activities to practice those skills. 
+We invite those who are interested in leading a project to join our organizing team in the months before the hackweek. At a first kick-off meeting, the group of project leads will be guided through brainstorming, identifying overlaps or connections between project ideas, and identifying common needs in hackweek tutorial content that will help projects be successful. After this initial meeting, project leads will work on defining their project by creating a github repository from the project template, defining project tasks, and outlining the anticipated skills that participants will apply in the project. This is all information that hackweek participants will be using to help them select a project team to join. Though projects may change and evolve during the ideation process, and during the hackweek event itself, it is important to begin outlining your initial ideas.
+- [x] Create a project repository from the template (see instructions below)
+- [x] Begin filling out basic project information in the README file
+  - [x] *Title* and *Introduction*
+  - [x] Add your name to the list of *Collaborators*
+  - [x] Describe the *Problem*
+  - [x] Provide an initial description of *Data and Methods*
+  - [x] Outline *Project goals and tasks*
+     
+### 1-on-1 meetings with hackweek organizers
 
-Around the time of the second meeting, hackweek participants will be browsing all of the project repositories, chatting with project leads on slack, and may begin selecting which one they would like to work on. Throughout the process, hackweek organizers will be available to answer questions and to help participants get connected with a project that fits their learning objectives.
+Hackweek event organizers will be available for 1-on-1 meetings to help you work through developing your project idea. It is best if you first try to document some of your initial project ideas (such as creating a first draft of a project README document) prior to this meeting.
+- [x] Schedule a meeting with hackweek organizers to address any questions about how to turn your ideas into a successful hackweek project
+- [x] Update or change project information in the README file as you continue to develop your ideas
+- [x] Begin creating and organizing additional content required for your project (e.g. write sample code and jupyter notebooks, organize and clean datasets, provide additional reading and learning resources for background information)
+
+### Sharing your ideas and soliciting feedback
+At a second group meeting, project leads will again share their projects with one another. This gives them an opportunity to solicit feedback on the feasibility of the project scope, or raise any questions. During this meeting hackweek organizers will present information on how to effectively lead a group project, and guide the project leads through some activities to practice those skills.
+- [x] Update or change project information in the README file as you continue to develop your ideas
+- [x] Ensure that project materials such as sample code, documentation, and data files are accessible (e.g. sample code and environment file in your project repository on GitHub, data files uploaded to an AWS S3 bucket)
+
+Around the time of this second group meeting, hackweek participants will be browsing all of the project repositories, chatting with project leads on slack, and may begin selecting which one they would like to work on. Throughout the process, hackweek organizers will be available to answer questions and to help participants get connected with a project that fits their learning objectives.
 
 ## Organizing your project on GitHub
 
