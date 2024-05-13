@@ -8,17 +8,6 @@ Each hackweek’s community of research scientists and domain practitioners gene
 * **Deepening tutorial learning with hands-on experience with data sets/tools**
 * **Developing a new community tool or library**
 
-The goal of these project teams is to provide hackweek participants with a learning environment to:
-* Practice new skills with data science tools, cloud computing, teamwork, collaboration, and open science
-* Advance personal goals in a team setting, which required open communication and clarifying project team member roles and tasks
-* Build a foundation for future collaboration, where the work performed during the hackweek event and the connections made with other participants set the stage for new work to emerge
-
-Project leaders are expected to:
-* Design a project ahead of the hackweek so that participants can start to select what project they might want to work on during the event
-* Participate in a peer review of each other's projects to provide and recieve suggestions for improvement
-* Ensure that any datasets, sample code, or other resources are available and ready to be used on day one of the event
-* (Optional) Assist in other hackweek organization tasks, such as identifying tutorials that will help your project team be successful
-
 
 ```{image} ../img/projects-montage.png
 :alt: picture of people interacting during hackweek project work
@@ -64,10 +53,10 @@ This section covers:
 
 ### [During the hackweek](project_during.md): Form Teams, Facilitate Teamwork, Share Learning
 
-Each day of the hackweek, participants will spend time with hackweek specific tutorials and with their project teams. A significant part of the first day is geared toward supporting participants with finding the project that best fits their interests, skills, and learning desires. By the end of Day 1, teams have formed and conversations about mapping out the tasks will have begun. Days 2-4 and part of 5, project leads will facilitate team members making progress on project work and their specific learning objectives. The hackweeks concludes with each project team showcasing what they explored, learned, and accomplished together. 
+Each day of the hackweek, participants will spend time with hackweek specific tutorials and with their project teams. For participants to advance their personal goals in a team setting, it requires open communication between the project leader and team members, and identifying team member roles and tasks. A significant part of the first day is geared toward supporting participants with finding the project that best fits their interests, skills, and learning desires. By the end of Day 1, teams have formed and conversations about mapping out the tasks will have begun. Days 2-4 and part of 5, project leads will facilitate team members making progress on project work and their specific learning objectives. The hackweeks concludes with each project team showcasing what they explored, learned, and accomplished together. 
 
 We have provided suggested outlines for daily check-in meetings and tasks that a project leader can guide their team through.
 
 ### [After the hackweek](project_after.md)
 
-We aspire to keep projects going after the hackweek! This is an optional (yet ideal) outcome of hackweek project work.
+We hope that project work will build a foundation for future collaboration, where the work performed during the hackweek event and the connections made with other participants set the stage for new work to emerge.
