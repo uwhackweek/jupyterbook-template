@@ -22,7 +22,15 @@ We facilitate a project team formation session on the first day of the hackweek.
   * Identify any clusters of common tasks or tasks that must be completed sequentially
   * Team members volunteer for tasks that match their personal goals and interests
   * Identify if any tasks require skills or knowledge that the current team does not yet have (the project team helper may be able to connect you with someone to provide those skills or knowledge)
-* Set up team organization infrastructure on Slack and GitHub (see [Organizing your project on GitHub](project_before.md)) 
+ 
+```{image} ../img/project-taskboard.png
+:alt: example of identifying tasks and organizing them into clusters
+:class: bg-primary mb-1
+:width: 800px
+:align: center
+```
+
+* Set up team organization infrastructure on Slack and GitHub (see [Organizing your project on GitHub](project_github.md)) 
 * Project work begins!
     * As progress is made, project outputs (code, notebooks, figures, documentation, etc.) are recorded in the team's GitHub repository (a good place for team members to get started is by making their own folder under the *contributors* directory)
 * All team members check back in at the end of the day, review progress towards tasks, anything preventing progress, and planned next steps
@@ -41,11 +49,14 @@ A "stand up" meeting model may be useful for your team to check in at the begini
     * Anything preventing progress
     * Planned next steps for tomorrow
  
-Organizing this information on a four-column chart with sticky notes (or a virtual chart) may be useful, such as the example below.
+Organizing this information on a four-column chart (ideas, in progress, need help, done) with sticky notes (or a virtual chart) may be useful, such as the example below.
 
-| To do | In progress | Blocked / Need help | Done |
-| --- | --- | --- | --- |
-| <ul><li></li><li></li>||||
+```{image} ../img/project-progress.png
+:alt: example of using sticky notes to keep track of project progress
+:class: bg-primary mb-1
+:width: 800px
+:align: center
+```
 
 ## Day 5: Sharing results
 
