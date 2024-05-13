@@ -30,9 +30,9 @@ Project Facilitation Training will be held a few weeks before the hackweek. The 
 During the second half, hackweek organizers will present information on how to effectively facilitate a group project with a diverse team, with varying skills, skill-levels, and learning desires. The goal of this training is to chat about some of the common scenarios that project leads might encounter and offer suggestions, so that leads can feel better equipped and more relaxed to work with what shows up.
 
 
-### Project Development Milestones:
+## Project Development Milestones:
 
-1. **Project Leaders Kick-off Meeting**
+1. **May 12, 2024 - Project Leaders Kick-off Meeting**
 2. [Create a project repository from the template](project_github.md) before your first check-in meeting
     - Begin filling out basic project information in the README file:
       - *Title* and *Introduction*
@@ -40,15 +40,15 @@ During the second half, hackweek organizers will present information on how to e
       - Describe the *Problem*
       - Provide an initial description of *Data and Methods*
       - Outline *Project goals and tasks*
-3. **Project Development & Support**: Schedule and hold your first check-in meeting with hackweek organizers
+3. **June 2024 - Project Development & Support**: Schedule and hold your first check-in meeting with hackweek organizers
 4. Continue project development with feedback from your check-in meeting(s):
     - Update project information in the README file before next meeting
     - Begin preparing other content required for your project (e.g. write sample code and Jupyter notebooks, organize and clean datasets, provide additional reading and learning resources for background information)
-5. **Project Facilitation Training**
+5. **July 9, 2024 - Project Facilitation Training**
 6. Continue project development with feedback from the Project Facilitation Training:
     - Update or change project information in the README file 
     - Ensure that project materials such as sample code, documentation, and data files are accessible (e.g. sample code and environment file in your project repository on GitHub, data files uploaded to an AWS S3 bucket)
     - Prepare any mini-tutorials needed or that will be co-developed with other leads
     - Share project information with interested participants to recruit team members
-7. **Hackweek**: Form your project team and get started!
+7. **August 19-23, 2024 - Hackweek**: Form your project team and get started!
 
