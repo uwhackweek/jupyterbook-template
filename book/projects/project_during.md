@@ -7,7 +7,7 @@ During the hackweek, participants will spend time with tutorials and with projec
 We facilitate a project team formation session on the first day of the hackweek. During this time we will finalize project goals and objectives. Hackweek organizers and facilitators will help each team set reasonable goals and develop a roadmap for task completion. The checklist below can be used for the first team meeting to focus on team introductions, reviewing the project scope, and identifying tasks.
 
 * Team introductions:
-    * Introduce yourself and what interests you about this project?
+    * Introduce yourself and what interests you about this project
     * What are your unique learning goals? 
     * How do you work best? What level of group interaction works for you?
     * What skills and background are you most excited to share with the team?
@@ -20,7 +20,7 @@ We facilitate a project team formation session on the first day of the hackweek.
   * List the tasks that will need to be done (starting with any that the project leader may have already identified)
   * All team members are encouraged to contribute here. All ideas and perspectives are needed.
   * Identify any clusters of common tasks or tasks that must be completed sequentially
-  * Team members volunteer for tasks that match their personal goals and interests
+  * Team members volunteer for tasks that match their personal goals and interests, identify opportunities for working in pairs or small groups
   * Identify if any tasks require skills or knowledge that the current team does not yet have (the project team helper may be able to connect you with someone to provide those skills or knowledge)
  
 ```{image} ../img/project-taskboard.png
