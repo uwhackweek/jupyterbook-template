@@ -50,5 +50,5 @@ During the second half, hackweek organizers will present information on how to e
     - Ensure that project materials such as sample code, documentation, and data files are accessible (e.g. sample code and environment file in your project repository on GitHub, data files uploaded to an AWS S3 bucket)
     - Prepare any mini-tutorials needed or that will be co-developed with other leads
     - Share project information with interested participants to recruit team members
-7. **August 19-23, 2024 - Hackweek**: Form your project team and get started!
+7. **August 19-23, 2024 - Hackweek**: Form your project team and get to work!
 
