@@ -32,7 +32,7 @@ During the second half, hackweek organizers will present information on how to e
 
 ## Project Development Milestones:
 
-1. **May 12, 2024 - Project Leaders Kick-off Meeting**
+1. **May 21, 2024 - Project Leaders Kick-off Meeting**
 2. [Create a project repository from the template](project_github.md) before your first check-in meeting
     - Begin filling out basic project information in the README file:
       - *Title* and *Introduction*
