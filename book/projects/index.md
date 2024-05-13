@@ -27,21 +27,21 @@ Project leaders are expected to:
 :align: center
 ```
 
-## How projects are designed
+## Project Design
 
 On the following pages, you will find more details on how projects are designed. This information is provided to help guide project leaders, but it is also useful for all hackweek participants to be familiar with. 
 
 We encourage all project leaders to be creative with their ideas when planning out the project’s group work and learning opportunities. **The hackweek organizers will help project leaders think through how to best scope their projects to match their desired outcomes for the group work.** In the meantime, project leaders can consider the range of scoping options described in the table below to get a sense of where their ideas may fall.
 
-This table presents examples of what a project scope might look like, what preparation by the project lead is neeed, and what teamwork at the hackweek might look like. Most projects will fit somwhere in between these two examples. On the left, the project is less structured so that it can be adapted to where team members would like to take the project based on what they can contribute and want to learn. On the right, the project work is much more structured allowing participants to make quick progress on project goals and/or focused learning experiences. **Most projects will fit somewhere in between, a blend of focused, structured, and adaptable.**
+This table presents examples of what a project scope might look like, what preparation by the project lead is needed, and what teamwork at the hackweek might look like. Most projects will fit somewhere in between these two examples. On the left, the project is less structured so that it can be adapted to where team members would like to take the project based on what they can contribute and want to learn. On the right, the project work is much more structured allowing participants to make quick progress on project goals and/or focused learning experiences. **Most projects will fit somewhere in between, a blend of focused, structured, and adaptable.**
 
 | | <img src="../img/project-icon-3.svg"  alt="Exploration" width="100px" align="center" > | <img src="../img/project-icon-4.svg"  alt="Focused" width="100px" align="center" > |
 | --- | --- | --- |
 | **Scope** | <ul><li>Your team explores a variety of aspects with a new data set, tool, or method</li></ul>  | <ul><li>Your team works to develop a specific software tool or answer a specific research question</li></ul> |
-| **Preparation** | <ul><li>Project leaders provide example data, code, and tutorial-like content | <ul><li>Project leaders provide well-defined and measureable goals</li></ul>  |
+| **Preparation** | <ul><li>Project leaders provide example data, code, and tutorial-like content | <ul><li>Project leaders provide well-defined and measurable goals</li></ul>  |
 | **Teamwork** | <ul><li>Team members can pursue their own specific learning goals within the broad project topic</li><li>Peer-learning - team members learn from each other during project work</li><li>Project leaders spend more time teaching and guiding team members through the project topic</li></ul>  |  <ul><li>Team members work on specific tasks to accomplish project goals</li><li>Pair programming - team members might code in pairs to solve a problem</li><li>Project leaders spend more time coordinating specific tasks and lead design discussions</li></ul> |
 
-## Project Timeline
+## Project Stages and Timeline
 
 Each project will progress through these stages:
 
@@ -52,14 +52,22 @@ Each project will progress through these stages:
 :align: center
 ```
 
-### [Before the hackweek](project_before.md): Project ideation and team formation
+### [Before the hackweek](project_before.md): Formulate Projects
 
-Though project ideation begins well before the hackweek event, it is expected that the process is ongoing and iterative, and will continue through the event itself with input from participants helping to shape or adapt project goals.
+For many project leaders, planning begins months before the hackweek, shortly after their applications to develop their project idea has been accepted by the hackweek organizers. This time is used to help project leads think through how to organize their project into tasks team members, with varying backgrounds and skills, can contribute to and make progress on during the week. 
 
-### [During the hackweek](project_during.md): Project teamwork
+This section covers:
+* Project Leaders Kick-off Meeting
+* Project Development & Support
+* Project Facilitation Training
+* Project Development Milestones
 
-During the hackweek, participants will spend time with tutorials and with project work. We have provided suggested outlines for daily check-in meetings and tasks that a project leader can guide their team through.
+### [During the hackweek](project_during.md): Form Teams, Facilitate Teamwork, Share Learning
 
-### [After the hackweek](project_after.md): Communities of practice
+Each day of the hackweek, participants will spend time with hackweek specific tutorials and with their project teams. A significant part of the first day is geared toward supporting participants with finding the project that best fits their interests, skills, and learning desires. By the end of Day 1, teams have formed and conversations about mapping out the tasks will have begun. Days 2-4 and part of 5, project leads will facilitate team members making progress on project work and their specific learning objectives. The hackweeks concludes with each project team showcasing what they explored, learned, and accomplished together. 
+
+We have provided suggested outlines for daily check-in meetings and tasks that a project leader can guide their team through.
+
+### [After the hackweek](project_after.md)
 
 We aspire to keep projects going after the hackweek! This is an optional (yet ideal) outcome of hackweek project work.
