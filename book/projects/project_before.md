@@ -24,7 +24,7 @@ Hackweek event organizers will reach out to each project lead team to schedule a
 
 ### Project Development Milestones:
 
-1. [Create a project repository from the template](#organizing-your-project-on-github)
+1. [Create a project repository from the template](project_github.md)
     - Begin filling out basic project information in the README file:
       - *Title* and *Introduction*
       - Add your name to the list of *Collaborators*
