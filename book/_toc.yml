@@ -28,6 +28,7 @@ parts:
         - file: projects/project_before
         - file: projects/project_during
         - file: projects/project_after
+        - file: projects/project_github
     - file: projects/list_of_projects
 - caption: Reference
   chapters:
