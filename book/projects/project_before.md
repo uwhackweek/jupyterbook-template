@@ -41,11 +41,11 @@ During the second half, hackweek organizers will present information on how to e
       - Provide an initial description of *Data and Methods*
       - Outline *Project goals and tasks*
 3. **Project Development & Support**: Schedule and hold your first check-in meeting with hackweek organizers
-4. Continue project development:
+4. Continue project development with feedback from your check-in meeting(s):
     - Update project information in the README file before next meeting
     - Begin preparing other content required for your project (e.g. write sample code and Jupyter notebooks, organize and clean datasets, provide additional reading and learning resources for background information)
 5. **Project Facilitation Training**
-6. Continue project development:
+6. Continue project development with feedback from the Project Facilitation Training:
     - Update or change project information in the README file 
     - Ensure that project materials such as sample code, documentation, and data files are accessible (e.g. sample code and environment file in your project repository on GitHub, data files uploaded to an AWS S3 bucket)
     - Prepare any mini-tutorials needed or that will be co-developed with other leads
