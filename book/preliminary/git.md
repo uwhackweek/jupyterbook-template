@@ -30,7 +30,7 @@ Set your username and email address. The email address should be the same
 as you used to register your GitHub account.
 
 ```{attention}
-Use your personal name instead of the placeholder `{{hackweek}} Attendee`
+Use your personal name instead of the placeholder `Attendee Name`
 in the below commands. For the email, it should be the address you used to create
 your GitHub account instead of `attendee@hackweek.com`. Both values need to be
 surrounded by quotes `"`.
@@ -61,7 +61,7 @@ command.
 The output should look similar to this:
 ```shell
 jovyan@jupyter:~$ git config -l
-user.name= Attendee Name
+user.name=Attendee Name
 user.email=attendee@hackweek.com
 credential.helper=store
 ```
