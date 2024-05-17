@@ -8,7 +8,7 @@ Goals/Outcomes:
 * Identify projects and discuss scope and possible content
 * Identify project lead and co-leads
 * Identify gaps in project portfolio and decide if will solicit additional leads
-* Discuss timeline, milestones, check-ins, and individualized project development suppor
+* Discuss timeline, milestones, check-ins, and individualized project development support
 
 ## Project Development & Support
 
