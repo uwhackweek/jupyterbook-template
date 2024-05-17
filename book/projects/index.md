@@ -26,9 +26,9 @@ This table presents examples of what a project scope might look like, what prepa
 
 | | <img src="../img/project-icon-3.svg"  alt="Exploration" width="100px" align="center" > | <img src="../img/project-icon-4.svg"  alt="Focused" width="100px" align="center" > |
 | --- | --- | --- |
-| **Scope** | <ul><li>Your team explores a variety of aspects with a new data set, tool, or method</li></ul>  | <ul><li>Your team works to develop a specific software tool or answer a specific research question</li></ul> |
-| **Preparation** | <ul><li>Project leaders provide example data, code, and tutorial-like content | <ul><li>Project leaders provide well-defined and measurable goals</li></ul>  |
-| **Teamwork** | <ul><li>Team members can pursue their own specific learning goals within the broad project topic</li><li>Peer-learning - team members learn from each other during project work</li><li>Project leaders spend more time teaching and guiding team members through the project topic</li></ul>  |  <ul><li>Team members work on specific tasks to accomplish project goals</li><li>Pair programming - team members might code in pairs to solve a problem</li><li>Project leaders spend more time coordinating specific tasks and lead design discussions</li></ul> |
+| **Scope** | - Your team explores a variety of aspects with a new data set, tool, or method  | - Your team works to develop a specific software tool or answer a specific research question |
+| **Preparation** | - Project leaders provide example data, code, and tutorial-like content | - Project leaders provide well-defined and measurable goals  |
+| **Teamwork** | - Team members can pursue their own specific learning goals within the broad project topic <br /> - Peer-learning - team members learn from each other during project work <br /> - Project leaders spend more time teaching and guiding team members through the project topic  |  - Team members work on specific tasks to accomplish project goals<br /> - Pair programming - team members might code in pairs to solve a problem<br /> - Project leaders spend more time coordinating specific tasks and lead design discussions |
 
 ## Project Stages and Timeline
 
