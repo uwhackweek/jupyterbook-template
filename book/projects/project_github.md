@@ -20,7 +20,7 @@ We encourage all teams to create a new GitHub repository within the {{hackweek}}
 
 * Choose "Create a new repository"
 * Name your repository using a short name.
-* We recommend choosing "Public" (so other participants can follow progress). You can also select Private for now and make Public before final presentation.
+* We recommend choosing "Public" so other participants can follow progress
 * Add a "topic" to your repository details (click on the gear icon next to the "About" section on your repository page) to help others find your work (e.g. `uw-hackweek-snowex2024`)
 
 Visit the [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) for more details on creating a repository from a template.
