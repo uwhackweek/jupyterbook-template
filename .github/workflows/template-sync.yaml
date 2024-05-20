@@ -22,7 +22,7 @@ jobs:
         # comment token (and add .github path to .templatesyncignore)
         # if you do not want actions and workflows updated
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
 
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
@@ -31,3 +31,4 @@ jobs:
           source_repo_path: uwhackweek/jupyterbook-template
           upstream_branch: main # defaults to main
           is_force_deletion: True
+          git_remote_pull_params: --allow-unrelated-histories --squash --strategy=recursive -X theirs

@@ -40,20 +40,25 @@ runs:
       run: |
         if (test -a book/_build/html/reports/*log); then cat book/_build/html/reports/*log ; fi
 
-    - name: Publish to GitHub Pages
+    - name: Upload Pages HTML
       if: inputs.publish-to-gh == 'true'
-      uses: peaceiris/actions-gh-pages@v3
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{github.token}}
-        publish_dir: book/_build/html
-        publish_branch: gh-pages
-        enable_jekyll: false
-        cname: book-template.hackweek.io
+        path: book/_build/html
 
-    - name: Save Build
+    - name: Setup GitHub Pages
+      if: inputs.publish-to-gh == 'true'
+      uses: actions/configure-pages@v5
+
+    - name: Deploy to GitHub Pages
+      if: inputs.publish-to-gh == 'true'
+      id: deployment
+      uses: actions/deploy-pages@v4
+
+    - name: Upload Complete Build Folder
       if: ${{ always() && inputs.jb-save == 'true'}}
       uses: actions/upload-artifact@v4
       with:
-        name: build-${{ inputs.os }}
+        name: build-${{ runner.os }}
         path: book/_build/
 

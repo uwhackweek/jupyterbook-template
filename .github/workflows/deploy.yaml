@@ -1,6 +1,13 @@
 name: Deploy
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'book/**'
@@ -15,7 +22,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    environment:
+      name: github-pages
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -34,4 +42,4 @@ jobs:
         jb-cache: false
         publish-to-gh: true
         jb-save: true
-        token:  ${{ secrets.GH_PAT }}
+        token:  ${{ secrets.GITHUB_TOKEN }}
