@@ -29,18 +29,18 @@ Visit the [GitHub documentation](https://docs.github.com/en/repositories/creatin
 GitHub teams provide a convenient way for you to set permissions on your project repository for groups of people, rather than having to do this for each individual on your team. 
 
 1. Go to the "Teams" tab near the top of the GitHub {{hackweek}} Organization page: {{ '[https://github.com/orgs/{name}/teams](https://github.com/orgs/{name}/teams)'.format(name=hackweek) }}
-2. Click green “New team” button
-3. Use your short project name for "Team name"
-4. Set the team to visibility "Visible"
-5. Click on the "Create Team" button
-6. Add all team members by clicking the “Members” tab and the green “Add a member” button
+1. Click green “New team” button
+1. Use your short project name for "Team name"
+1. Set the team to visibility "Visible"
+1. Click on the "Create Team" button
+1. Add all team members by clicking the “Members” tab and the green “Add a member” button
 
 ## Add the project team to your project repo
 
 1. Go to the new repository you just created 
-2. Click “Settings” tab in upper right corner
-3. Select “Manage access” on left side of page
-4. Add your team name under the "Manage access" section
-5. Select “write” to enable all team members to make commits
+1. Click “Settings” tab in upper right corner
+1. Select “Manage access” on left side of page
+1. Add your team name under the "Manage access" section
+1. Select “write” to enable all team members to make commits
 
 Visit the [GitHub documentation](https://docs.github.com/en/organizations/organizing-members-into-teams/creating-a-team) for more details on creating a team.
