@@ -1,10 +1,10 @@
-# Configuring netlify for pull request previews
+# Configuring Netlify for pull request previews
 
-Public websites for hackweeks have content contributed by many different people, and we want to ensure that they are well-formatted and functional at all times. In order to do this, we ‘preview’ changes to a website to confirm it all looks good before merging new content. There are different ways to accomplish this, but we have found that Netlify is free and works well for public sites. 
+Public websites for hackweeks have content contributed by many different people, and we want to ensure that they are well-formatted and functional at all times. In order to do this, we "preview" changes to a website to confirm it all looks good before merging new content. There are different ways to accomplish this, but we have found that [Netlify](https://www.netlify.com) is free and works well for previews. 
 
-## Link netlify to a repository
+## Link Netlify to a repository
 
-Netlify organizes websites by 'Site' which is tied to a specific GitHub repository. All preview links created are persistent but not indexed by search engines. If you want to delete them, you can delete the 'Site' from Netlify. Importantly, the Netlify previews are completely decoupled from the main website that is hosted by GitHub pages, so you do not need to worry about overwriting or losing your main event webpage!
+Netlify organizes websites by "Site" which is tied to a specific GitHub repository. *All preview links created are persistent and public but not indexed by search engines.* If you want to delete them, you can delete the 'Site' from Netlify. Importantly, the Netlify previews are completely decoupled from the main website that is hosted by GitHub Pages, so you do not need to worry about overwriting or losing your main event webpage!
 
 1. ### Make sure the Netlify App is installed for your organization
 
@@ -16,7 +16,7 @@ Netlify organizes websites by 'Site' which is tied to a specific GitHub reposito
 
    ![Add Site](./images/netlify-repo-access.png)
 
-1. ### Log into netlify and 'Add new site'
+1. ### Log into Netlify and 'Add new site'
 
    ![Add Site](./images/netlify-addsite.png)
 
