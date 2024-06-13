@@ -1,42 +1,39 @@
-# Event Code of Conduct
+# Participant Conduct
 
-Guidelines to ensure we offer a hospitable and inclusive event and a list of resources for reporting violations. Although the content is similar, this event Code of Conduct should not be confused with the {{ '[Contributor Covenant Code of Conduct]({url}/{repo}/blob/main/CODE_OF_CONDUCT.md)'.format(url=github_org_url, repo=book_repo) }}  governing contributions to this JupyterBook.
+The UW Data Science for Social Good program is run by the UW eScience Institute and, thus, all DSSG program participants are expected to comply with the following [Code of Conduct](https://escience.washington.edu/about/code-of-conduct/). Project teams are intentionally diverse across many categories including academic standing, domain field, technical experience, etc., and all program participants are expected to respect the diverse perspectives represented. Please also see the [eScience Equity Statement](https://escience.washington.edu/about/equity-statement/).
 
+# Code of Conduct
 
----
+The University of Washington eScience Institute (“eScience”) is dedicated to providing a welcoming, supportive and inclusive environment for all people, regardless of background and identity. We do not tolerate discrimination or harassment based on characteristics that include, but are not limited to gender, gender identity and expression, sexual orientation, marital status, disability, physical appearance, body size, race, age, national origin or religion. Any form of behavior to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. By participating in this community, participants accept to abide by the eScience Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved.
 
-## Overview
+In order to foster a positive and professional learning environment we encourage the following kinds of behaviors on all platforms and during all events, both in-person and online:
 
-The organizers of this event are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age or religion.
-We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any event venues in either in-person or virtual form, including the Slack workspace. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the {{hackweek}} at the discretion of the organizers.
-
-## Definition of Harassment
+* Use welcoming and inclusive language
+* Be respectful of different viewpoints and experiences
+* Gracefully provide and accept constructive criticism
+* Show courtesy and respect towards other community members
 
 Harassment includes, but is not limited to:
 
-* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, age, religion.
-* Sexual images in public spaces
+* Written or verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, marital status, disability, physical appearance, body size, race, age, national origin or religion
+* Violent threats or language directed against another person
+* Sexual language or images in public spaces
 * Deliberate intimidation, stalking, or following
-* Harassing photography or recording
-* Sustained disruption of talks or other events
-* Inappropriate physical contact
-* Unwelcome sexual attention
+* Continuing to initiate interaction (including photography or recording) after being asked to stop
+* Publication of private communication without consent
+* Sustained disruption of talks, events, or communications
+* Insults or put downs
+* Nonconsensual or unwelcome physical contact
 * Advocating for, or encouraging, any of the above behavior
 
-## Expectations
+Participants asked to stop any harassing behavior are expected to comply immediately. This applies to any eScience events or activities, either online or in-person. Participants violating these rules may be sanctioned or expelled from participation at the discretion of eScience staff. The organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants. 
 
-We expect participants and instructors to act in ways that foster a supportive and welcoming learning community at all event venues and event-related social activities. We expect you to support collaboration and learning while participating in this community of practice. Hackweek organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants (including unintentionally). Participants asked to stop any harassing behavior are expected to comply immediately. Failure to comply may result in the participant being expelled from the event at the discretion of the organizers.
+Harassment and other code of conduct violations reduce the value of our programming for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. You can make a report either personally or anonymously. To personally report, contact the eScience executive director, Sarah Stone, at sstone3@uw.edu or another trusted staff member. Anonymous reports can be made [here](bit.ly/uwhackweekfeedback). If you are experiencing a problem or issue that needs to be addressed by someone outside the program, you may contact the UW Office of the Ombud at ombuds@uw.edu or 206-543-6028.
 
-## Reporting a violation
-Harassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible.
+[SafeCampus](https://www.washington.edu/safecampus/) (206-685-7233) is also available at any time to anonymously discuss safety and well-being concerns for yourself and others. SafeCampus is the University of Washington’s violence-prevention and response program, providing resources to UW students, staff, faculty and community members. For more information, visit their [What to Expect](https://www.washington.edu/safecampus/what-to-expect) page.
 
-If you feel comfortable contacting someone associated with our event, you may speak with one of the event organizers in person, send an e-mail to {{ '[`{email}`](mailto:{email})'.format(email=contact_email) }}, or contact an organizer on a private Slack channel. You may also submit an anonymous comment to our {{ '[virtual comment box]({url})'.format(url=anon_reporting_url) }}.
+Thank you for helping to make our institute inclusive, welcoming and safe.
 
-If you have experienced or observed harassment, unethical or unprofessional behavior as described above (a violation of this code of conduct) and want to talk to someone not directly associated with our event about it, choose from these specialists below:
-
-* Contact the Office of the Ombud, 206-543-6028, ombuds@uw.edu, [www.uw.edu/ombud](https://www.uw.edu/ombud). For individuals who are uncertain about whether they want to pursue a formal complaint but would like to speak to someone about unethical or unprofessional behavior or some other challenging situations, the Ombud office provides a confidential, informal, and neutral resource for you. They can assist you with determining what, if any, course of action you would like to pursue and to navigate the different resources on campus.
-* Speak up about discrimination to the University Complaint Investigation and Resolution Office (UCIRO), 206- 616-2028, uciro@uw.edu. Staff are available if you would like to file a formal complaint regarding discrimination.
-* Speak up about sexual misconduct to the Title IX Office, 206-616-5334, tixinv@uw.edu, [link](https://www.washington.edu/compliance/tixio/). Staff are available if you would like to file a formal complaint regarding sexual misconduct.
+[Contact us here.](bit.ly/uwhackweekfeedback)
 
 
-This anti-harassment policy is based on the example policy from the Geek Feminism wiki, created by the Ada Initiative and other volunteers.
