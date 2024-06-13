@@ -1,4 +1,4 @@
-# Configuing netlify for pull request previews
+# Configuring Netlify for pull request previews
 
 Public websites for hackweeks have content contributed by many different people, and we want to ensure that they are well-formatted and functional at all times. In order to do this, we ‘preview’ changes to a website to confirm it all looks good before merging new content. There are different ways to accomplish this, but we have found that Netlify is free and works well for public sites. 
 
