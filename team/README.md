@@ -9,7 +9,8 @@ Follow these steps to add yourself:
 * Navigate into the 'teams' directory.
 * Use the provided 'template.yaml' file.
 * Create a copy of the 'template.yaml' file and rename the file to your name.
-In the GitHub interface, you can create a new file and copy-paste from the template. Or, you can do this on the command line with
+In the GitHub interface, you can create a new file and copy-paste from the template.
+Or, you can do this on the command line with
    ```
     cp template.yaml FirstName-LastName.yaml
    ```
