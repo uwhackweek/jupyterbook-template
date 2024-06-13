@@ -4,4 +4,4 @@ Some template features require additional GitHub settings. For example, the [net
 
 [github-setup.md](./github-setup.md): Our recommendations for configuring a GitHub organization and managing secrets for a Hackweek
 
-[netlify-setup.md](./github-setup.md): Documentation on setting up previews of website changes in pull requests with Netlify
+[netlify-setup.md](./netlify-setup.md): Documentation on setting up previews of website changes in pull requests with Netlify
