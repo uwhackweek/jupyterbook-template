@@ -10,7 +10,7 @@ Follow these steps to add yourself:
 * Use the provided 'template.yaml' file.
 * Create a copy of the 'template.yaml' file and rename the file to your name.
 In the GitHub interface, you can create a new file and copy-paste from the template.
-Or, in a local copy of the repository you can do this on the command line with
+Or, in a local repository you can do this on the command line with
    ```
     cp template.yaml FirstName-LastName.yaml
    ```
