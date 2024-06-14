@@ -2,7 +2,7 @@
 
 The UW Data Science for Social Good program is run by the UW eScience Institute and, thus, all DSSG program participants are expected to comply with the following [Code of Conduct](https://escience.washington.edu/about/code-of-conduct/). Project teams are intentionally diverse across many categories including academic standing, domain field, technical experience, etc., and all program participants are expected to respect the diverse perspectives represented. Please also see the [eScience Equity Statement](https://escience.washington.edu/about/equity-statement/).
 
-# Code of Conduct
+## Code of Conduct
 
 The University of Washington eScience Institute (“eScience”) is dedicated to providing a welcoming, supportive and inclusive environment for all people, regardless of background and identity. We do not tolerate discrimination or harassment based on characteristics that include, but are not limited to gender, gender identity and expression, sexual orientation, marital status, disability, physical appearance, body size, race, age, national origin or religion. Any form of behavior to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. By participating in this community, participants accept to abide by the eScience Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved.
 
