@@ -36,6 +36,4 @@ Harassment and other code of conduct violations reduce the value of our programm
 
 Thank you for helping to make our institute inclusive, welcoming and safe.
 
-[Contact us here.](https://bit.ly/uwhackweekfeedback)
-
 
