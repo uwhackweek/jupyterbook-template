@@ -1,6 +1,8 @@
 # Participant Conduct
 
-The UW Data Science for Social Good program is run by the UW eScience Institute and, thus, all DSSG program participants are expected to comply with the following [Code of Conduct](https://escience.washington.edu/about/code-of-conduct/). Project teams are intentionally diverse across many categories including academic standing, domain field, technical experience, etc., and all program participants are expected to respect the diverse perspectives represented. Please also see the [eScience Equity Statement](https://escience.washington.edu/about/equity-statement/).
+We require all participants in the University of Washington (UW) eScience Hackweek program to comply with the [eScience Code of Conduct](https://escience.washington.edu/about/code-of-conduct/) copied below.
+
+Hackweek participants are intentionally diverse across many categories including academic standing, domain field, technical experience, etc., and we expect everyone to respect all perspectives represented. Please also read the [eScience Equity Statement](https://escience.washington.edu/about/equity-statement/).
 
 ## Code of Conduct
 
