@@ -3,7 +3,7 @@
 
 ```{attention}
 Please make sure to find some time to go through the below material before
-the hackweek.
+the hackweek. It should take arond 10 minutes to accomplish this.
 
 __Upon completion you__:
 <div>
