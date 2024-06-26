@@ -20,6 +20,10 @@ Netlify organizes websites by "Site" which is tied to a specific GitHub reposito
 
    ![Add Site](./images/netlify-addsite.png)
 
+1. ### Select import an existing project
+
+<img width="365" alt="image" src="https://github.com/uwhackweek/jupyterbook-template/assets/2545978/dffdaca4-dfcf-4ee8-802f-16351486e252">
+
 1. ### Select deploy project with GitHub
 
    ![Link GitHub](./images/netlify-link-github.png)
@@ -36,7 +40,7 @@ Netlify organizes websites by "Site" which is tied to a specific GitHub reposito
 
 1. ### Disable netlify main deployment
 
-   Important!! We only want to use Netlify for *Previews* so under 'Site Configuration' -> 'Build & Deploy' -> 'Continuous deployment' -> 'Build settings' select "Stopped Builds"
+   Important!! We only want to use Netlify for *Previews* so under 'Site Configuration' -> 'Build & Deploy' -> 'Continuous deployment' -> 'Build settings' -> 'Configure' -> select "Stopped Builds" -> Save
    (e.g. https://app.netlify.com/sites/snowex-website-2024/configuration/deploys)
 
    If you do not do this, you will have a public mirror of your website available at your netlify site name (https://snowex-website-2024.netlify.app)
@@ -61,3 +65,16 @@ Netlify organizes websites by "Site" which is tied to a specific GitHub reposito
    In the end, a website repository needs to have access to both `NETLIFY_AUTH_TOKEN` and a specific `NETLIFY_SITE_ID` for the preview workflow to function:
 
    ![Repo secrets final](./images/github-repo-secrets2.png)
+
+   In your website repository, go to 'Settings' -> 'Secrets and variables' -> 'Actions' -> 'New repository secret' . Make one for `NETLIFY_SITE_ID` and `NETLIFY_AUTH_TOKEN` with the codes copied in the previous two steps.
+
+1. ### Ensure that the workflow has permission to write issue comments
+
+  <img width="1001" alt="image" src="https://github.com/uwhackweek/jupyterbook-template/assets/2545978/5b2333d3-3b21-4ff8-b87e-e29a45f1d0f2">
+
+  In your website repository, go to 'Settings' -> 'Actions' -> 'General' and scroll to the section on workflow permissions. Make sure sure that the workflow has read/write permissions. By default, this will be disabled at the organization level, so if the read/write is greyed out, you will need to have a GitHub organization admin change the org level permissions. To do this, go to the GitHub organization then 'Settings' -> 'Actions' -> 'General' and scroll to the section on workflow permissions.
+
+1. ### Trigger your first deploy
+
+   Edit a file in GitHub, Commit and create a pull-request. Label the pull request 'preview'. You will need to create the 'preview' label the first time. Once you create the PR with label 'preview', the Netlify workflow will be triggers and when finished a link to a preview of the website will appear in the PR comments.
+
