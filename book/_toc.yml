@@ -23,11 +23,7 @@ parts:
         - file: tutorials/example/tutorial-notebook
 - caption: Projects
   chapters:
-    - file: projects/list_of_projects
     - file: projects/index
-      sections:
-        - file: projects/project_roadmap
-        - file: projects/project_initialization
 - caption: Reference
   chapters:
     - file: reference/glossary
