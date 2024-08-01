@@ -13,5 +13,10 @@ team/*-*
 ###
 # book files (configuration, usage-specific)
 book/_config.yml
+book/logo.png
+# book/_toc.yml
 ###
 # event-specific tutorials
+###
+# other files you may want to exclude once you start using your template
+# README.md
