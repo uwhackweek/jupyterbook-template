@@ -13,8 +13,8 @@ You can find our comprehensive guide for organizing projects before, during, and
 
 ## List of Projects
 
-Here is our current list of project for our {{dates}} {{ hackweek }} hackweek:
+Projects for the {{dates}} {{ hackweek }} will be listed here during the event. Prior to them being listed here, participants can express their interest in one or more projects on the projects spreadsheet: {{ project_spreadsheet_url }}
 
 | Project Name (with link to GitHub repo) | Short Description | Project Lead(s) |
 |:--------|:--------|:-----|
-| [Snow-Extrapolation](https://github.com/geo-smart/Snow-Extrapolation) | Goal: Improve National Snow Model (NSM) prediction performance in the Sierra Nevada mountains through domain constraints and the exploration of different ML algorithms. | Ryan Johnson |
+| [Example Project](#) | Example project description. | Leader(s) |
