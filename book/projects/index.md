@@ -17,4 +17,4 @@ Projects for the {{dates}} {{ hackweek }} will be listed here during the event. 
 
 | Project Name (with link to GitHub repo) | Short Description | Project Lead(s) |
 |:--------|:--------|:-----|
-| [Example Project](#) | Example project description. | Leader(s) |
+| [Example Project](https://github.com/uwhackweek/sample_project_repository) | Example project description. | Leader(s) |
