@@ -63,6 +63,7 @@ bibtex_bibfiles:
 sphinx:
   config:
     bibtex_reference_style: author_year  # or label, super, \supercite
+    nb_merge_streams: true # stdout lines combined in output
     nb_custom_formats:
         .py:
             - jupytext.reads
