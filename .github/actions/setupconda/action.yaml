@@ -4,7 +4,7 @@ description: 'Create conda environment for GitHub Action Job'
 runs:
   using: "composite"
   steps:
-    - uses: mamba-org/setup-micromamba@v1
+    - uses: mamba-org/setup-micromamba@v3
       with:
         environment-file: conda/conda-lock.yml
         environment-name: hackweek

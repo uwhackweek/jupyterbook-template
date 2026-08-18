@@ -21,7 +21,7 @@ runs:
   steps:
     - name: Setup JupyterBook Cache
       if: inputs.jb-cache == 'true'
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: ./book/_build
         # NOTE: change key to "jupyterbook-N+1" to force rebuilding cache
@@ -42,22 +42,22 @@ runs:
 
     - name: Upload Pages HTML
       if: inputs.publish-to-gh == 'true'
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v5
       with:
         path: book/_build/html
 
     - name: Setup GitHub Pages
       if: inputs.publish-to-gh == 'true'
-      uses: actions/configure-pages@v5
+      uses: actions/configure-pages@v6
 
     - name: Deploy to GitHub Pages
       if: inputs.publish-to-gh == 'true'
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
 
     - name: Upload Complete Build Folder
       if: ${{ always() && inputs.jb-save == 'true'}}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: build-${{ runner.os }}
         path: book/_build/
