@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: ${{ github.event.pull_request.head.sha }}
 
@@ -34,7 +34,7 @@ jobs:
 
     - name: Deploy Website Preview
       if: always()
-      uses: nwtgck/actions-netlify@v3.0
+      uses: nwtgck/actions-netlify@v4.0.0
       with:
         publish-dir: './book/_build/html'
         github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -13,7 +13,7 @@ jobs:
         shell: bash -l {0}
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
 
     - uses: ./.github/actions/setupconda
 
@@ -28,7 +28,7 @@ jobs:
     # NOTE: this isn't a comprehensive spellcheck, just common typos
     - name: Spellcheck
       if: always()
-      uses: codespell-project/actions-codespell@master
+      uses: codespell-project/actions-codespell@v2.2
       with:
         check_filenames: true
         skip: '*.js,*.css,qaqc.yml,*.geojson'
